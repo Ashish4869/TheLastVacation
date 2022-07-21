@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 2
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: c629b976475e7d1479ceed25b102889b, type: 3}
+  Characters:
+  - {fileID: 21300000, guid: da840c658d57e8642b83055e0b37df1f, type: 3}
+  - {fileID: 21300000, guid: a86dab2d0959965409d6bd9a4d830396, type: 3}
+  - {fileID: 21300000, guid: 9d954779a6cb1da4486781108c9e99d8, type: 3}
+  SceneDialouges:
+  - _speaker: You
+    _dialouge: 'ANGELA what happened why did you scream....are you alright? '
+  - _speaker: Angela
+    _dialouge: "I just saw a huge cockroach over there....aaaahhh so scary \uFF08>\uFE4F<\uFF09"
+  - _speaker: You
+    _dialouge: 'Are you serious we got so  scared... Angela why you such a coward?
+
+'
+  - _speaker: Chris
+    _dialouge: 'Angela...you are so silly.
+
+      By the way where is Emily??'
+  - _speaker: Angella
+    _dialouge: Im so sorry you guys..i just got shocked seeing it all of a sudden..
+  - _speaker: Angella
+    _dialouge: Lets go to bed we have to go out tomorrow.

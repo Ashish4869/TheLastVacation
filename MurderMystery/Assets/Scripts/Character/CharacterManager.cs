@@ -6,18 +6,17 @@ using UnityEngine.UI;
 
 public class CharacterManager : MonoBehaviour
 {
-    [SerializeField] SceneDataSO _currentScene;
+    SceneDataSO _currentScene;
     [SerializeField] GameObject _charactersInSceneGameObject;
     [SerializeField] GameObject _characterUITemplatePrefab;
 
     Sprite[] _charactersInScene;
     Dictionary<string , GameObject> _charactersDict;
 
-    int i;
-
     // Start is called before the first frame update
     void Start()
     {
+        EventManager.OnSceneDialougeExhausted += PrepareNextScene;
         _charactersDict = new Dictionary<string, GameObject>();
         GetCharacters();
         SetCharactersInUI();
@@ -35,35 +34,40 @@ public class CharacterManager : MonoBehaviour
             rectTransform = child.GetComponent<RectTransform>();
             rectTransform.sizeDelta = new Vector2(500, 1000); //later we have to change and make it so that each character gets their own height and expression
             child.GetComponent<Image>().sprite = _charactersInScene[i];
-            _charactersDict.Add(_charactersInScene[i].name, child); //Center Center or In Place and all
+            _charactersDict.Add(_charactersInScene[i].name, child); //Place All characters
         }
     }
 
     private void GetCharacters()
     {
+        _currentScene = GameManager.Instance.GetCurrentScene();
         _charactersInScene = _currentScene.GetCurrentSceneCharacters();
     }
 
     public void RenderCharacters()
     {
-        ClearAllCharacters();
-
-        foreach(string charName in _charactersDict.Keys)
-        {
-            if(charName == _currentScene.GetCurrentSceneDialouges()[i]._speaker)
-            {
-                _charactersDict[_currentScene.GetCurrentSceneDialouges()[i]._speaker].SetActive(true);
-            }
-        }
-
-        i++;
+        
     }
 
     private void ClearAllCharacters()
     {
         foreach (string charName in _charactersDict.Keys)
         {
-            _charactersDict[charName].SetActive(false);
+            Destroy(_charactersDict[charName]);
         }
+
+        _charactersDict.Clear();
+    }
+
+    private void PrepareNextScene()
+    {
+        ClearAllCharacters();
+        GetCharacters();
+        SetCharactersInUI();
+    }
+
+    private void OnDestroy()
+    {
+        EventManager.OnSceneDialougeExhausted -= PrepareNextScene;
     }
 }

@@ -7,8 +7,8 @@ using System;
 
 public class DialougeManager : MonoBehaviour
 {
-    [SerializeField]
-    SceneDataSO CurrentScene;
+
+    SceneDataSO _currentScene;
     [SerializeField]
     TextMeshProUGUI DialougeText;
     [SerializeField]
@@ -17,7 +17,6 @@ public class DialougeManager : MonoBehaviour
     Continue _continue;
     private Queue<string> _dialouges;
     string _currentDialouge;
-    int _currentDialougeCounter = -1;
     Dialouge[] _currentSceneDialouges;
     bool IsDialougeAnimating = false;
 
@@ -25,14 +24,19 @@ public class DialougeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        EventManager.OnSceneDialougeExhausted += PrepareNextScene;
+
         _dialouges = new Queue<string>();
         _continue = GetComponent<Continue>();
         GetDialouges();
+
     }
 
     void GetDialouges()
     {
-        _currentSceneDialouges = CurrentScene.GetCurrentSceneDialouges();
+        _currentScene = GameManager.Instance.GetCurrentScene();
+
+        _currentSceneDialouges = _currentScene.GetCurrentSceneDialouges();
 
         foreach (Dialouge dialouge in _currentSceneDialouges)
         {
@@ -64,21 +68,21 @@ public class DialougeManager : MonoBehaviour
 
         if (_dialouges.Count != 0)
         {
-            _currentDialougeCounter++;
+            GameManager.Instance.UpdateCurrentDialougeCounter();
             _currentDialouge = _dialouges.Dequeue();
             StartCoroutine(AnimateText());
         }
         else
         {
-            Debug.Log("Exhausted all dialouges");
+            GameManager.Instance.LoadNextScene();
         }
     }
 
     private void HandleSpeaker()
     {
-        if (_currentDialougeCounter >= 0)
+        if (GameManager.Instance.GetCurrentDialougeCounter() >= 0)
         {
-            SpeakerText.text = CurrentScene.GetCurrentSceneDialouges()[_currentDialougeCounter]._speaker;
+            SpeakerText.text = _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()]._speaker;
         }
     }
 
@@ -94,5 +98,15 @@ public class DialougeManager : MonoBehaviour
 
         IsDialougeAnimating = false;
         _continue.HandleContinueButton(IsDialougeAnimating);
+    }
+
+    private void PrepareNextScene()
+    {
+        GetDialouges();
+    }
+
+    private void OnDestroy()
+    {
+        EventManager.OnSceneDialougeExhausted -= PrepareNextScene; 
     }
 }

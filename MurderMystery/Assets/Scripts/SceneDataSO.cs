@@ -28,4 +28,14 @@ public class SceneDataSO : ScriptableObject
     {
         return Characters;
     }
+
+    public int GetDialougeAmount()
+    {
+        return SceneDialouges.Length;
+    }
+
+    public Sprite GetCurrentSceneBG()
+    {
+        return SceneBG;
+    }
 }
