@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// This is the templat of the scriptable object which we will use to store revelant data for a particular scene
+/// This is the template of the scriptable object which we will use to store revelant data for a particular scene
 /// </summary>
 
 [CreateAssetMenu(fileName ="NewScene" , menuName ="Scenes")]

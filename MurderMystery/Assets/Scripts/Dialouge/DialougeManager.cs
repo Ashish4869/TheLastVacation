@@ -20,8 +20,6 @@ public class DialougeManager : MonoBehaviour
     Dialouge[] _currentSceneDialouges;
     bool IsDialougeAnimating = false;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         EventManager.OnSceneDialougeExhausted += PrepareNextScene;
@@ -32,7 +30,10 @@ public class DialougeManager : MonoBehaviour
 
     }
 
-    void GetDialouges()
+    //Gets the current scene from Game Manager
+    //Fills the dialouges of the current scene into a Queue
+    //Displays first Dialouge
+    void GetDialouges() 
     {
         _currentScene = GameManager.Instance.GetCurrentScene();
 
@@ -46,6 +47,10 @@ public class DialougeManager : MonoBehaviour
         DisplayNextText();
     }
 
+
+    //Displays the Speaker Text on the UI
+    //Displays The Dialouge on the UI
+    //Hides the Animation for Continue
     public void DisplayNextText()
     {
         HandleDialouge();
@@ -53,6 +58,11 @@ public class DialougeManager : MonoBehaviour
         _continue.HandleContinueButton(IsDialougeAnimating);
     }
 
+    //First Stop animation
+    //Checks if the dialouge is animating
+    //  if yes then fills the textbox with current dialouge
+    //  else Animates the next dialouge
+    //Loads NextScene if all dialouges is exhausted
     private void HandleDialouge()
     {
         DialougeText.text = "";
@@ -78,7 +88,7 @@ public class DialougeManager : MonoBehaviour
         }
     }
 
-    private void HandleSpeaker()
+    private void HandleSpeaker() //Gets the current speaker and displays on the UI
     {
         if (GameManager.Instance.GetCurrentDialougeCounter() >= 0)
         {
@@ -86,6 +96,7 @@ public class DialougeManager : MonoBehaviour
         }
     }
 
+    //Gets each character and displays it on the UI , the process is repeated with a little delay each time
     IEnumerator AnimateText()
     {
         IsDialougeAnimating = true;
@@ -100,7 +111,7 @@ public class DialougeManager : MonoBehaviour
         _continue.HandleContinueButton(IsDialougeAnimating);
     }
 
-    private void PrepareNextScene()
+    private void PrepareNextScene() //Gets the dialouge of the NextScene
     {
         GetDialouges();
     }

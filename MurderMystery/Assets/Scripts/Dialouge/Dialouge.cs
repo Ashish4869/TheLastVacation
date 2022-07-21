@@ -9,9 +9,9 @@ using UnityEngine;
 [System.Serializable]
 public class Dialouge 
 {
-    public string _speaker;
+    public string _speaker; //Person saying the dialouge
 
     [TextArea(0,5)]
-    public string _dialouge;
+    public string _dialouge; //Dialouge said by the person
    
 }

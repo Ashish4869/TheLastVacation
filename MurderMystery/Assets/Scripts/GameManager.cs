@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Game Manager keeps tabs of all data on the game and we have made use of the singleton pattern to make this class a, global static class
+/// The Game Manager keeps tabs of all data on the game and we have made use of the singleton pattern to make this class a global static class accessible by all other classes
 /// </summary>
 public class GameManager : MonoBehaviour
 {
