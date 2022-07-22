@@ -12,8 +12,9 @@ public class CharacterManager : MonoBehaviour
     SceneDataSO _currentScene;
     [SerializeField] GameObject _charactersInSceneGameObject;
     [SerializeField] GameObject _characterUITemplatePrefab;
+    [SerializeField] Image _speakerImage;
 
-    Sprite[] _charactersInScene;
+    CharacterDataSO[] _charactersInScene;
     Dictionary<string , GameObject> _charactersDict;
 
     // Start is called before the first frame update
@@ -35,8 +36,8 @@ public class CharacterManager : MonoBehaviour
             child.transform.SetParent(_charactersInSceneGameObject.transform);
             child.transform.localScale = new Vector3(1, 1, 1);
             rectTransform = child.GetComponent<RectTransform>();
-            rectTransform.sizeDelta = new Vector2(500, 1000); //later we have to change and make it so that each character gets their own height , width and expression
-            child.GetComponent<Image>().sprite = _charactersInScene[i];
+            rectTransform.sizeDelta = new Vector2(_charactersInScene[i].GetCharacterWidth(), _charactersInScene[i].GetCharacterHeight()); //later we have to change and make it so that each character gets their own height , width and expression
+            child.GetComponent<Image>().sprite = _charactersInScene[i].GetCharacterSpriteAsPerEmotion(Emotion.Normal);
             _charactersDict.Add(_charactersInScene[i].name, child); //Place All characters
         }
     }
@@ -47,9 +48,27 @@ public class CharacterManager : MonoBehaviour
         _charactersInScene = _currentScene.GetCurrentSceneCharacters();
     }
 
-    public void RenderCharacters()
-    {
-        
+   public void SetCharacterExpressionAndSpeaker() //Function is called when we click on the screen
+   {
+        if(_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "You" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "Narrator" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "???")
+        {
+            _speakerImage.color = new Color(1, 1, 1, 0);
+            _speakerImage.sprite = null;
+            return;
+        }
+
+        int i = 0;
+        foreach (string charName in _charactersDict.Keys)
+        {
+            if (charName == _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()]._speaker)
+            {
+                Image charImage = _charactersDict[_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()]._speaker].GetComponent<Image>();
+                charImage.sprite = _charactersInScene[i].GetCharacterSpriteAsPerEmotion(_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()].emotion);
+                _speakerImage.color = new Color(1, 1, 1, 1);
+                _speakerImage.sprite = _charactersInScene[i].GetCharacterSpriteAsPerEmotion(Emotion.SpeakCrop);
+            }
+            i++;
+        }
     }
 
     private void ClearAllCharacters() //Deletes all child elements that were created for this scene

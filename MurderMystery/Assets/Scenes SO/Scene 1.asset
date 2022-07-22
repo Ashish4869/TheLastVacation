@@ -12,41 +12,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
   m_Name: Scene 1
   m_EditorClassIdentifier: 
-  SceneBG: {fileID: 21300000, guid: aedd5dd59550e3841a06e8044822d2ae, type: 3}
+  SceneBG: {fileID: 21300000, guid: 5f984c0c35f970b47aed4cd4f46f3a2e, type: 3}
   Characters:
-  - {fileID: 21300000, guid: 9d954779a6cb1da4486781108c9e99d8, type: 3}
-  - {fileID: 21300000, guid: 7c78d1b3e8ab4c44cab0085f88e21e37, type: 3}
-  - {fileID: 21300000, guid: da840c658d57e8642b83055e0b37df1f, type: 3}
+  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
   SceneDialouges:
   - _speaker: Chris
-    _dialouge: Hey Ashish, Andy come check this room out.....its  even bigger than
-      my living room!
-  - _speaker: You
-    _dialouge: Wow...my whole family can stay here.
-  - _speaker: Andy
-    _dialouge: "Hahaha...C\u2019mon it isn\u2019t that big.\nBut i have been wondering
-      how did Dan get this mansion for such a low price. Something doesn\u2019t feel
-      right.\n"
-  - _speaker: Chris
-    _dialouge: "C\u2019mon Andy...why are you like this, overthinking about everything,
-      we are here to relax...we don\u2019t get this opportunity everyday."
-  - _speaker: You
-    _dialouge: "Yes Chris is right... we are here to release our stress so don\u2019t
-      increase it by overthinking."
-  - _speaker: Andy
-    _dialouge: 'Yeah i think you guys are right....
+    _dialouge: 'Hey Ashish, Andy come check this room out.
 
-      if only i was a little
-      more carefree like you guys. .'
+      Its  even bigger
+      than my living room!'
+    emotion: 0
+    _ShouldShakeScreen: 0
+  - _speaker: You
+    _dialouge: 'Wow!
+
+      My whole <color=yellow> family </color> can stay here.'
+    emotion: 0
+    _ShouldShakeScreen: 0
+  - _speaker: Andy
+    _dialouge: "Hahaha, C\u2019mon it isn\u2019t that <b>big</b>."
+    emotion: 0
+    _ShouldShakeScreen: 0
+  - _speaker: Andy
+    _dialouge: 'But I have been wondering how did Dan get this mansion for such a
+      <color=red> low price. </color>
+
+'
+    emotion: 0
+    _ShouldShakeScreen: 0
+  - _speaker: Chris
+    _dialouge: "C\u2019mon Andy!\nWhy are you like this, overthinking about everything,
+      we are here to relax.\nWe don\u2019t get this opportunity everyday."
+    emotion: 0
+    _ShouldShakeScreen: 0
+  - _speaker: You
+    _dialouge: "Yes Chris is right.\nWe are here to release our stress so don\u2019t
+      increase it by overthinking."
+    emotion: 0
+    _ShouldShakeScreen: 0
+  - _speaker: Andy
+    _dialouge: 'Yeah I think you guys are right.
+
+      if only I was a little more
+      carefree like you guys. '
+    emotion: 0
+    _ShouldShakeScreen: 0
   - _speaker: Andy
     _dialouge: 'We are in this beautiful mansion in this peaceful place and we are
       going to make the best of it.
 
-      Besides  what can go wrong'
-  - _speaker: Narrator
-    _dialouge: Sudden scream from the other room....
+      Besides  <i>what can go wrong</i>.'
+    emotion: 0
+    _ShouldShakeScreen: 0
+  - _speaker: ???
+    _dialouge: 'AAAAAAHHHHHHHH
+
+      (Sudden scream from the other room.)'
+    emotion: 0
+    _ShouldShakeScreen: 2
   - _speaker: You
-    _dialouge: I think i just heard Angela screaming we must hurry up and check what
+    _dialouge: I think I just heard Angela screaming we must hurry up and check what
       happened.
+    emotion: 0
+    _ShouldShakeScreen: 0
   - _speaker: Chris
-    _dialouge: You guys go ahead I'll call rest of them.
+    _dialouge: You guys go ahead, I'll call rest of them.
+    emotion: 0
+    _ShouldShakeScreen: 0

@@ -14,7 +14,7 @@ public class SceneDataSO : ScriptableObject
     private Sprite SceneBG;
 
     [SerializeField]
-    private Sprite[] Characters;
+    private CharacterDataSO[] Characters;
 
     [SerializeField]
     private Dialouge[] SceneDialouges;
@@ -24,7 +24,7 @@ public class SceneDataSO : ScriptableObject
         return SceneDialouges;
     }
 
-    public Sprite[] GetCurrentSceneCharacters()
+    public CharacterDataSO[] GetCurrentSceneCharacters()
     {
         return Characters;
     }

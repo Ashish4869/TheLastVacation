@@ -14,7 +14,19 @@ public class DialougeManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI SpeakerText;
 
+
+    [SerializeField] float _screenShakeIntensitySmall;
+    [SerializeField] float _screenShakeAmountSmall;
+
+    [SerializeField] float _screenShakeIntensityMeduim;
+    [SerializeField] float _screenShakeAmountMeduim;
+
+    [SerializeField] float _screenShakeIntensityHeavy;
+    [SerializeField] float _screenShakeAmountMeduim;
+
     Continue _continue;
+    EventManager _eventManager;
+    bool _isAnimatingHTMLTag;
     private Queue<string> _dialouges;
     string _currentDialouge;
     Dialouge[] _currentSceneDialouges;
@@ -22,6 +34,7 @@ public class DialougeManager : MonoBehaviour
 
     void Start()
     {
+        _eventManager = FindObjectOfType<EventManager>();
         EventManager.OnSceneDialougeExhausted += PrepareNextScene;
 
         _dialouges = new Queue<string>();
@@ -72,6 +85,7 @@ public class DialougeManager : MonoBehaviour
         {
             DialougeText.text = _currentDialouge;
             IsDialougeAnimating = false;
+            _eventManager.OnShakeScreenEvent(0, 0);
             _continue.HandleContinueButton(IsDialougeAnimating);
             return;
         }
@@ -79,6 +93,12 @@ public class DialougeManager : MonoBehaviour
         if (_dialouges.Count != 0)
         {
             GameManager.Instance.UpdateCurrentDialougeCounter();
+
+            //if(_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()]._ShouldShakeScreen)
+            {
+                
+            }
+
             _currentDialouge = _dialouges.Dequeue();
             StartCoroutine(AnimateText());
         }
@@ -99,12 +119,39 @@ public class DialougeManager : MonoBehaviour
     //Gets each character and displays it on the UI , the process is repeated with a little delay each time
     IEnumerator AnimateText()
     {
+       
         IsDialougeAnimating = true;
 
         foreach(char character in _currentDialouge.ToCharArray())
         {
             DialougeText.text += character;
-            yield return new WaitForSeconds(0.03f);
+
+            if (character == '<')
+            {
+                _isAnimatingHTMLTag = true;
+            }
+
+            if(character == '>')
+            {
+                _isAnimatingHTMLTag = false;
+            }
+
+            if(_isAnimatingHTMLTag)
+            {
+                continue;
+            }
+
+                
+
+            if(character == '.' || character == '?' || character == '!')
+            {
+                yield return new WaitForSeconds(0.5f);
+            }
+            else
+            {
+                yield return new WaitForSeconds(0.03f);
+            }
+            
         }
 
         IsDialougeAnimating = false;

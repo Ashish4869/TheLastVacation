@@ -13,5 +13,8 @@ public class Dialouge
 
     [TextArea(0,5)]
     public string _dialouge; //Dialouge said by the person
-   
+
+    public Emotion emotion; //Emotion with which the speaker says his/her dialogue   
+
+    public ScreenShakes _ShouldShakeScreen; //Indicates which screen shake u want
 }
