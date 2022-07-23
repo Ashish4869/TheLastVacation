@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Shakes the Screen by randomly moving the object  to which this script is attached. The movement is randomized within a Unit Sphere
+/// </summary>
 public class ScreenShaker : MonoBehaviour
 {
     [SerializeField]
@@ -18,7 +21,7 @@ public class ScreenShaker : MonoBehaviour
         EventManager.OnShakeScreen += ScreenShakeForTime;
     }
 
-
+    //Shakes The screen untill the shaketime is below 0
     private void Update()
     {
         
@@ -35,7 +38,7 @@ public class ScreenShaker : MonoBehaviour
         }
     }
 
-    public void ScreenShakeForTime(float time, float Intensity)
+    public void ScreenShakeForTime(float time, float Intensity) //Function to call ScreenShake
     {
         _initialPosition = transform.position;
         _shakeTime = time;

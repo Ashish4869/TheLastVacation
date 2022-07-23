@@ -22,7 +22,7 @@ public class DialougeManager : MonoBehaviour
     [SerializeField] float _screenShakeAmountMeduim;
 
     [SerializeField] float _screenShakeIntensityHeavy;
-    [SerializeField] float _screenShakeAmountMeduim;
+    [SerializeField] float _screenShakeAmountHeavy;
 
     Continue _continue;
     EventManager _eventManager;
@@ -36,11 +36,9 @@ public class DialougeManager : MonoBehaviour
     {
         _eventManager = FindObjectOfType<EventManager>();
         EventManager.OnSceneDialougeExhausted += PrepareNextScene;
-
         _dialouges = new Queue<string>();
         _continue = GetComponent<Continue>();
         GetDialouges();
-
     }
 
     //Gets the current scene from Game Manager
@@ -49,7 +47,6 @@ public class DialougeManager : MonoBehaviour
     void GetDialouges() 
     {
         _currentScene = GameManager.Instance.GetCurrentScene();
-
         _currentSceneDialouges = _currentScene.GetCurrentSceneDialouges();
 
         foreach (Dialouge dialouge in _currentSceneDialouges)
@@ -94,11 +91,8 @@ public class DialougeManager : MonoBehaviour
         {
             GameManager.Instance.UpdateCurrentDialougeCounter();
 
-            //if(_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()]._ShouldShakeScreen)
-            {
-                
-            }
-
+            ProcessScreenShakes();
+            
             _currentDialouge = _dialouges.Dequeue();
             StartCoroutine(AnimateText());
         }
@@ -106,6 +100,26 @@ public class DialougeManager : MonoBehaviour
         {
             GameManager.Instance.LoadNextScene();
         }
+    }
+
+    //Shakes the screen as the per the value of the enum in the dialouge object , event is called
+    private void ProcessScreenShakes()
+    {
+        switch (_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()]._ShakeScreenType)
+        {
+            case ScreenShakes.Small:
+                _eventManager.OnShakeScreenEvent(_screenShakeAmountSmall, _screenShakeIntensitySmall);
+                break;
+
+            case ScreenShakes.Meduim:
+                _eventManager.OnShakeScreenEvent(_screenShakeAmountMeduim, _screenShakeIntensityMeduim);
+                break;
+
+            case ScreenShakes.Heavy:
+                _eventManager.OnShakeScreenEvent(_screenShakeAmountHeavy, _screenShakeIntensityHeavy);
+                break;
+        }
+
     }
 
     private void HandleSpeaker() //Gets the current speaker and displays on the UI
@@ -126,24 +140,17 @@ public class DialougeManager : MonoBehaviour
         {
             DialougeText.text += character;
 
-            if (character == '<')
-            {
-                _isAnimatingHTMLTag = true;
-            }
 
-            if(character == '>')
-            {
-                _isAnimatingHTMLTag = false;
-            }
+            //Checks if the text encounrtered is a html tag or not
+            if (character == '<') _isAnimatingHTMLTag = true;
 
-            if(_isAnimatingHTMLTag)
-            {
-                continue;
-            }
+            if(character == '>') _isAnimatingHTMLTag = false;
 
-                
+            if(_isAnimatingHTMLTag) continue;
 
-            if(character == '.' || character == '?' || character == '!')
+
+            
+            if(IsSentenceBreak(character)) //Gives a pause when we meet a sentence break character like . ? !
             {
                 yield return new WaitForSeconds(0.5f);
             }
@@ -157,6 +164,8 @@ public class DialougeManager : MonoBehaviour
         IsDialougeAnimating = false;
         _continue.HandleContinueButton(IsDialougeAnimating);
     }
+
+    private bool IsSentenceBreak(char character) =>  character == '.' || character == '?' || character == '!';
 
     private void PrepareNextScene() //Gets the dialouge of the NextScene
     {

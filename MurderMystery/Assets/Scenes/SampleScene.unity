@@ -602,7 +602,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f3678b79c59c92543bb37b145030debf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc83fde600d0bde459a6789879e19ecf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1041,6 +1041,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialougeText: {fileID: 864712228}
   SpeakerText: {fileID: 1623401861}
+  _screenShakeIntensitySmall: 1
+  _screenShakeAmountSmall: 0.3
+  _screenShakeIntensityMeduim: 10
+  _screenShakeAmountMeduim: 0.5
+  _screenShakeIntensityHeavy: 20
+  _screenShakeAmountHeavy: 0.5
 --- !u!114 &730592065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1420,8 +1426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -209, y: -116}
-  m_SizeDelta: {x: 266.58765, y: 50}
+  m_AnchoredPosition: {x: -147.23584, y: -109.85123}
+  m_SizeDelta: {x: 390.116, y: 56.1488}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1623401861
 MonoBehaviour:
@@ -1445,8 +1451,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Chris
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8423518064fd65b48942c5f1a765edb1, type: 2}
+  m_sharedMaterial: {fileID: 1642829749196544833, guid: 8423518064fd65b48942c5f1a765edb1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1470,8 +1476,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

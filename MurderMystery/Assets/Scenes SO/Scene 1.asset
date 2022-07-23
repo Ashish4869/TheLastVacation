@@ -23,60 +23,60 @@ MonoBehaviour:
       Its  even bigger
       than my living room!'
     emotion: 0
-    _ShouldShakeScreen: 0
+    _ShakeScreenType: 0
   - _speaker: You
     _dialouge: 'Wow!
 
-      My whole <color=yellow> family </color> can stay here.'
+      My whole <color=yellow>family</color> can stay here.'
     emotion: 0
-    _ShouldShakeScreen: 0
+    _ShakeScreenType: 1
   - _speaker: Andy
     _dialouge: "Hahaha, C\u2019mon it isn\u2019t that <b>big</b>."
     emotion: 0
-    _ShouldShakeScreen: 0
+    _ShakeScreenType: 0
   - _speaker: Andy
     _dialouge: 'But I have been wondering how did Dan get this mansion for such a
       <color=red> low price. </color>
 
 '
     emotion: 0
-    _ShouldShakeScreen: 0
+    _ShakeScreenType: 0
   - _speaker: Chris
     _dialouge: "C\u2019mon Andy!\nWhy are you like this, overthinking about everything,
       we are here to relax.\nWe don\u2019t get this opportunity everyday."
     emotion: 0
-    _ShouldShakeScreen: 0
+    _ShakeScreenType: 0
   - _speaker: You
     _dialouge: "Yes Chris is right.\nWe are here to release our stress so don\u2019t
       increase it by overthinking."
     emotion: 0
-    _ShouldShakeScreen: 0
+    _ShakeScreenType: 0
   - _speaker: Andy
     _dialouge: 'Yeah I think you guys are right.
 
       if only I was a little more
       carefree like you guys. '
     emotion: 0
-    _ShouldShakeScreen: 0
+    _ShakeScreenType: 0
   - _speaker: Andy
     _dialouge: 'We are in this beautiful mansion in this peaceful place and we are
       going to make the best of it.
 
       Besides  <i>what can go wrong</i>.'
     emotion: 0
-    _ShouldShakeScreen: 0
+    _ShakeScreenType: 0
   - _speaker: ???
     _dialouge: 'AAAAAAHHHHHHHH
 
       (Sudden scream from the other room.)'
     emotion: 0
-    _ShouldShakeScreen: 2
+    _ShakeScreenType: 2
   - _speaker: You
     _dialouge: I think I just heard Angela screaming we must hurry up and check what
       happened.
     emotion: 0
-    _ShouldShakeScreen: 0
+    _ShakeScreenType: 0
   - _speaker: Chris
     _dialouge: You guys go ahead, I'll call rest of them.
     emotion: 0
-    _ShouldShakeScreen: 0
+    _ShakeScreenType: 0

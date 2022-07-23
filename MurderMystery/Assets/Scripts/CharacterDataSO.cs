@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This ScritableObject stores the all the expression that the character can make as well as the width and heigth
+/// </summary>
+
 [CreateAssetMenu(fileName = "NewCharacter", menuName = "Characters")]
 public class CharacterDataSO : ScriptableObject
 {
@@ -31,7 +35,7 @@ public class CharacterDataSO : ScriptableObject
     [SerializeField]
     Sprite _characterSpeakCrop;
 
-
+    //Getters
     public Sprite GetCharacterSpriteAsPerEmotion(Emotion emotion)
     {
         switch(emotion)

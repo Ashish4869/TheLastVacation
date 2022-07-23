@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - EventManager
     - GameManager
     - SceneDataSO
+    - ScreenShaker
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -106,19 +107,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3136}
     - Class: 114
-      Script: {instanceID: 4164}
+      Script: {instanceID: 3544}
     - Class: 114
-      Script: {instanceID: 4284}
+      Script: {instanceID: 3976}
     - Class: 114
-      Script: {instanceID: 4618}
+      Script: {instanceID: 4172}
     - Class: 114
-      Script: {instanceID: 4658}
+      Script: {instanceID: 4292}
     - Class: 114
-      Script: {instanceID: 4718}
+      Script: {instanceID: 4626}
     - Class: 114
-      Script: {instanceID: 4804}
+      Script: {instanceID: 4666}
     - Class: 114
-      Script: {instanceID: 21466}
+      Script: {instanceID: 4726}
+    - Class: 114
+      Script: {instanceID: 4812}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -210,7 +213,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 344ce2da98c45d0da8db706ffd815347
+      Hash: 311d3bafaca3932d134216b0d41b1586
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SceneDataSO
@@ -552,6 +555,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 821865a0af208b0e1f37b38ebe841615
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterDataSO
+  - hash:
+      serializedVersion: 2
       Hash: e63944317d2f5958e31963668bb29158
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -664,6 +673,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnvMapAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: d990ef3e5877d6291106cfc2ced7ef7a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScreenShaker
   - hash:
       serializedVersion: 2
       Hash: bd3f0ca738703903e759f77536ed74fd
@@ -798,7 +813,7 @@ ScriptsOnlyBuild:
     className: VertexColorCycler
   - hash:
       serializedVersion: 2
-      Hash: 7b84bcfbc146ada8483531c306341a6c
+      Hash: 10c43d38368787be1007e73200bacda3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DialougeManager
@@ -898,12 +913,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
-  - hash:
-      serializedVersion: 2
-      Hash: 821865a0af208b0e1f37b38ebe841615
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CharacterDataSO
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

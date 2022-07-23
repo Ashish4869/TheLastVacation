@@ -16,5 +16,5 @@ public class Dialouge
 
     public Emotion emotion; //Emotion with which the speaker says his/her dialogue   
 
-    public ScreenShakes _ShouldShakeScreen; //Indicates which screen shake u want
+    public ScreenShakes _ShakeScreenType; //Indicates which screen shake u want
 }

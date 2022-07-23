@@ -8,7 +8,8 @@ using UnityEngine;
 public class EventManager : MonoBehaviour
 {
     //This event is called when we are done with a Scene and want to go the next scene
-    //Elements Effected
+    //Called From - Game Manager
+    //Elements Effected - DialougeManager , Character Manager , Background Manager
     public delegate void SceneDialougeExhausted();
     public static event SceneDialougeExhausted OnSceneDialougeExhausted;
 
@@ -22,7 +23,8 @@ public class EventManager : MonoBehaviour
 
 
     //This event is called when we want to shake the screen
-    //Elements effected
+    //Called from - Dialouge Manager 
+    //Elements effected - DialougeManager , Character Manager , Background Manager
     public delegate void ShakeScreen(float time , float intensity);
     public static event ShakeScreen OnShakeScreen;
 

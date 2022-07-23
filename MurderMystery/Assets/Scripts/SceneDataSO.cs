@@ -19,6 +19,7 @@ public class SceneDataSO : ScriptableObject
     [SerializeField]
     private Dialouge[] SceneDialouges;
 
+    //Getters
     public Dialouge[] GetCurrentSceneDialouges()
     {
         return SceneDialouges;
