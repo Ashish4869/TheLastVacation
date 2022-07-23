@@ -14,11 +14,14 @@ public class ScreenShaker : MonoBehaviour
     float _shakeTime = 0.0f;
 
     Vector3 _initialPosition;
+    Vector3 _permanentPosition;
     bool _isScreenShaking = false;
+
 
     private void Start()
     {
         EventManager.OnShakeScreen += ScreenShakeForTime;
+        _permanentPosition = transform.position;
     }
 
     //Shakes The screen untill the shaketime is below 0
@@ -40,10 +43,17 @@ public class ScreenShaker : MonoBehaviour
 
     public void ScreenShakeForTime(float time, float Intensity) //Function to call ScreenShake
     {
+        if (time == 0 || Intensity == 0) ResetPosition();
+
         _initialPosition = transform.position;
         _shakeTime = time;
         _shakeAmount = Intensity;
         _isScreenShaking = true;
+    }
+
+    public void ResetPosition() //Resets the position when there is no shake
+    {
+        transform.position = _permanentPosition;
     }
 
 }
