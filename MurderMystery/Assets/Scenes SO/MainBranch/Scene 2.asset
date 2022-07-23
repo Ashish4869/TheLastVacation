@@ -17,6 +17,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8995cc24c6bd44848a1ebdac7439026e, type: 2}
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
   SceneDialouges:
+  - _speaker: 
+    _dialouge: 'August 2nd
+
+      Angella''s Room'
+    emotion: 4
+    _ShakeScreenType: 0
   - _speaker: You
     _dialouge: 'ANGELA what happened?
 

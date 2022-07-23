@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     private int _EndbranchCounter = 0;
 
     StateManager _stateManager;
+    TransitionManager _transitionManager;
 
     [SerializeField]
     GameObject _options;
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
     {
         _eventManager = FindObjectOfType<EventManager>();
         _stateManager = FindObjectOfType<StateManager>();
+        _transitionManager = FindObjectOfType<TransitionManager>();
     }
 
     //Implementation of Singleton Pattern
@@ -113,9 +115,20 @@ public class GameManager : MonoBehaviour
 
     void LoadNextScene()
     {
+        StartCoroutine(Transition());
+    }
+
+    IEnumerator Transition()
+    {
+        _transitionManager.FadeIn();
+        yield return new WaitForSeconds(1f);
+        // call an event to setup the next scene
+        _transitionManager.Transition();
+        _transitionManager.FadeOut();
         _currentScene++;
         _dialougeCounter = -1;
-        _eventManager.OnSceneDialougeExhaustedEvent(); // call an event to setup the next scene
+        _eventManager.OnSceneDialougeExhaustedEvent();
+        
     }
 
     //Getters
@@ -147,6 +160,11 @@ public class GameManager : MonoBehaviour
         
         return null;
 
+    }
+
+    public GameStates GetGameState()
+    {
+        return _stateManager.GetCurrentGameState();
     }
 
 }

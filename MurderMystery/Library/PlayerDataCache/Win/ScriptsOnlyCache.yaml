@@ -10,6 +10,8 @@ ScriptsOnlyBuild:
     - GameManager
     - SceneDataSO
     - ScreenShaker
+    - StateManager
+    - TransitionManager
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -37,8 +39,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateMachineInspector
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -93,35 +98,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2108}
     - Class: 114
-      Script: {instanceID: 2488}
+      Script: {instanceID: 2386}
     - Class: 114
-      Script: {instanceID: 2638}
+      Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2680}
+      Script: {instanceID: 2640}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 2778}
     - Class: 114
-      Script: {instanceID: 3024}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 3136}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 3544}
+      Script: {instanceID: 3138}
     - Class: 114
-      Script: {instanceID: 3976}
+      Script: {instanceID: 3546}
     - Class: 114
-      Script: {instanceID: 4172}
+      Script: {instanceID: 3980}
     - Class: 114
-      Script: {instanceID: 4292}
+      Script: {instanceID: 4176}
     - Class: 114
-      Script: {instanceID: 4626}
+      Script: {instanceID: 4296}
     - Class: 114
-      Script: {instanceID: 4666}
+      Script: {instanceID: 4630}
     - Class: 114
-      Script: {instanceID: 4726}
+      Script: {instanceID: 4670}
     - Class: 114
-      Script: {instanceID: 4812}
+      Script: {instanceID: 4730}
+    - Class: 114
+      Script: {instanceID: 4816}
+    - Class: 114
+      Script: {instanceID: 17104}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -213,7 +222,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 311d3bafaca3932d134216b0d41b1586
+      Hash: 959981de380c2c4b0241271e0d60a830
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SceneDataSO
@@ -313,6 +322,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: IKManager2D
+  - hash:
+      serializedVersion: 2
+      Hash: f66244b7545c3911b5a9e0680bf7d018
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StateManager
   - hash:
       serializedVersion: 2
       Hash: 4f60ff347d4efee4ef8cc7f627735018
@@ -555,7 +570,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 821865a0af208b0e1f37b38ebe841615
+      Hash: 78d5cb41e232f7cd12e49f7f74f1d5ac
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterDataSO
@@ -861,7 +876,7 @@ ScriptsOnlyBuild:
     className: ObjectSpin
   - hash:
       serializedVersion: 2
-      Hash: 2665ba55433cf2d1b8377f50495a9468
+      Hash: cddb5be65e86e00f302b9a32263907a0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -913,6 +928,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
+  - hash:
+      serializedVersion: 2
+      Hash: fdb5644fe96e5dc30ac561de293e0105
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TransitionManager
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

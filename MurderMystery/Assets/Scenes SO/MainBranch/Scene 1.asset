@@ -17,6 +17,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
   - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
   SceneDialouges:
+  - _speaker: 
+    _dialouge: 'August 1
+
+      Chris''s Office'
+    emotion: 0
+    _ShakeScreenType: 0
   - _speaker: Chris
     _dialouge: 'Hey Ashish, Andy come check this room out.
 
