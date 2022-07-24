@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Handles the transtion between scenes in the game
+/// </summary>
 public class TransitionManager : MonoBehaviour
 {
     [SerializeField] GameObject TextBoxUI;
@@ -15,29 +18,33 @@ public class TransitionManager : MonoBehaviour
 
     private void Start()
     {
-        anim = transition.GetComponent<Animator>();
+        anim = transition.GetComponent<Animator>(); //getting the animator component
     }
 
-    public void Transition()
+    public void Transition() //Sets the objects which are affected transition off and starts the transition animation
     {
-        
         TextBoxUI.SetActive(false);
         CharactersParent.SetActive(false);
         DialougeManager.SetActive(false);
         StartCoroutine(ShowElements());
     }
 
-    public void FadeIn()
+    public void FadeIn() //Trigger to Fade in
     {
-        ClickScreen.SetActive(false);
+        ClickScreen.SetActive(false); //Turns off the click screen so that the player cannot interact while the animation happens
         anim.SetTrigger("FadeIn");
     }
 
-    public void FadeOut()
+    public void FadeOut() //Triggers the fade out animation
     {   
         anim.SetTrigger("FadeOut");
     }
 
+    //Shows the elements
+    //First the background
+    //Then the characters
+    //Then the Textbox UI
+    //Activates all the gameobjects
     IEnumerator ShowElements()
     {
         DialougeManager.SetActive(true);
