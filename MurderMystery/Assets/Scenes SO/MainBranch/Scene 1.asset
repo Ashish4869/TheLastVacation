@@ -24,10 +24,10 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
   - _speaker: Chris
-    _dialouge: 'Hey Ashish, Andy come check this room out.
+    _dialouge: 'Hey :, Andy come check this room out.
 
-      Its  even bigger
-      than my living room!'
+      Its  even bigger than
+      my living room!'
     emotion: 0
     _ShakeScreenType: 0
   - _speaker: You

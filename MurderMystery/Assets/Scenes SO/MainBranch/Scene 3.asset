@@ -46,7 +46,7 @@ MonoBehaviour:
     emotion: 4
     _ShakeScreenType: 0
   - _speaker: Kevin
-    _dialouge: I would be Pissed if someone bails last moment
+    _dialouge: 'I would be Pissed if someone bails last moment like :'
     emotion: 2
     _ShakeScreenType: 0
   - _speaker: Kevin
