@@ -16,7 +16,9 @@ public class CharacterManager : MonoBehaviour
 
 
 
-    CharacterDataSO[] _charactersInScene;
+    [SerializeField]
+    List<CharacterDataSO> _charactersInScene;
+    CharacterDataSO _yourCharacter;
     Dictionary<string, GameObject> _charactersDict;
 
     // Start is called before the first frame update
@@ -24,6 +26,7 @@ public class CharacterManager : MonoBehaviour
     {
         EventManager.OnSceneDialougeExhausted += PrepareNextScene;
         _charactersDict = new Dictionary<string, GameObject>();
+        _yourCharacter = GameManager.Instance.GetCharacter();
         GetCharacters();
         SetCharactersInUI();
         //SetCharacterExpressionAndSpeaker();
@@ -31,13 +34,13 @@ public class CharacterManager : MonoBehaviour
 
     private void SetCharactersInUI() //Creates a game object for each character and makes it a child of CharacterInTheScene gameobject
     {
-        int animSpeed = 1;
-        if (GameManager.Instance.GetGameState() == GameStates.Scene) animSpeed = 1;
+        int animSpeed = 2;
+        if (GameManager.Instance.GetGameState() == GameStates.Scene) animSpeed = 2;
         else animSpeed = 100;
 
         RectTransform rectTransform;
 
-        for (int i = 0; i < _charactersInScene.Length; i++)
+        for (int i = 0; i < _charactersInScene.Count; i++)
         {
             GameObject child = Instantiate(_characterUITemplatePrefab);
             child.transform.SetParent(_charactersInSceneGameObject.transform); //Setting the parent
@@ -56,7 +59,18 @@ public class CharacterManager : MonoBehaviour
     private void GetCharacters() //Gets all the characters data from the Game Manager and sets up it in the current scene
     {
         _currentScene = GameManager.Instance.GetCurrentScene();
-        _charactersInScene = _currentScene.GetCurrentSceneCharacters();
+       _charactersInScene = _currentScene.GetCurrentSceneCharacters();
+
+        List<Dialouge> dialouges = _currentScene.GetCurrentSceneDialouges();
+
+        foreach (Dialouge dia in dialouges)
+        {
+            if (dia._speaker == "You")
+            {
+                _charactersInScene.Add(_yourCharacter);
+                break;
+            }
+        }
     }
 
     public void SetCharacterExpressionAndSpeaker() //Function is called when we click on the screen
@@ -74,7 +88,8 @@ public class CharacterManager : MonoBehaviour
         int i = 0;
         foreach (string charName in _charactersDict.Keys)
         {
-            if (charName == _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()]._speaker)
+            if (currentSpeaker == "You") currentSpeaker = _yourCharacter.name;
+            if (charName == currentSpeaker)
             {
                 Image charImage = _charactersDict[currentSpeaker].GetComponent<Image>(); //getting image component
                 charImage.sprite = _charactersInScene[i].GetCharacterSpriteAsPerEmotion(currentEmotion); //Setting sprite as per emotion
@@ -85,7 +100,7 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
-    private bool IsNotCharacter() => _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "You" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "Narrator" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "???" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "";
+    private bool IsNotCharacter() =>  _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "Narrator" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "???" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "";
     
 
     private void ClearAllCharacters() //Deletes all child elements that were created for this scene
@@ -95,6 +110,7 @@ public class CharacterManager : MonoBehaviour
             Destroy(_charactersDict[charName]);
         }
 
+        _charactersInScene.Clear();
         _charactersDict.Clear();
     }
 

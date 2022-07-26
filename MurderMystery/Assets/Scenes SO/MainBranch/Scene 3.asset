@@ -16,6 +16,7 @@ MonoBehaviour:
   Characters:
   - {fileID: 11400000, guid: 8995cc24c6bd44848a1ebdac7439026e, type: 2}
   - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
+  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
   SceneDialouges:
   - _speaker: 
     _dialouge: 'August 3rd
@@ -23,7 +24,7 @@ MonoBehaviour:
       Kevin''s Room'
     emotion: 4
     _ShakeScreenType: 0
-  - _speaker: You
+  - _speaker: Chris
     _dialouge: 'Whats Up Angela!
 
       Everything good'
@@ -33,7 +34,7 @@ MonoBehaviour:
     _dialouge: Ya I'm feeling , I'm so exicted for the trip
     emotion: 3
     _ShakeScreenType: 0
-  - _speaker: You
+  - _speaker: Chris
     _dialouge: 'Same Me to!
 
 '

@@ -11,13 +11,16 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     private EventManager _eventManager;
-    public SceneDataSO[] _mainBranchScenes; //Stores all the scene data for the main branch
-    public SceneDataSO[] _sceneA; //Stores all the scene data for the A branch
-    public SceneDataSO[] _sceneB; //Stores all the scene data for B branch
+    public List<SceneDataSO> _mainBranchScenes; //Stores all the scene data for the main branch
+    public List<SceneDataSO> _sceneA; //Stores all the scene data for the A branch
+    public List<SceneDataSO> _sceneB; //Stores all the scene data for B branch
     private int _dialougeCounter = -1; //Counter that keeps track of the dialogue to be displayed
     private int _currentScene = 0; //Counter that keeps track of the scene we are currently in
     private int _branchCounter = 0; //Counter that keeps track of the branch we are in
     private int _EndbranchCounter = 0;
+
+    private string _yourName;
+    private CharacterDataSO _yourCharacter;
 
     StateManager _stateManager;
     TransitionManager _transitionManager;
@@ -38,6 +41,7 @@ public class GameManager : MonoBehaviour
         _eventManager = FindObjectOfType<EventManager>();
         _stateManager = FindObjectOfType<StateManager>();
         _transitionManager = FindObjectOfType<TransitionManager>();
+       
     }
 
     //Implementation of Singleton Pattern
@@ -71,6 +75,10 @@ public class GameManager : MonoBehaviour
 
         _eventManager = FindObjectOfType<EventManager>();
         _stateManager = FindObjectOfType<StateManager>();
+
+        //Getting values saved in the SaveDataFile
+        _yourName = SaveData.Instance.GetPlayerName();
+        _yourCharacter = SaveData.Instance.GetCharacter();
     }
 
     //Setters / Updaters
@@ -97,6 +105,9 @@ public class GameManager : MonoBehaviour
             LoadNextScene();
         }
     }
+
+
+    
 
     private void ShowOptions() //shows the options 
     {
@@ -166,5 +177,9 @@ public class GameManager : MonoBehaviour
     {
         return _stateManager.GetCurrentGameState();
     }
+
+    public CharacterDataSO GetCharacter() => _yourCharacter;
+
+    public string GetName() => _yourName;
 
 }

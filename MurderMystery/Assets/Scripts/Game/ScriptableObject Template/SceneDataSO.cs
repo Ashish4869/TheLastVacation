@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System.Linq;
 /// <summary>
 /// This is the template of the scriptable object which we will use to store revelant data for a particular scene
 /// </summary>
@@ -14,28 +14,29 @@ public class SceneDataSO : ScriptableObject
     private Sprite SceneBG;
 
     [SerializeField]
-    private CharacterDataSO[] Characters;
+    private List<CharacterDataSO> Characters;
 
     [SerializeField]
-    private Dialouge[] SceneDialouges;
+    private List<Dialouge> SceneDialouges;
 
     [SerializeField]
     bool _hasBranching;
 
     //Getters
-    public Dialouge[] GetCurrentSceneDialouges()
+    public List<Dialouge> GetCurrentSceneDialouges()
     {
         return SceneDialouges;
     }
 
-    public CharacterDataSO[] GetCurrentSceneCharacters()
+    public List<CharacterDataSO> GetCurrentSceneCharacters()
     {
-        return Characters;
+        List<CharacterDataSO> characters = Characters.ToList();
+        return characters;
     }
 
     public int GetDialougeAmount()
     {
-        return SceneDialouges.Length;
+        return SceneDialouges.Count;
     }
 
     public Sprite GetCurrentSceneBG()

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31586043c51f304ba9ea69911924242, type: 3}
+  m_Name: You(female)
+  m_EditorClassIdentifier: 
+  CharacterWidth: 500
+  CharacterHeight: 1000
+  _characterNormal: {fileID: 21300000, guid: 13cde39010c6a204b9b57f41665c4023, type: 3}
+  _characterSad: {fileID: 0}
+  _characterAngry: {fileID: 0}
+  _characterScared: {fileID: 0}
+  _characterHappy: {fileID: 0}
+  _characterShocked: {fileID: 0}
+  _characterSpeakCrop: {fileID: 21300000, guid: 3e348a0607207214f8c41aee8170b791, type: 3}

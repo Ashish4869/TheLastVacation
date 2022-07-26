@@ -7,7 +7,7 @@ using System;
 
 public class DialougeManager : MonoBehaviour
 {
-    string _playerName = "Ashish";
+    string _yourName;
 
     SceneDataSO _currentScene;
     [SerializeField]
@@ -30,13 +30,14 @@ public class DialougeManager : MonoBehaviour
     bool _isAnimatingHTMLTag;
     private Queue<string> _dialouges;
     string _currentDialouge;
-    Dialouge[] _currentSceneDialouges;
+    List<Dialouge> _currentSceneDialouges;
     bool IsDialougeAnimating = false;
 
     void Start()
     {
         _eventManager = FindObjectOfType<EventManager>();
         EventManager.OnSceneDialougeExhausted += PrepareNextScene;
+        _yourName = GameManager.Instance.GetName();
         _dialouges = new Queue<string>();
         _continue = GetComponent<Continue>();
         GetDialouges();
@@ -94,7 +95,7 @@ public class DialougeManager : MonoBehaviour
             GameManager.Instance.UpdateCurrentDialougeCounter();
             ProcessScreenShakes(); 
             _currentDialouge = _dialouges.Dequeue();
-            _currentDialouge = _currentDialouge.Replace(":", _playerName); //Replacing the : with the player name as entered by the player
+            _currentDialouge = _currentDialouge.Replace(":", _yourName); //Replacing the : with the player name as entered by the player
             StartCoroutine(AnimateText());
            
         }
