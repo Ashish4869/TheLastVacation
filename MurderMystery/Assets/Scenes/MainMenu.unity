@@ -1576,7 +1576,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 658096670}
         m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
-        m_MethodName: ChooseMale
+        m_MethodName: ChooseCharacter
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 050205734bc5ca14c8cec287532f5b34, type: 2}
@@ -3102,7 +3102,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 658096670}
         m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
-        m_MethodName: ChooseFemale
+        m_MethodName: ChooseCharacter
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 1afad53dc9e1eae4d9c84a5ca1784acd, type: 2}

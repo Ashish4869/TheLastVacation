@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
+/// <summary>
+/// Gets the dialouge from Game Manager and animates the dialouges. It calls the event to start the next event , once the dialouges have been exhausted
+/// </summary>
 public class DialougeManager : MonoBehaviour
 {
     string _yourName;
@@ -140,11 +143,8 @@ public class DialougeManager : MonoBehaviour
 
         
         foreach(char character in _currentDialouge.ToCharArray())
-        {
-           
-
+        { 
             DialougeText.text += character;
-
 
             //Checks if the text encounrtered is a html tag or not
             if (character == '<') _isAnimatingHTMLTag = true;
@@ -152,9 +152,6 @@ public class DialougeManager : MonoBehaviour
             if(character == '>') _isAnimatingHTMLTag = false;
 
             if(_isAnimatingHTMLTag) continue;
-
-            
-
             
             if(IsSentenceBreak(character)) //Gives a pause when we meet a sentence break character like . ? !
             {
@@ -173,10 +170,7 @@ public class DialougeManager : MonoBehaviour
 
     private bool IsSentenceBreak(char character) =>  character == '.' || character == '?' || character == '!';
 
-    private void PrepareNextScene() //Gets the dialouge of the NextScene
-    {
-        GetDialouges();
-    }
+    private void PrepareNextScene() => GetDialouges(); //Gets the dialouge of the NextScene
 
     private void OnDestroy()
     {

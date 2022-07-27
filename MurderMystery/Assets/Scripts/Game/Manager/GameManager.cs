@@ -19,8 +19,8 @@ public class GameManager : MonoBehaviour
     private int _branchCounter = 0; //Counter that keeps track of the branch we are in
     private int _EndbranchCounter = 0;
 
-    private string _yourName;
-    private CharacterDataSO _yourCharacter;
+    private string _yourName; //contains the name that the player has inputed
+    private CharacterDataSO _yourCharacter; //contains the character that the player has selected
 
     StateManager _stateManager;
     TransitionManager _transitionManager;
@@ -36,12 +36,11 @@ public class GameManager : MonoBehaviour
 
 
   
-    private void Start()
+    private void Start() //Cache references to required classes
     {
         _eventManager = FindObjectOfType<EventManager>();
         _stateManager = FindObjectOfType<StateManager>();
         _transitionManager = FindObjectOfType<TransitionManager>();
-       
     }
 
     //Implementation of Singleton Pattern
@@ -76,20 +75,20 @@ public class GameManager : MonoBehaviour
         _eventManager = FindObjectOfType<EventManager>();
         _stateManager = FindObjectOfType<StateManager>();
 
-        //Getting values saved in the SaveDataFile
+        //Getting values saved in the SaveData Class
         _yourName = SaveData.Instance.GetPlayerName();
         _yourCharacter = SaveData.Instance.GetCharacter();
     }
 
     //Setters / Updaters
-    public void UpdateCurrentDialougeCounter()
+    public void UpdateCurrentDialougeCounter() => _dialougeCounter++;
+    
+    //Process the next scene based on which state we are currently in
+    //if we are in any branch state then we return to the main branch and process the next scene
+    //if the scene as branching , we show the options , else process next scene
+    public void ProcessNextScene() 
     {
-        _dialougeCounter++;
-    }
-
-    public void ProcessNextScene()
-    {
-        if(_stateManager.GetCurrentGameState() == GameStates.SceneA || _stateManager.GetCurrentGameState() == GameStates.SceneB)
+        if(_stateManager.GetCurrentGameState() == GameStates.SceneA || _stateManager.GetCurrentGameState() == GameStates.SceneB) //If we are in a branch scene
         {
             _stateManager.ReturnToMain();
             LoadNextScene();
@@ -107,8 +106,6 @@ public class GameManager : MonoBehaviour
     }
 
 
-    
-
     private void ShowOptions() //shows the options 
     {
         _options.SetActive(true);
@@ -116,9 +113,14 @@ public class GameManager : MonoBehaviour
         _option2.text = _sceneB[_branchCounter].GetCurrentSceneDialouges()[0]._dialouge;
     }
 
-    public void HideOptions()
+    public void HideOptions() //Hides the options
     {
         _options.SetActive(false);
+        SetUpNextScene();
+    }
+
+    void SetUpNextScene() //Setsup the next scene
+    {
         _dialougeCounter = -1;
         _eventManager.OnSceneDialougeExhaustedEvent(); // call an event to setup the next scene
         _branchCounter++;
@@ -143,10 +145,8 @@ public class GameManager : MonoBehaviour
     }
 
     //Getters
-    public int GetCurrentDialougeCounter()
-    {
-        return _dialougeCounter;
-    }
+    public int GetCurrentDialougeCounter() => _dialougeCounter;
+    
 
     public SceneDataSO GetCurrentScene() //Returns scene data depending on the state that we are in , defined by the state manager
     {
@@ -167,16 +167,12 @@ public class GameManager : MonoBehaviour
             
             return _sceneB[_branchCounter];
         }
-
         
         return null;
 
     }
 
-    public GameStates GetGameState()
-    {
-        return _stateManager.GetCurrentGameState();
-    }
+    public GameStates GetGameState() => _stateManager.GetCurrentGameState();
 
     public CharacterDataSO GetCharacter() => _yourCharacter;
 

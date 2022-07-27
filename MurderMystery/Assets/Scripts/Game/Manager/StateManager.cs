@@ -15,10 +15,8 @@ public class StateManager : MonoBehaviour
     }
     
     //Getters
-    public GameStates GetCurrentGameState()
-    {
-        return gameState;
-    }
+    public GameStates GetCurrentGameState() =>  gameState;
+   
 
 
     //Setters
@@ -34,9 +32,7 @@ public class StateManager : MonoBehaviour
         GameManager.Instance.HideOptions();
     }
 
-    public void ReturnToMain() //Takes the control back to the main branch
-    {
-        gameState = GameStates.Scene;
-    }
+    public void ReturnToMain() => gameState = GameStates.Scene;//Takes the control back to the main branch
+    
 
 }

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Used to cache data that will stored in file when the player saves the game
+/// </summary>
 public class SaveData : MonoBehaviour
 {
     //Implementation of Singleton Pattern

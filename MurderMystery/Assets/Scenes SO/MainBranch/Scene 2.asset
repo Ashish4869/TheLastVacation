@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Scene 2
   m_EditorClassIdentifier: 
   SceneBG: {fileID: 21300000, guid: ae01d74ae38cfbb4aabfc36dd5f45b61, type: 3}
-  Characters:
+  characters:
   - {fileID: 11400000, guid: 8995cc24c6bd44848a1ebdac7439026e, type: 2}
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  - {fileID: 11400000, guid: 1afad53dc9e1eae4d9c84a5ca1784acd, type: 2}
   SceneDialouges:
   - _speaker: 
     _dialouge: 'August 2nd

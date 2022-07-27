@@ -52,8 +52,6 @@ public class TransitionManager : MonoBehaviour
         CharactersParent.SetActive(true);
         yield return new WaitForSeconds(1f);
         TextBoxUI.SetActive(true);
-
-        
         ClickScreen.SetActive(true);
 
     }

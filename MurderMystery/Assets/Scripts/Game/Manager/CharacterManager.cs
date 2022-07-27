@@ -14,8 +14,6 @@ public class CharacterManager : MonoBehaviour
     [SerializeField] GameObject _characterUITemplatePrefab;
     [SerializeField] Image _speakerImage;
 
-
-
     [SerializeField]
     List<CharacterDataSO> _charactersInScene;
     CharacterDataSO _yourCharacter;
@@ -52,6 +50,7 @@ public class CharacterManager : MonoBehaviour
 
             rectTransform.sizeDelta = new Vector2(_charactersInScene[i].GetCharacterWidth(), _charactersInScene[i].GetCharacterHeight()); //Setting the width and height of the character
             child.GetComponent<Image>().sprite = _charactersInScene[i].GetCharacterSpriteAsPerEmotion(Emotion.Normal); //Setting the sprite with normal emotion
+
             _charactersDict.Add(_charactersInScene[i].name, child); //Place All characters
         }
     }
@@ -61,9 +60,10 @@ public class CharacterManager : MonoBehaviour
         _currentScene = GameManager.Instance.GetCurrentScene();
        _charactersInScene = _currentScene.GetCurrentSceneCharacters();
 
+
         List<Dialouge> dialouges = _currentScene.GetCurrentSceneDialouges();
 
-        foreach (Dialouge dia in dialouges)
+        foreach (Dialouge dia in dialouges) //Checking if the main character is present in the scene and we add him to the _characterInScene LIST
         {
             if (dia._speaker == "You")
             {
@@ -88,7 +88,7 @@ public class CharacterManager : MonoBehaviour
         int i = 0;
         foreach (string charName in _charactersDict.Keys)
         {
-            if (currentSpeaker == "You") currentSpeaker = _yourCharacter.name;
+            if (currentSpeaker == "You") currentSpeaker = _yourCharacter.name; //This is because we have You(male) and You(female)
             if (charName == currentSpeaker)
             {
                 Image charImage = _charactersDict[currentSpeaker].GetComponent<Image>(); //getting image component
@@ -100,6 +100,7 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
+    //Show a Sillehoute when the person speaking is not in the scene , eg : Narrator
     private bool IsNotCharacter() =>  _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "Narrator" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "???" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "";
     
 
@@ -110,7 +111,6 @@ public class CharacterManager : MonoBehaviour
             Destroy(_charactersDict[charName]);
         }
 
-        _charactersInScene.Clear();
         _charactersDict.Clear();
     }
 

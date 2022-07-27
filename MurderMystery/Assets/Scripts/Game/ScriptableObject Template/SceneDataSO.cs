@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 /// <summary>
-/// This is the template of the scriptable object which we will use to store revelant data for a particular scene
+/// Template of the scriptable object which we will use to store revelant data for a particular scene
 /// </summary>
 
 [CreateAssetMenu(fileName ="NewScene" , menuName ="Scenes")]
@@ -14,7 +14,7 @@ public class SceneDataSO : ScriptableObject
     private Sprite SceneBG;
 
     [SerializeField]
-    private List<CharacterDataSO> Characters;
+    private List<CharacterDataSO> characters;
 
     [SerializeField]
     private List<Dialouge> SceneDialouges;
@@ -23,26 +23,14 @@ public class SceneDataSO : ScriptableObject
     bool _hasBranching;
 
     //Getters
-    public List<Dialouge> GetCurrentSceneDialouges()
-    {
-        return SceneDialouges;
-    }
+    public List<Dialouge> GetCurrentSceneDialouges() => SceneDialouges;
 
-    public List<CharacterDataSO> GetCurrentSceneCharacters()
-    {
-        List<CharacterDataSO> characters = Characters.ToList();
-        return characters;
-    }
+    public List<CharacterDataSO> GetCurrentSceneCharacters() => characters;
 
-    public int GetDialougeAmount()
-    {
-        return SceneDialouges.Count;
-    }
+    public int GetDialougeAmount() => SceneDialouges.Count;
+   
+    public Sprite GetCurrentSceneBG() => SceneBG;
 
-    public Sprite GetCurrentSceneBG()
-    {
-        return SceneBG;
-    }
-
+    //Returns a bool for whether the current scene has branching
     public bool HasBranching() => _hasBranching;
 }
