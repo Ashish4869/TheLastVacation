@@ -91,20 +91,29 @@ public class GameManager : MonoBehaviour
         if(_stateManager.GetCurrentGameState() == GameStates.SceneA || _stateManager.GetCurrentGameState() == GameStates.SceneB) //If we are in a branch scene
         {
             _stateManager.ReturnToMain();
-            LoadNextScene();
+            LoadNextSceneWithoutTransition();
             return;
         }
 
-        if(_mainBranchScenes[_currentScene].HasBranching())
+        
+        
+
+        if (_mainBranchScenes[_currentScene].HasBranching())
         {
             ShowOptions();
         }
         else
         {
-            LoadNextScene();
+            LoadNextSceneWithTransition();
         }
     }
 
+    private void LoadNextSceneWithoutTransition() //Loads next scene without any transition
+    {
+        _currentScene++;
+        _dialougeCounter = -1;
+        _eventManager.OnSceneDialougeExhaustedEvent();
+    }
 
     private void ShowOptions() //shows the options 
     {
@@ -126,7 +135,7 @@ public class GameManager : MonoBehaviour
         _branchCounter++;
     }
 
-    void LoadNextScene()
+    void LoadNextSceneWithTransition()
     {
         StartCoroutine(Transition());
     }
@@ -143,6 +152,8 @@ public class GameManager : MonoBehaviour
         _eventManager.OnSceneDialougeExhaustedEvent();
         
     }
+
+
 
     //Getters
     public int GetCurrentDialougeCounter() => _dialougeCounter;

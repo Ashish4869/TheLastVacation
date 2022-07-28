@@ -17,8 +17,6 @@ public class StateManager : MonoBehaviour
     //Getters
     public GameStates GetCurrentGameState() =>  gameState;
    
-
-
     //Setters
     public void BranchAChosen() //function called when we click on the First option 
     {

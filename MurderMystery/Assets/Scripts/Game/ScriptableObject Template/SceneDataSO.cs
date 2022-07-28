@@ -17,10 +17,11 @@ public class SceneDataSO : ScriptableObject
     private List<CharacterDataSO> characters;
 
     [SerializeField]
-    private List<Dialouge> SceneDialouges;
+    bool _hasBranching;
 
     [SerializeField]
-    bool _hasBranching;
+    private List<Dialouge> SceneDialouges;
+
 
     //Getters
     public List<Dialouge> GetCurrentSceneDialouges() => SceneDialouges;

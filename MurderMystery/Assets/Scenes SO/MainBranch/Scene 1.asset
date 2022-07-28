@@ -16,7 +16,8 @@ MonoBehaviour:
   characters:
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
   - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
-  - {fileID: 11400000, guid: 1afad53dc9e1eae4d9c84a5ca1784acd, type: 2}
+  _hasBranching: 0
+  _mergeFromPreviousBranch: 0
   SceneDialouges:
   - _speaker: 
     _dialouge: 'August 1
@@ -92,4 +93,3 @@ MonoBehaviour:
     _dialouge: You guys go ahead, I'll call rest of them.
     emotion: 0
     _ShakeScreenType: 0
-  _hasBranching: 0

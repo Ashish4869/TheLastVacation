@@ -18,6 +18,8 @@ public class CharacterManager : MonoBehaviour
     List<CharacterDataSO> _charactersInScene;
     CharacterDataSO _yourCharacter;
     Dictionary<string, GameObject> _charactersDict;
+    bool _characterInScene;
+    bool _branchToScene;
 
     // Start is called before the first frame update
     void Start()
@@ -33,8 +35,16 @@ public class CharacterManager : MonoBehaviour
     private void SetCharactersInUI() //Creates a game object for each character and makes it a child of CharacterInTheScene gameobject
     {
         int animSpeed = 2;
-        if (GameManager.Instance.GetGameState() == GameStates.Scene) animSpeed = 2;
-        else animSpeed = 100;
+        if (GameManager.Instance.GetGameState() == GameStates.Scene && _branchToScene == false)
+        {
+            animSpeed = 2;
+            _branchToScene = false;
+        }
+        else
+        {
+            animSpeed = 100;
+            _branchToScene = true;
+        }
 
         RectTransform rectTransform;
 
@@ -68,6 +78,7 @@ public class CharacterManager : MonoBehaviour
             if (dia._speaker == "You")
             {
                 _charactersInScene.Add(_yourCharacter);
+                _characterInScene = true;
                 break;
             }
         }
@@ -109,6 +120,13 @@ public class CharacterManager : MonoBehaviour
         foreach (string charName in _charactersDict.Keys)
         {
             Destroy(_charactersDict[charName]);
+        }
+
+
+        if(_characterInScene)
+        { 
+            _charactersInScene.Remove(_yourCharacter);
+            _characterInScene = false;
         }
 
         _charactersDict.Clear();
