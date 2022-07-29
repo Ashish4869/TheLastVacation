@@ -6,6 +6,7 @@ using UnityEngine.UI;
 /// <summary>
 /// This script is responsible for setting the background as the games demands
 /// </summary>
+
 public class BackGroundManager : MonoBehaviour
 {
     [SerializeField] Image BackGround;

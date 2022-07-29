@@ -123,7 +123,7 @@ public class CharacterManager : MonoBehaviour
         }
 
 
-        if(_characterInScene)
+        if(_characterInScene) //We are removing the character after using him in the scene , so that when the game is played again , the process can be repeated 
         { 
             _charactersInScene.Remove(_yourCharacter);
             _characterInScene = false;
