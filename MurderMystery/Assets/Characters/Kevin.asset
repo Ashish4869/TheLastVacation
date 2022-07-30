@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b31586043c51f304ba9ea69911924242, type: 3}
   m_Name: Kevin
   m_EditorClassIdentifier: 
-  _characterNormal: {fileID: 21300000, guid: d3f3ffc5f0795384290cf071b87d1ac4, type: 3}
+  CharacterWidth: 500
+  CharacterHeight: 1000
+  _characterNormal: {fileID: 21300000, guid: 0ac1a467162c0474eb7b430d8140c301, type: 3}
   _characterSad: {fileID: 0}
-  _characterAngry: {fileID: 21300000, guid: 0534ea155d2aca44d8a6be7e26c763c4, type: 3}
+  _characterAngry: {fileID: 21300000, guid: 58d6cee1d65e0e64ab078e959dd15e4b, type: 3}
   _characterScared: {fileID: 0}
-  _characterHappy: {fileID: 21300000, guid: 62e50e8a1c058a84aa8ac67fc970e906, type: 3}
+  _characterHappy: {fileID: 21300000, guid: def687a54f5f50149b571c6a0c45d26d, type: 3}
   _characterShocked: {fileID: 0}
   _characterSpeakCrop: {fileID: 21300000, guid: f9cad0d82eee3ba469b9bf65c7ed6f38, type: 3}

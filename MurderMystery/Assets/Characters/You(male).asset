@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterWidth: 500
   CharacterHeight: 1000
-  _characterNormal: {fileID: 21300000, guid: 5642415b6d83f114e8422ef8ffad7bf6, type: 3}
+  _characterNormal: {fileID: 21300000, guid: 0de1e26c26a36ac4c9b4446c93dd19ac, type: 3}
   _characterSad: {fileID: 0}
   _characterAngry: {fileID: 0}
   _characterScared: {fileID: 0}
   _characterHappy: {fileID: 0}
   _characterShocked: {fileID: 0}
-  _characterSpeakCrop: {fileID: 21300000, guid: 96bcd470358ec8b44aa93c0c0818c194, type: 3}
+  _characterSpeakCrop: {fileID: 21300000, guid: 09331ff5299ce504fa8d34f52b83f155, type: 3}
