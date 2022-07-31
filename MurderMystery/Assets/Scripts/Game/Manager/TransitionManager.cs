@@ -56,6 +56,23 @@ public class TransitionManager : MonoBehaviour
 
     }
 
+    public void TransitionCharacters()
+    {
+        ClickScreen.SetActive(false);
+        foreach (Transform trans in CharactersParent.transform)
+        {
+            trans.gameObject.GetComponent<Animator>().SetTrigger("fadeout");
+        }
+        Debug.Log("Hello");
+        ClickScreen.SetActive(true);
+        
+    }
+
+    public void JustFadeIn() //used to move from game to main menu
+    {
+        anim.SetTrigger("FadeIn");
+    }
+
     private void OnDestroy()
     {
         EventManager.OnSceneDialougeExhausted -= Transition;

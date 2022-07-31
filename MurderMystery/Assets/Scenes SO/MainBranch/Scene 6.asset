@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 6
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 4502762da3aa4554fbbd4bec2a76cebb, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
+  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  - {fileID: 11400000, guid: 050205734bc5ca14c8cec287532f5b34, type: 2}
+  _hasBranching: 0
+  _characterChange: 0
+  SceneDialouges:
+  - _speaker: You
+    _dialouge: this is the scene where we character just change and nothjing else
+    emotion: 0
+    _ShakeScreenType: 0
+  - _speaker: Andy
+    _dialouge: Ya that is ryt
+    emotion: 0
+    _ShakeScreenType: 0
+  - _speaker: Chris
+    _dialouge: 'Thats Right!
+
+      If this works then we dont have cuddle like some
+      gays'
+    emotion: 0
+    _ShakeScreenType: 3
+  - _speaker: Kevin
+    _dialouge: that ryt
+    emotion: 0
+    _ShakeScreenType: 0

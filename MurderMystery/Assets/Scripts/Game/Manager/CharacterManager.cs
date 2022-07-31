@@ -20,6 +20,7 @@ public class CharacterManager : MonoBehaviour
     Dictionary<string, GameObject> _charactersDict;
     bool _characterInScene;
     bool _branchToScene;
+    int animSpeed = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -34,8 +35,7 @@ public class CharacterManager : MonoBehaviour
 
     private void SetCharactersInUI() //Creates a game object for each character and makes it a child of CharacterInTheScene gameobject
     {
-        int animSpeed = 2;
-        if (GameManager.Instance.GetGameState() == GameStates.Scene && _branchToScene == false)
+        if (GameManager.Instance.GetGameState() == GameStates.Scene)
         {
             animSpeed = 2;
             _branchToScene = false;
@@ -45,6 +45,9 @@ public class CharacterManager : MonoBehaviour
             animSpeed = 100;
             _branchToScene = true;
         }
+
+        
+     
 
         RectTransform rectTransform;
 
@@ -63,6 +66,9 @@ public class CharacterManager : MonoBehaviour
 
             _charactersDict.Add(_charactersInScene[i].name, child); //Place All characters
         }
+
+        animSpeed = 2;
+
     }
 
     private void GetCharacters() //Gets all the characters data from the Game Manager and sets up it in the current scene

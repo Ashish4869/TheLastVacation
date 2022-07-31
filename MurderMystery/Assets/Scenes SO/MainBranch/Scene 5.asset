@@ -19,6 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
   - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
   _hasBranching: 0
+  _characterChange: 1
   SceneDialouges:
   - _speaker: You
     _dialouge: This is the scene after the option, we are not supposed to have any

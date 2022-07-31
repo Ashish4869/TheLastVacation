@@ -94,8 +94,13 @@ public class GameManager : MonoBehaviour
             LoadNextSceneWithoutTransition();
             return;
         }
-
         
+        
+        if(_mainBranchScenes[_currentScene].HasCharacterSwitch())
+        {
+            LoadNextSceneWithCharacterTransition();
+            return;
+        }
         
 
         if (_mainBranchScenes[_currentScene].HasBranching())
@@ -106,6 +111,20 @@ public class GameManager : MonoBehaviour
         {
             LoadNextSceneWithTransition();
         }
+    }
+
+    private void LoadNextSceneWithCharacterTransition()
+    {
+        StartCoroutine(TransitionCharacters());
+    }
+
+    IEnumerator TransitionCharacters()
+    {
+        _transitionManager.TransitionCharacters();
+        yield return new WaitForSeconds(1f);
+        _currentScene++;
+        _dialougeCounter = -1;
+        _eventManager.OnSceneDialougeExhaustedEvent();
     }
 
     private void LoadNextSceneWithoutTransition() //Loads next scene without any transition
@@ -150,7 +169,6 @@ public class GameManager : MonoBehaviour
         _currentScene++;
         _dialougeCounter = -1;
         _eventManager.OnSceneDialougeExhaustedEvent();
-        
     }
 
 

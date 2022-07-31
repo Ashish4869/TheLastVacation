@@ -13,10 +13,14 @@ public class MainMenuManager: MonoBehaviour
     [SerializeField] GameObject _mainMenu;
     [SerializeField] GameObject _chooseCharacter;
     [SerializeField] TMP_InputField _InputField;
+    [SerializeField] GameObject _Extras;
+    [SerializeField] GameObject _settings;
 
     bool _IsenterNameActive;
     bool _IsmainMenuActive;
     bool _IschooseCharacterActive;
+    bool _isExtrasActive;
+    bool _isSettingsActive;
 
 
     private void Start()
@@ -24,13 +28,40 @@ public class MainMenuManager: MonoBehaviour
         _IsenterNameActive = false;
         _IsmainMenuActive = true;
         _IschooseCharacterActive = false;
+        _isExtrasActive = false;
+        _isSettingsActive = false;
         UpdateGameObjects();
     }
 
     public void EnterName() //opens the ui for player to enter name
     {
+        
         _IsenterNameActive = true;
         _IsmainMenuActive = false;
+        UpdateGameObjects();
+    }
+
+    public void ViewExtras()
+    {
+        FindObjectOfType<AudioManager>().FadeMusicMethod(FadeMusic.FadeOut, "Rain");
+        _IsmainMenuActive = false;
+        _isExtrasActive = true;
+        UpdateGameObjects();
+    }
+
+    public void ViewSettings()
+    {
+        _IsmainMenuActive = false;
+        _isSettingsActive = true;
+        UpdateGameObjects();
+    }
+
+    public void Back()
+    {
+        
+        _isExtrasActive = false;
+        _isSettingsActive = false;
+        _IsmainMenuActive = true;
         UpdateGameObjects();
     }
 
@@ -42,6 +73,7 @@ public class MainMenuManager: MonoBehaviour
         Debug.Log(name);
         SaveData.Instance.SetName(name);
         UpdateGameObjects();
+        FindObjectOfType<AudioManager>().FadeMusicMethod(FadeMusic.FadeOut, "Rain");
     }
 
     public void ChooseCharacter(CharacterDataSO charData) //saves the character chosen in Save data class and loads the next scene
@@ -52,9 +84,12 @@ public class MainMenuManager: MonoBehaviour
 
     void UpdateGameObjects() //updates the game objects based on the bool
     {
+        FindObjectOfType<AudioManager>().Play("ButtonClick");
         _enterName.SetActive(_IsenterNameActive);
         _mainMenu.SetActive(_IsmainMenuActive);
         _chooseCharacter.SetActive(_IschooseCharacterActive);
+        _Extras.SetActive(_isExtrasActive);
+        _settings.SetActive(_isSettingsActive);
     }
 
     void LoadGameScene() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //Loads the next scene

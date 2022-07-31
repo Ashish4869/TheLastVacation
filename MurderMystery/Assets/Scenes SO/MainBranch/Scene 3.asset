@@ -18,6 +18,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
   _hasBranching: 1
+  _characterChange: 0
   SceneDialouges:
   - _speaker: 
     _dialouge: 'August 3rd

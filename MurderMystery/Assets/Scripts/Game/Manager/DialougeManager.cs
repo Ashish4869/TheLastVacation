@@ -29,6 +29,7 @@ public class DialougeManager : MonoBehaviour
     [SerializeField] float _screenShakeAmountHeavy;
 
     Continue _continue;
+    DialougeSound _dialougeSound;
     EventManager _eventManager;
     bool _isAnimatingHTMLTag;
     private Queue<string> _dialouges;
@@ -43,6 +44,7 @@ public class DialougeManager : MonoBehaviour
         _yourName = GameManager.Instance.GetName();
         _dialouges = new Queue<string>();
         _continue = GetComponent<Continue>();
+        _dialougeSound = GetComponent<DialougeSound>();
         GetDialouges();
     }
 
@@ -114,14 +116,17 @@ public class DialougeManager : MonoBehaviour
         switch (_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()]._ShakeScreenType)
         {
             case ScreenShakes.Small:
+                _dialougeSound.SoundEffects(ScreenShakes.Small);
                 _eventManager.OnShakeScreenEvent(_screenShakeAmountSmall, _screenShakeIntensitySmall);
                 break;
 
             case ScreenShakes.Meduim:
+                _dialougeSound.SoundEffects(ScreenShakes.Meduim);
                 _eventManager.OnShakeScreenEvent(_screenShakeAmountMeduim, _screenShakeIntensityMeduim);
                 break;
 
             case ScreenShakes.Heavy:
+                _dialougeSound.SoundEffects(ScreenShakes.Heavy);
                 _eventManager.OnShakeScreenEvent(_screenShakeAmountHeavy, _screenShakeIntensityHeavy);
                 break;
         }
@@ -140,10 +145,17 @@ public class DialougeManager : MonoBehaviour
     IEnumerator AnimateText()
     {
         IsDialougeAnimating = true;
-
+        int _isplayed = 0;
         
         foreach(char character in _currentDialouge.ToCharArray())
         { 
+            if(_isplayed == 0)
+            {
+                _dialougeSound.PlayTypingSound();
+            }
+
+            _isplayed = (_isplayed+1)%3;
+
             DialougeText.text += character;
 
             //Checks if the text encounrtered is a html tag or not
@@ -168,6 +180,7 @@ public class DialougeManager : MonoBehaviour
         _continue.HandleContinueButton(IsDialougeAnimating);
     }
 
+   
     private bool IsSentenceBreak(char character) =>  character == '.' || character == '?' || character == '!';
 
     private void PrepareNextScene() => GetDialouges(); //Gets the dialouge of the NextScene

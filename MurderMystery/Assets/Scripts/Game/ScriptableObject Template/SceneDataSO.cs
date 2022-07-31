@@ -20,6 +20,9 @@ public class SceneDataSO : ScriptableObject
     bool _hasBranching;
 
     [SerializeField]
+    bool _characterChange;
+
+    [SerializeField]
     private List<Dialouge> SceneDialouges;
 
 
@@ -34,4 +37,5 @@ public class SceneDataSO : ScriptableObject
 
     //Returns a bool for whether the current scene has branching
     public bool HasBranching() => _hasBranching;
+    public bool HasCharacterSwitch() => _characterChange;
 }
