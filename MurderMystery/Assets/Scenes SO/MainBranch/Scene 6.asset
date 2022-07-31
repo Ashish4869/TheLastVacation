@@ -17,7 +17,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
   - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
-  - {fileID: 11400000, guid: 050205734bc5ca14c8cec287532f5b34, type: 2}
   _hasBranching: 0
   _characterChange: 0
   SceneDialouges:

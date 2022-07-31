@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     private string _yourName; //contains the name that the player has inputed
     private CharacterDataSO _yourCharacter; //contains the character that the player has selected
 
+    bool _previousStateBranch; //bool is to store whether the prev state was branch state or not
+
     StateManager _stateManager;
     TransitionManager _transitionManager;
 
@@ -41,6 +43,8 @@ public class GameManager : MonoBehaviour
         _eventManager = FindObjectOfType<EventManager>();
         _stateManager = FindObjectOfType<StateManager>();
         _transitionManager = FindObjectOfType<TransitionManager>();
+        FindObjectOfType<AudioManager>().StopPlaying("Rain");
+        _previousStateBranch = false;
     }
 
     //Implementation of Singleton Pattern
@@ -96,14 +100,14 @@ public class GameManager : MonoBehaviour
         }
         
         
-        if(_mainBranchScenes[_currentScene].HasCharacterSwitch())
+        if(_mainBranchScenes[_currentScene].HasCharacterSwitch()) //if we have to switch characters then we do this
         {
             LoadNextSceneWithCharacterTransition();
             return;
         }
         
 
-        if (_mainBranchScenes[_currentScene].HasBranching())
+        if (_mainBranchScenes[_currentScene].HasBranching()) //if we have to branch then
         {
             ShowOptions();
         }
@@ -125,6 +129,7 @@ public class GameManager : MonoBehaviour
         _currentScene++;
         _dialougeCounter = -1;
         _eventManager.OnSceneDialougeExhaustedEvent();
+       
     }
 
     private void LoadNextSceneWithoutTransition() //Loads next scene without any transition
@@ -171,6 +176,21 @@ public class GameManager : MonoBehaviour
         _eventManager.OnSceneDialougeExhaustedEvent();
     }
 
+
+    public void InBranchState() //Storing information that we are in branch state
+    {
+        _previousStateBranch = true;
+    }
+
+    public void InMainState() //storing information that we are in main state
+    {
+        _previousStateBranch = false;
+    }
+
+    public bool WasPreviousStateBranch() //return information as to which state we are in
+    {
+        return _previousStateBranch;
+    }
 
 
     //Getters

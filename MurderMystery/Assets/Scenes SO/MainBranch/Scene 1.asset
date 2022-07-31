@@ -25,6 +25,7 @@ MonoBehaviour:
       Chris''s Office'
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Chris
     _dialouge: 'Hey :, Andy come check this room out.
 
@@ -32,16 +33,19 @@ MonoBehaviour:
       my living room!'
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: StartTheme
   - _speaker: You
     _dialouge: 'Wow!
 
       My whole <color=yellow>family</color> can stay here.'
     emotion: 0
     _ShakeScreenType: 1
+    switchTheme: 
   - _speaker: Andy
     _dialouge: "Hahaha, C\u2019mon it isn\u2019t that <b>big</b>."
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Andy
     _dialouge: 'But I have been wondering how did Dan get this mansion for such a
       <color=red> low price. </color>
@@ -49,19 +53,23 @@ MonoBehaviour:
 '
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Chris
     _dialouge: "C\u2019mon Andy!\nWhy are you like this, overthinking about everything!\n"
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Chris
     _dialouge: "We are here to relax!\nWe don\u2019t get this opportunity everyday."
     emotion: 0
     _ShakeScreenType: 1
+    switchTheme: 
   - _speaker: You
     _dialouge: "Yes Chris is right.\nWe are here to release our stress so don\u2019t
       increase it by overthinking."
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Andy
     _dialouge: 'Yeah I think you guys are right.
 
@@ -69,27 +77,33 @@ MonoBehaviour:
       carefree like you guys. '
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Andy
     _dialouge: We are in this beautiful mansion in this peaceful place and we are
       going to make the best of it.
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Andy
     _dialouge: Besides  <i>what can go wrong</i>.
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: ???
     _dialouge: 'AAAAAAHHHHHHHH
 
       (Sudden scream from the other room.)'
     emotion: 0
     _ShakeScreenType: 2
+    switchTheme: nothing
   - _speaker: You
     _dialouge: I think I just heard Angela screaming we must hurry up and check what
       happened.
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: Confused
   - _speaker: Chris
     _dialouge: You guys go ahead, I'll call rest of them.
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 

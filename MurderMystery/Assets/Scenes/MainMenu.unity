@@ -1676,33 +1676,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
+  - name: StartTheme
+    _audioClip: {fileID: 8300000, guid: 889485bdffd884d42936ce03ab3d510f, type: 3}
+    _volume: 0.7
+    _pitch: 1
+    _loop: 1
+    source: {fileID: 0}
+  - name: ChillTheme
+    _audioClip: {fileID: 8300000, guid: af922e438bce76a4d9d356bf346dbec8, type: 3}
+    _volume: 0.7
+    _pitch: 1
+    _loop: 1
+    source: {fileID: 0}
+  - name: Confused
+    _audioClip: {fileID: 8300000, guid: 32e1470ddbd996f45a0df217edfe8181, type: 3}
+    _volume: 0.7
+    _pitch: 1
+    _loop: 1
+    source: {fileID: 0}
   - name: Rain
     _audioClip: {fileID: 8300000, guid: f0d8b97c6642d494cb93951b1f7e471a, type: 3}
     _volume: 0.3
     _pitch: 1
     _loop: 1
     source: {fileID: 0}
+  - name: DissapointedTheme
+    _audioClip: {fileID: 8300000, guid: e64a63a34732b6f418f1a15ca52613e3, type: 3}
+    _volume: 0.7
+    _pitch: 1
+    _loop: 0
+    source: {fileID: 0}
   - name: Key1
     _audioClip: {fileID: 8300000, guid: 30f8dd32d965d8d4aa5b56b378db3ff7, type: 3}
-    _volume: 0.3
+    _volume: 0.5
     _pitch: 1
     _loop: 0
     source: {fileID: 0}
   - name: Key2
     _audioClip: {fileID: 8300000, guid: f8b434bf04b63f4489f55a6d09dd1da4, type: 3}
-    _volume: 0.3
+    _volume: 0.5
     _pitch: 1
     _loop: 0
     source: {fileID: 0}
   - name: Key3
     _audioClip: {fileID: 8300000, guid: a522c670917b9fe43954fa22d5832bee, type: 3}
-    _volume: 0.3
+    _volume: 0.5
     _pitch: 1
     _loop: 0
     source: {fileID: 0}
   - name: Key4
     _audioClip: {fileID: 8300000, guid: fbab2697c18e1454680b82da8923c4db, type: 3}
-    _volume: 0.3
+    _volume: 0.5
     _pitch: 1
     _loop: 0
     source: {fileID: 0}
@@ -1724,6 +1748,13 @@ MonoBehaviour:
     _pitch: 0.1
     _loop: 0
     source: {fileID: 0}
+  - name: MysteryUnsolved
+    _audioClip: {fileID: 8300000, guid: 3c377a1531b959040a61e8059607099d, type: 3}
+    _volume: 0.7
+    _pitch: 1
+    _loop: 0
+    source: {fileID: 0}
+  currentTheme: 
 --- !u!1 &306640260
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,7 +3859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &793601268
 RectTransform:
   m_ObjectHideFlags: 0

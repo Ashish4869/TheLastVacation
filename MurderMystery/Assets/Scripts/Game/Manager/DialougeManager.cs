@@ -68,8 +68,10 @@ public class DialougeManager : MonoBehaviour
     //Displays the Speaker Text on the UI
     //Displays The Dialouge on the UI
     //Hides the Animation for Continue
+    //Called on mouse click
     public void DisplayNextText()
     {
+       
         HandleDialouge();
         HandleSpeaker(); 
 
@@ -82,7 +84,7 @@ public class DialougeManager : MonoBehaviour
     //  else Animates the next dialouge
     //Loads NextScene if all dialouges is exhausted
     private void HandleDialouge()
-    {
+    { 
         DialougeText.text = "";
         StopAllCoroutines();
 
@@ -102,12 +104,15 @@ public class DialougeManager : MonoBehaviour
             _currentDialouge = _dialouges.Dequeue();
             _currentDialouge = _currentDialouge.Replace(":", _yourName); //Replacing the : with the player name as entered by the player
             StartCoroutine(AnimateText());
-           
+            _dialougeSound.SwitchTheme(_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()].switchTheme); //changes the theme based on the value stored in the object
         }
         else
         {
+            DialougeText.text = _currentDialouge;
             GameManager.Instance.ProcessNextScene();
         }
+
+       
     }
 
     //Shakes the screen as the per the value of the enum in the dialouge object , event is called
@@ -148,24 +153,19 @@ public class DialougeManager : MonoBehaviour
         int _isplayed = 0;
         
         foreach(char character in _currentDialouge.ToCharArray())
-        { 
-            if(_isplayed == 0)
-            {
-                _dialougeSound.PlayTypingSound();
-            }
-
-            _isplayed = (_isplayed+1)%3;
+        {
+            _isplayed = TypingSound(_isplayed);
 
             DialougeText.text += character;
 
             //Checks if the text encounrtered is a html tag or not
             if (character == '<') _isAnimatingHTMLTag = true;
 
-            if(character == '>') _isAnimatingHTMLTag = false;
+            if (character == '>') _isAnimatingHTMLTag = false;
 
-            if(_isAnimatingHTMLTag) continue;
-            
-            if(IsSentenceBreak(character)) //Gives a pause when we meet a sentence break character like . ? !
+            if (_isAnimatingHTMLTag) continue;
+
+            if (IsSentenceBreak(character)) //Gives a pause when we meet a sentence break character like . ? !
             {
                 yield return new WaitForSeconds(0.5f);
             }
@@ -173,14 +173,24 @@ public class DialougeManager : MonoBehaviour
             {
                 yield return new WaitForSeconds(0.03f);
             }
-            
+
         }
 
         IsDialougeAnimating = false;
         _continue.HandleContinueButton(IsDialougeAnimating);
     }
 
-   
+    private int TypingSound(int _isplayed) //we play the typing sound on every 4th leter , to prevent it from being too annoyying
+    {
+        if (_isplayed == 0)
+        {
+            _dialougeSound.PlayTypingSound();
+        }
+
+        _isplayed = (_isplayed + 1) % 3;
+        return _isplayed;
+    }
+
     private bool IsSentenceBreak(char character) =>  character == '.' || character == '?' || character == '!';
 
     private void PrepareNextScene() => GetDialouges(); //Gets the dialouge of the NextScene

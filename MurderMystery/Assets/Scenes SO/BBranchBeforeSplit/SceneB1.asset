@@ -16,15 +16,19 @@ MonoBehaviour:
   characters:
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
   - {fileID: 11400000, guid: 8995cc24c6bd44848a1ebdac7439026e, type: 2}
+  _hasBranching: 0
+  _characterChange: 0
   SceneDialouges:
   - _speaker: You
     _dialouge: 'Yeah the cops must be here within 2 hours. '
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: You
     _dialouge: 'Hope they find enough evidence. '
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Chris
     _dialouge: 'Yeah since you mentioned it...
 
@@ -32,4 +36,4 @@ MonoBehaviour:
       go through his things we can find some evidence.'
     emotion: 0
     _ShakeScreenType: 0
-  _hasBranching: 0
+    switchTheme: 

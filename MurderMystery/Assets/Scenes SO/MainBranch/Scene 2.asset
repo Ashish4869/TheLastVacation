@@ -25,6 +25,7 @@ MonoBehaviour:
       Angella''s Room'
     emotion: 4
     _ShakeScreenType: 0
+    switchTheme: Confused
   - _speaker: You
     _dialouge: 'ANGELA what happened?
 
@@ -33,12 +34,14 @@ MonoBehaviour:
       Are you alright? '
     emotion: 0
     _ShakeScreenType: 1
+    switchTheme: 
   - _speaker: Angella
     _dialouge: 'I just saw a huge cockroach over there.
 
       Aaaahhh so scary'
     emotion: 3
     _ShakeScreenType: 0
+    switchTheme: DissapointedTheme
   - _speaker: You
     _dialouge: 'Are you serious we got so  scared.
 
@@ -47,12 +50,14 @@ MonoBehaviour:
 '
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: ChillTheme
   - _speaker: Chris
     _dialouge: 'Angela,you are so silly.
 
       By the way where is Emily??'
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Angella
     _dialouge: 'I''m so sorry you guys.
 
@@ -60,7 +65,9 @@ MonoBehaviour:
       a sudden.'
     emotion: 1
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Angella
     _dialouge: Lets go to bed we have to go out tomorrow.
     emotion: 4
     _ShakeScreenType: 0
+    switchTheme: 

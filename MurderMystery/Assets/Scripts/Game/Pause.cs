@@ -87,12 +87,12 @@ public class Pause : MonoBehaviour
 
     IEnumerator SaveGameAnimation()
     {
-        _savingAnim.SetActive(true);
-        Time.timeScale = 1;
-        int waitime = Random.Range(2, 3);
+        _savingAnim.SetActive(true); //runn the save animation
+        Time.timeScale = 1; //set the time to one , so that we can show the animation
+        int waitime = Random.Range(2, 3); //wait for 2-3 seconds
         yield return new WaitForSeconds(waitime);
-        Time.timeScale = 0;
-        _savingAnim.SetActive(false);
+        Time.timeScale = 0; //set the time back to one
+        _savingAnim.SetActive(false); //close the animation
         _isGameSaved = true;
         _Isok = true;
 

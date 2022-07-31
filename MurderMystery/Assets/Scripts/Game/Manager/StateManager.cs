@@ -21,12 +21,14 @@ public class StateManager : MonoBehaviour
     public void BranchAChosen() //function called when we click on the First option 
     {
         gameState = GameStates.SceneA;
+        GameManager.Instance.InBranchState();
         GameManager.Instance.HideOptions();
     }
 
     public void BranchBChosen() //function called when we click on the Second option 
     {
         gameState = GameStates.SceneB;
+        GameManager.Instance.InBranchState();
         GameManager.Instance.HideOptions();
     }
 

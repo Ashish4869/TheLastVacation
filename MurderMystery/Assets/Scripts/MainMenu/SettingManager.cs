@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/// <summary>
+/// Deals with changing the settinsg and applying them
+/// </summary>
+
+
 public class SettingManager : MonoBehaviour
 {
     [SerializeField] TMP_Dropdown ChangeTextSize;
@@ -18,6 +23,7 @@ public class SettingManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //These are delegates for the onchange event on the drop down
         ChangeTextSize.onValueChanged.AddListener(delegate 
         {
             OnChangeTextSize(ChangeTextSize);

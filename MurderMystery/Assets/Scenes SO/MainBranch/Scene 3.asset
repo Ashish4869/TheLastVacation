@@ -26,45 +26,55 @@ MonoBehaviour:
       Kevin''s Room'
     emotion: 4
     _ShakeScreenType: 0
+    switchTheme: MysteryUnsolved
   - _speaker: You
     _dialouge: HELLO
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Chris
     _dialouge: 'Whats Up Angela!
 
       Everything good'
     emotion: 0
     _ShakeScreenType: 1
+    switchTheme: 
   - _speaker: Angella
     _dialouge: Ya I'm feeling , I'm so exicted for the trip
     emotion: 3
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Chris
     _dialouge: 'Same Me to!
 
 '
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Kevin
     _dialouge: 'I know right!
 
       Can''t wait for the day to come'
     emotion: 4
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Kevin
     _dialouge: 'I would be Pissed if someone bails last moment like :'
     emotion: 2
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Kevin
     _dialouge: Well , there's nothing we can do about it now.
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Angella
     _dialouge: Let's hope it doesn't rain that day.
     emotion: 1
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Angella
     _dialouge: It should be very Sunny!
     emotion: 4
     _ShakeScreenType: 0
+    switchTheme: 

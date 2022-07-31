@@ -19,7 +19,6 @@ public class CharacterManager : MonoBehaviour
     CharacterDataSO _yourCharacter;
     Dictionary<string, GameObject> _charactersDict;
     bool _characterInScene;
-    bool _branchToScene;
     int animSpeed = 2;
 
     // Start is called before the first frame update
@@ -35,19 +34,25 @@ public class CharacterManager : MonoBehaviour
 
     private void SetCharactersInUI() //Creates a game object for each character and makes it a child of CharacterInTheScene gameobject
     {
-        if (GameManager.Instance.GetGameState() == GameStates.Scene)
+        if (GameManager.Instance.GetGameState() == GameStates.Scene) //animate the characters if we are moving between scenes
         {
             animSpeed = 2;
-            _branchToScene = false;
         }
-        else
+        else //and not between states
         {
             animSpeed = 100;
-            _branchToScene = true;
         }
 
+        if(GameManager.Instance.GetGameState() == GameStates.Scene) //if we coming from branch state , we dont want the character to animate
+        {
+            if (GameManager.Instance.WasPreviousStateBranch())
+            {
+                animSpeed = 100;
+                GameManager.Instance.InMainState();
+            }
+        }
         
-     
+
 
         RectTransform rectTransform;
 

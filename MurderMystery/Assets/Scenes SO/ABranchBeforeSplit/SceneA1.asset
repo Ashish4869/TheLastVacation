@@ -18,18 +18,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
   _hasBranching: 0
+  _characterChange: 0
   SceneDialouges:
   - _speaker: You
     _dialouge: Why are you in such a Hurry?
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Chris
     _dialouge: "What do you mean? \nI'm not in any hurry I just want justice for
       angela. "
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Chris
     _dialouge: And for that reason I think we should go and look for some evidence
       in his bags.
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 

@@ -46,8 +46,8 @@ public class SaveData : MonoBehaviour
     string _playerName;
     CharacterDataSO _character;
     int _currentScene;
-    int _dialougeCounter;
     GameStates _currentState;
+    bool _IspreviousStatebranch;
 
     public void SetName(string Name) => _playerName = Name;
 

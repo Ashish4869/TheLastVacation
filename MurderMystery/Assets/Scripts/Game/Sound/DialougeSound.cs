@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Plays all sound originating from the dialouges
+/// </summary>
 public class DialougeSound : MonoBehaviour
 {
     AudioManager _audioManager;
-    private void Start()
-    {
-       
-    }
-
-    public void PlayTypingSound()
+    
+    public void PlayTypingSound() //Picks a random audio and plays it
     {
         int key = Random.Range(0, 5);
 
@@ -23,11 +22,16 @@ public class DialougeSound : MonoBehaviour
        }
     }
 
-    public void SoundEffects(ScreenShakes shake)
+    public void SoundEffects(ScreenShakes shake) //Plays a audio cue for each shake type
     {
         if(shake == ScreenShakes.Meduim)
         {
             FindObjectOfType<AudioManager>().Play("Hit");
         }
+    }
+
+    public void SwitchTheme(string theme) //Switches the theme of music
+    {
+        FindObjectOfType<AudioManager>().SwitchTheme(theme);
     }
 }

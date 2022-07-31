@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Manages the Achievemnets that we obtains after reaching a particular ending
+/// </summary>
 public class AchivementManager : MonoBehaviour
 {
     [SerializeField] GameObject Lock1;
@@ -19,7 +22,7 @@ public class AchivementManager : MonoBehaviour
 
 
 
-    public void ProcessAchviements()
+    public void ProcessAchviements() //Update he ui as per the data
     {
         SetAllGameObjectInactive();
 

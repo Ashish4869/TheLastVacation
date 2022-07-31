@@ -1,6 +1,10 @@
 using UnityEngine.Audio;
 using UnityEngine;
 
+/// <summary>
+/// Holds the properties of sound that we are interested in
+/// </summary>
+
 [System.Serializable]
 public class Sound 
 {

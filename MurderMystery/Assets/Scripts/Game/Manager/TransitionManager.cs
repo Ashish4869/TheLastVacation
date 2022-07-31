@@ -58,14 +58,18 @@ public class TransitionManager : MonoBehaviour
 
     public void TransitionCharacters()
     {
+        StartCoroutine(TransitionChar());
+    }
+
+    IEnumerator TransitionChar() //we are getting each child , then getting animator component and then making each of them run FadeOut animation
+    {
         ClickScreen.SetActive(false);
         foreach (Transform trans in CharactersParent.transform)
         {
             trans.gameObject.GetComponent<Animator>().SetTrigger("fadeout");
         }
-        Debug.Log("Hello");
+        yield return new WaitForSeconds(1f);
         ClickScreen.SetActive(true);
-        
     }
 
     public void JustFadeIn() //used to move from game to main menu

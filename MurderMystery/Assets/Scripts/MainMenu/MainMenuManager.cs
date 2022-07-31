@@ -43,7 +43,6 @@ public class MainMenuManager: MonoBehaviour
 
     public void ViewExtras()
     {
-        FindObjectOfType<AudioManager>().FadeMusicMethod(FadeMusic.FadeOut, "Rain");
         _IsmainMenuActive = false;
         _isExtrasActive = true;
         UpdateGameObjects();
@@ -73,12 +72,13 @@ public class MainMenuManager: MonoBehaviour
         Debug.Log(name);
         SaveData.Instance.SetName(name);
         UpdateGameObjects();
-        FindObjectOfType<AudioManager>().FadeMusicMethod(FadeMusic.FadeOut, "Rain");
+       
     }
 
     public void ChooseCharacter(CharacterDataSO charData) //saves the character chosen in Save data class and loads the next scene
     {
         SaveData.Instance.SetCharacter(charData);
+        FindObjectOfType<AudioManager>().FadeMusicMethod(FadeMusic.FadeOut, "Rain");
         LoadGameScene();
     }
 
