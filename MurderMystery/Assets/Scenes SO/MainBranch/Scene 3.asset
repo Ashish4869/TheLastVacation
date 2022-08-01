@@ -12,69 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
   m_Name: Scene 3
   m_EditorClassIdentifier: 
-  SceneBG: {fileID: 21300000, guid: c629b976475e7d1479ceed25b102889b, type: 3}
+  SceneBG: {fileID: 21300000, guid: cb4338eba8753634b9ce9714bac3fe47, type: 3}
   characters:
-  - {fileID: 11400000, guid: 8995cc24c6bd44848a1ebdac7439026e, type: 2}
   - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
-  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
-  _hasBranching: 1
-  _characterChange: 0
+  _hasBranching: 0
+  _characterChange: 1
+  _isFlashback: 0
   SceneDialouges:
-  - _speaker: 
-    _dialouge: 'August 3rd
-
-      Kevin''s Room'
-    emotion: 4
-    _ShakeScreenType: 0
-    switchTheme: MysteryUnsolved
-  - _speaker: You
-    _dialouge: HELLO
+  - _speaker: Narrator
+    _dialouge: Kevin,
     emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: 
-  - _speaker: Chris
-    _dialouge: 'Whats Up Angela!
-
-      Everything good'
-    emotion: 0
-    _ShakeScreenType: 1
-    switchTheme: 
-  - _speaker: Angella
-    _dialouge: Ya I'm feeling , I'm so exicted for the trip
-    emotion: 3
-    _ShakeScreenType: 0
-    switchTheme: 
-  - _speaker: Chris
-    _dialouge: 'Same Me to!
-
-'
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: 
-  - _speaker: Kevin
-    _dialouge: 'I know right!
-
-      Can''t wait for the day to come'
-    emotion: 4
-    _ShakeScreenType: 0
-    switchTheme: 
-  - _speaker: Kevin
-    _dialouge: 'I would be Pissed if someone bails last moment like :'
-    emotion: 2
-    _ShakeScreenType: 0
-    switchTheme: 
-  - _speaker: Kevin
-    _dialouge: Well , there's nothing we can do about it now.
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: 
-  - _speaker: Angella
-    _dialouge: Let's hope it doesn't rain that day.
-    emotion: 1
-    _ShakeScreenType: 0
-    switchTheme: 
-  - _speaker: Angella
-    _dialouge: It should be very Sunny!
-    emotion: 4
     _ShakeScreenType: 0
     switchTheme: 

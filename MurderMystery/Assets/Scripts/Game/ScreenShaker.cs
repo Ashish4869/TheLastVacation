@@ -27,7 +27,7 @@ public class ScreenShaker : MonoBehaviour
     //Shakes The screen untill the shaketime is below 0
     private void Update()
     {
-        if(!GameManager.Instance.GetIfScreenShake())
+        if(!GameManager.Instance.GetIfScreenShake()) //If we have set to no screen shake in the settings then we shall not screen shake
         {
             return;
         }

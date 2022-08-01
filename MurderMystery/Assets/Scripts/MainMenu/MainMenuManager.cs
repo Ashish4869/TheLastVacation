@@ -31,15 +31,17 @@ public class MainMenuManager: MonoBehaviour
         _IschooseCharacterActive = false;
         _isExtrasActive = false;
         _isSettingsActive = false;
+
         Debug.Log(Application.persistentDataPath);
 
+        //Loading the save file to check if we have data to load the game
         GameData data = SaveSystem.LoadGameData();
 
-        if(data != null)
+        if(data != null) //if data present , load game
         {
             _load.interactable = data._canLoad;   
         }
-        else
+        else //if no data present , no load game
         {
             _load.interactable = false;
         }
@@ -55,21 +57,21 @@ public class MainMenuManager: MonoBehaviour
         UpdateGameObjects();
     }
 
-    public void ViewExtras()
+    public void ViewExtras() //opens the ui for Extras page
     {
         _IsmainMenuActive = false;
         _isExtrasActive = true;
         UpdateGameObjects();
     }
 
-    public void ViewSettings()
+    public void ViewSettings()  //opens the ui for Settings page
     {
         _IsmainMenuActive = false;
         _isSettingsActive = true;
         UpdateGameObjects();
     }
 
-    public void Back()
+    public void Back() //opens Main UI
     {
         
         _isExtrasActive = false;
@@ -106,21 +108,13 @@ public class MainMenuManager: MonoBehaviour
         _settings.SetActive(_isSettingsActive);
     }
 
-    public void LoadData()
+    public void LoadData() //Loads the data from the file and starts the game
     { 
         GameData data = SaveSystem.LoadGameData();
-        if(data == null)
+        if (data == null)
         {
             return;
         }
-
-            Debug.Log("Name: " + data._playerName);
-            Debug.Log("Scene: " + data._currentScene);
-            Debug.Log("State: " + data._currentState);
-            Debug.Log("PreviousBranchState: " + data._IspreviousStatebranch);
-            Debug.Log("BranchCounter: " + data._branchcounter);
-            Debug.Log("IsMale: " + data._IsMalecharacter);
-
             SaveData.Instance.SetIsfromLoad(true);
             LoadGameScene();
     }

@@ -38,7 +38,7 @@ public class Pause : MonoBehaviour
         UpdateGameObjects();
     }
 
-    public void PauseGame()
+    public void PauseGame() //Pause the game and halts all operations
    {
         if(GameManager.Instance.IsCurrentSceneFlashback())
         {
@@ -49,7 +49,7 @@ public class Pause : MonoBehaviour
         UpdateGameObjects();
    }
 
-    public void ResumeGame()
+    public void ResumeGame() //Resumes the game
     {
         if (GameManager.Instance.IsCurrentSceneFlashback())
         {
@@ -61,13 +61,13 @@ public class Pause : MonoBehaviour
         UpdateGameObjects();
     }
 
-    public void LeaveMainMenu()
+    public void LeaveMainMenu() //Shows the UI for main menu
     {
         _mainMenuBool = true;
         UpdateGameObjects();
     }
 
-    public void LeaveTOMainMenu()
+    public void LeaveTOMainMenu() //Leaves to the main menu
     {
         Time.timeScale = 1;
         GameManager.Instance.FadeOutMusic();
@@ -75,7 +75,7 @@ public class Pause : MonoBehaviour
         StartCoroutine(TransitionToMainMenu());
     }
 
-    IEnumerator TransitionToMainMenu()
+    IEnumerator TransitionToMainMenu() //Transion to Main Menu
     {
         yield return new WaitForSeconds(1f);
         FindObjectOfType<CharacterManager>().ClearAllCharacters();
@@ -83,13 +83,13 @@ public class Pause : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); // go the prev scene  
     }
 
-    public void BacktoPauseMenu()
+    public void BacktoPauseMenu() //Closes the Main menu warning
     {
         _mainMenuBool = false;
         UpdateGameObjects();
     }
 
-    public void SaveGameUI()
+    public void SaveGameUI() //Shows the UI for saving game
     {
         GameManager.Instance.SetValuesInSaveData();
         SaveSystem.SaveGameData(SaveData.Instance);

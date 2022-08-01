@@ -12,34 +12,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
   m_Name: Scene 8
   m_EditorClassIdentifier: 
-  SceneBG: {fileID: 21300000, guid: 4502762da3aa4554fbbd4bec2a76cebb, type: 3}
-  characters:
-  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
-  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
-  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  SceneBG: {fileID: 21300000, guid: cb4338eba8753634b9ce9714bac3fe47, type: 3}
+  characters: []
   _hasBranching: 0
   _characterChange: 0
   _isFlashback: 0
   SceneDialouges:
+  - _speaker: Narrator
+    _dialouge: 'and : .'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: You
-    _dialouge: This is flash back scene
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: MysteryUnsolved
-  - _speaker: Andy
-    _dialouge: Ya that is ryt
+    _dialouge: 'We were best friends since college, and worked in different MNC''s. '
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
-  - _speaker: Chris
-    _dialouge: 'Thats Right!
-
-'
+  - _speaker: You
+    _dialouge: We got tired of our day to day life and wanted to go on a long vaccation.
     emotion: 0
-    _ShakeScreenType: 3
+    _ShakeScreenType: 0
     switchTheme: 
-  - _speaker: Kevin
-    _dialouge: we all in black and white
+  - _speaker: You
+    _dialouge: Keith suggested to go to the countryside so that they can get rid
+      of the city rush.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+  - _speaker: You
+    _dialouge: 'We decided to book a hotel but later Kevin suggested that he knows
+      a person who owns a mansion '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+  - _speaker: You
+    _dialouge: and is willing to rent it for a fair price.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+  - _speaker: You
+    _dialouge: All of us agreed.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+  - _speaker: You
+    _dialouge: We were all very excited and we began their journey 3 days from then
+      in John's car
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+  - _speaker: You
+    _dialouge: We reached there the next night.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 

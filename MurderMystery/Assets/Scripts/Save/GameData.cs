@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Class which holds the data that needs to be saved between sessions
+/// </summary>
 [System.Serializable]
 public class GameData
 {

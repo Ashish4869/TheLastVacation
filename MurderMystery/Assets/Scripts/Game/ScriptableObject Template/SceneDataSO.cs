@@ -26,6 +26,7 @@ public class SceneDataSO : ScriptableObject
     [SerializeField]
     bool _characterChange;
 
+    [Tooltip("Whether this scene is a flashback or not")]
     [SerializeField]
     bool _isFlashback;
 
@@ -43,7 +44,7 @@ public class SceneDataSO : ScriptableObject
    
     public Sprite GetCurrentSceneBG() => SceneBG;
 
-    //Returns a bool for whether the current scene has branching
+    //Returns a bool for the following
     public bool HasBranching() => _hasBranching;
     public bool HasCharacterSwitch() => _characterChange;
 

@@ -12,63 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
   m_Name: Scene 2
   m_EditorClassIdentifier: 
-  SceneBG: {fileID: 21300000, guid: ae01d74ae38cfbb4aabfc36dd5f45b61, type: 3}
+  SceneBG: {fileID: 21300000, guid: cb4338eba8753634b9ce9714bac3fe47, type: 3}
   characters:
-  - {fileID: 11400000, guid: 8995cc24c6bd44848a1ebdac7439026e, type: 2}
-  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
   _hasBranching: 0
-  _characterChange: 0
+  _characterChange: 1
   _isFlashback: 0
   SceneDialouges:
-  - _speaker: 
-    _dialouge: 'August 2nd
-
-      Angella''s Room'
-    emotion: 4
-    _ShakeScreenType: 0
-    switchTheme: Confused
-  - _speaker: You
-    _dialouge: 'ANGELA what happened?
-
-      Why did you scream?
-
-      Are you alright? '
+  - _speaker: Narrator
+    _dialouge: Andy..
     emotion: 0
-    _ShakeScreenType: 1
-    switchTheme: 
-  - _speaker: Angella
-    _dialouge: 'I just saw a huge cockroach over there.
-
-      Aaaahhh so scary'
-    emotion: 3
-    _ShakeScreenType: 0
-    switchTheme: DissapointedTheme
-  - _speaker: You
-    _dialouge: 'Are you serious we got so  scared.
-
-      Angela why you such a coward?
-
-'
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: ChillTheme
-  - _speaker: Chris
-    _dialouge: 'Angela,you are so silly.
-
-      By the way where is Emily??'
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: 
-  - _speaker: Angella
-    _dialouge: 'I''m so sorry you guys.
-
-      I just got shocked seeing it all of
-      a sudden.'
-    emotion: 1
-    _ShakeScreenType: 0
-    switchTheme: 
-  - _speaker: Angella
-    _dialouge: Lets go to bed we have to go out tomorrow.
-    emotion: 4
     _ShakeScreenType: 0
     switchTheme: 

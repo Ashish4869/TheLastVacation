@@ -23,7 +23,7 @@ public class BackGroundManager : MonoBehaviour
         _currentScene = GameManager.Instance.GetCurrentScene();
         BackGround.sprite = _currentScene.GetCurrentSceneBG();
 
-        if(_currentScene._isFlashBack())
+        if(_currentScene._isFlashBack()) //Sets flash back scene dependin on the bool
         {
             FindObjectOfType<PostProcessHandler>().GOBlackAndWhite();
         }

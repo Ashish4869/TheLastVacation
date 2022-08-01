@@ -133,7 +133,7 @@ public class AudioManager : MonoBehaviour
         return currentTheme;
     }
 
-    public void removeCurrentTheme()
+    public void removeCurrentTheme() //Removes the current theme , this is so that we can still play the music when we laod the file
     {
         currentTheme = "";
     }

@@ -101,12 +101,13 @@ public class CharacterManager : MonoBehaviour
         string currentSpeaker = _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker;
         Emotion currentEmotion = _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()].emotion;
 
-        if (IsNotCharacter())
+        if (IsNotCharacter()) //If not character in the scene then add sillhoute
         {
             _speakerImage.sprite = _sillhoute;
+            _speakerImage.color = new Color(1, 1, 1, 1);
             return;
         }
-        else if(_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "")
+        else if(_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "You ") //For scene intros
         {
             _speakerImage.sprite = null;
             _speakerImage.color = new Color(0,0, 0, 0);

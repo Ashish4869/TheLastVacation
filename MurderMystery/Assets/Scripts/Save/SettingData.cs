@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class holds data of the game configuration
+/// </summary>
+
 [System.Serializable]
 public class SettingData 
 {
-    public bool _screenShakes;
+    public bool _screenShakes; //Whether to implement screenshakes
     public int _fontSize; // 0 - big  , 1 - meduim , 2 - small
     public float _textSpeed; // 0 - Fast , 1 - slow
 

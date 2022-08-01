@@ -8,11 +8,6 @@ using UnityEngine;
 public class StateManager : MonoBehaviour
 {
     public GameStates gameState;
-
-    private void Awake()
-    {
-      
-    }
     
     //Getters
     public GameStates GetCurrentGameState() =>  gameState;
@@ -34,7 +29,7 @@ public class StateManager : MonoBehaviour
 
     public void ReturnToMain() => gameState = GameStates.Scene; //Takes the control back to the main branch
 
-    public void SetState(int state)
+    public void SetState(int state) //Sets the state from the values obtained from the file
     {
         switch (state)
         {

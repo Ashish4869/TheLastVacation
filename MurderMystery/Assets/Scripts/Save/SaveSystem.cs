@@ -2,13 +2,16 @@ using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-
+/// <summary>
+/// Coverts data into a binary stream and stores it in a file and vice versa
+/// </summary>
 public static class SaveSystem
 { 
+    //Stores the game save data 
     public static void SaveGameData(SaveData savedata)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/gameData.data";
+        string path = Application.persistentDataPath + "/gameData.data"; //Path to be stored
 
         FileStream stream = new FileStream(path, FileMode.Create);
 
@@ -18,6 +21,7 @@ public static class SaveSystem
         stream.Close();
     }
 
+    //Stores the Setting configuration of the game
     public static void SaveSettingsData(SettingManager setting)
     {
         BinaryFormatter formatter = new BinaryFormatter();
@@ -31,7 +35,7 @@ public static class SaveSystem
         stream.Close();
     }
 
-
+    //Loads Save data from the file
     public static GameData LoadGameData()
     {
         string path = Application.persistentDataPath + "/gameData.data";
@@ -50,6 +54,8 @@ public static class SaveSystem
             return null;
         }
     }
+
+    //Loads Setting data from the file
 
     public static SettingData LoadSettingData()
     {

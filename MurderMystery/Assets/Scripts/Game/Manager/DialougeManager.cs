@@ -48,10 +48,12 @@ public class DialougeManager : MonoBehaviour
         _dialouges = new Queue<string>();
         _continue = GetComponent<Continue>();
         _dialougeSound = GetComponent<DialougeSound>();
+
+        //Setting values obtained from the configuration file
         _fontSize = GameManager.Instance.GetFontSize();
         _textSpeed = GameManager.Instance.GetTextSpeed();
-
         DialougeText.fontSize = _fontSize;
+
         GetDialouges();
     }
 

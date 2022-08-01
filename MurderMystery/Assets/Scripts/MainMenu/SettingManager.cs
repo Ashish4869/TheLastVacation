@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 
 /// <summary>
-/// Deals with changing the settinsg and applying them
+/// Deals with changing the settings and applying them
 /// </summary>
 
 
@@ -35,9 +35,10 @@ public class SettingManager : MonoBehaviour
             OnChangeTextSpeed(ChangeTextSpeed);
         });
 
+        //Getting the from the file
         SettingData data = SaveSystem.LoadSettingData();
 
-        if(data != null)
+        if(data != null) //Data from the file
         {
             _isScreenShake = data._screenShakes;
             _fontsize = data._fontSize;
@@ -111,10 +112,9 @@ public class SettingManager : MonoBehaviour
     }
 
 
-    public void SaveSettings()
+    public void SaveSettings() //Saves the settings in to a file
     {
         Debug.Log("Saved");
-        //Save the settings into a file later
         SaveSystem.SaveSettingsData(this);
         SaveData.Instance.SettingsChanged();
         FindObjectOfType<AudioManager>().Play("ButtonClick");
@@ -127,7 +127,7 @@ public class SettingManager : MonoBehaviour
 
     public int GetSize() => _fontsize;
 
-    public void DisableSetting()
+    public void DisableSetting() //Closes the popup for saving settings
     {
         FindObjectOfType<AudioManager>().Play("ButtonClick");
         _settingsOK.SetActive(false);

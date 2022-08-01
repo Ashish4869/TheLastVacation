@@ -9,7 +9,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewCharacter", menuName = "Characters")]
 public class CharacterDataSO : ScriptableObject
 {
-
     [SerializeField] int CharacterWidth = 500;
     [SerializeField] int CharacterHeight = 1000;
 
@@ -28,7 +27,6 @@ public class CharacterDataSO : ScriptableObject
     [SerializeField]
     Sprite _characterHappy;
 
-
     [SerializeField]
     Sprite _characterShocked;
 
@@ -36,7 +34,7 @@ public class CharacterDataSO : ScriptableObject
     Sprite _characterSpeakCrop;
 
     //Getters
-    public Sprite GetCharacterSpriteAsPerEmotion(Emotion emotion)
+    public Sprite GetCharacterSpriteAsPerEmotion(Emotion emotion) //Returns a sprite based the emotion passed of type EMOTION (enum)
     {
         switch(emotion)
         {

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31586043c51f304ba9ea69911924242, type: 3}
+  m_Name: Keith
+  m_EditorClassIdentifier: 
+  CharacterWidth: 500
+  CharacterHeight: 1000
+  _characterNormal: {fileID: 21300000, guid: 232062e2fbb27324ea892f2b8a533a20, type: 3}
+  _characterSad: {fileID: 21300000, guid: 7d8496d8485aab4428a85c13d5a06ca9, type: 3}
+  _characterAngry: {fileID: 21300000, guid: b518171a9ae01ff4eb7ec3db4e31ef1c, type: 3}
+  _characterScared: {fileID: 0}
+  _characterHappy: {fileID: 21300000, guid: 6acaef922d336744f89b935f55562dd7, type: 3}
+  _characterShocked: {fileID: 21300000, guid: 2d2513ab9b9f3344ca2ae7470fc34e5e, type: 3}
+  _characterSpeakCrop: {fileID: 21300000, guid: d61f2dc22ad961040b6c08842d265454, type: 3}

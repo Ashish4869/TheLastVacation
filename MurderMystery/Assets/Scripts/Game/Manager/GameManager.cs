@@ -91,13 +91,12 @@ public class GameManager : MonoBehaviour
         _eventManager = FindObjectOfType<EventManager>();
         _stateManager = FindObjectOfType<StateManager>();
 
-        //Getting values saved in the SaveData Class
+        //Getting values saved in the Save File
         if(SaveData.Instance.IsFromLoad())
         {
             GameData data = SaveSystem.LoadGameData();
             
-            if(data != null) SetValuesInSaveDataFromGameData(data);
-
+            if(data != null) SetValuesInSaveDataFromGameData(data); //if we are loading for first time , then pull data and store in save data class
 
             _currentScene = SaveData.Instance.GetCurrentScene();
 
@@ -110,7 +109,6 @@ public class GameManager : MonoBehaviour
             {
                 _branchCounter =  SaveData.Instance.GetBranchCounter() - 1;
                 InBranchState();
-                Debug.Log("WE ARE IN BRANCH STATE");
             }
 
             _stateManager.SetState(SaveData.Instance.GetCurrentStateinInt());
@@ -260,7 +258,7 @@ public class GameManager : MonoBehaviour
         return _previousStateBranch;
     }
 
-    public void SetValuesInSaveData()
+    public void SetValuesInSaveData() //Saves the values in gamemanager to the Save data class 
     {
         SaveData.Instance.SetBranchCounter(_branchCounter);
         SaveData.Instance.SetCurrentScene(_currentScene);
@@ -270,7 +268,7 @@ public class GameManager : MonoBehaviour
         SaveData.Instance.SetCanLoad(true);
     }
 
-    public void SetValuesInSaveDataFromGameData(GameData data)
+    public void SetValuesInSaveDataFromGameData(GameData data) //Does the same as above but from save file
     {
         SaveData.Instance.SetBranchCounter(data._branchcounter);
         SaveData.Instance.SetCurrentScene(data._currentScene);
@@ -281,7 +279,7 @@ public class GameManager : MonoBehaviour
         SaveData.Instance.SetCanLoad(true);
     }
 
-    GameStates GetStateFromInt(int value)
+    GameStates GetStateFromInt(int value) //Getting a state from the int value
     {
         switch (value)
         {

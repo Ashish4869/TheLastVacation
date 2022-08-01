@@ -12,34 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
   m_Name: Scene 7
   m_EditorClassIdentifier: 
-  SceneBG: {fileID: 21300000, guid: 4502762da3aa4554fbbd4bec2a76cebb, type: 3}
+  SceneBG: {fileID: 21300000, guid: cb4338eba8753634b9ce9714bac3fe47, type: 3}
   characters:
-  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
-  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
-  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
   _hasBranching: 0
-  _characterChange: 0
-  _isFlashback: 1
+  _characterChange: 1
+  _isFlashback: 0
   SceneDialouges:
-  - _speaker: You
-    _dialouge: This is flash back scene
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: MysteryUnsolved
-  - _speaker: Andy
-    _dialouge: Ya that is ryt
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: 
-  - _speaker: Chris
-    _dialouge: 'Thats Right!
-
-'
-    emotion: 0
-    _ShakeScreenType: 3
-    switchTheme: 
-  - _speaker: Kevin
-    _dialouge: we all in black and white
+  - _speaker: Narrator
+    _dialouge: Keith,
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
