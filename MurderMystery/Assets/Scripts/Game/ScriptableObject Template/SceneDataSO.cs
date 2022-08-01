@@ -26,6 +26,9 @@ public class SceneDataSO : ScriptableObject
     [SerializeField]
     bool _characterChange;
 
+    [SerializeField]
+    bool _isFlashback;
+
     [Tooltip("The dialouges in the scene")]
     [SerializeField]
     private List<Dialouge> SceneDialouges;
@@ -43,4 +46,6 @@ public class SceneDataSO : ScriptableObject
     //Returns a bool for whether the current scene has branching
     public bool HasBranching() => _hasBranching;
     public bool HasCharacterSwitch() => _characterChange;
+
+    public bool _isFlashBack() => _isFlashback;
 }

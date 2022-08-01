@@ -16,18 +16,22 @@ MonoBehaviour:
   characters:
   - {fileID: 11400000, guid: 8995cc24c6bd44848a1ebdac7439026e, type: 2}
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  _hasBranching: 0
+  _characterChange: 0
   SceneDialouges:
   - _speaker: You
     _dialouge: He is saying you are blaming dan for no reason.
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: MysteryUnsolved
   - _speaker: You
     _dialouge: you just started blaming Dan without any thought behind it.
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Chris
     _dialouge: And the fact that you were so sure that she died because of the poison
       is very suspicious.
     emotion: 0
     _ShakeScreenType: 0
-  _hasBranching: 0
+    switchTheme: 

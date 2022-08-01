@@ -24,7 +24,7 @@ MonoBehaviour:
     _dialouge: Why are you in such a Hurry?
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: 
+    switchTheme: MysteryUnsolved
   - _speaker: Chris
     _dialouge: "What do you mean? \nI'm not in any hurry I just want justice for
       angela. "

@@ -211,9 +211,9 @@ Canvas:
   m_GameObject: {fileID: 18621730}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -501,9 +501,9 @@ Canvas:
   m_GameObject: {fileID: 120938751}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -585,7 +585,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -77.025, y: 52}
+  m_AnchoredPosition: {x: -77.025024, y: 52}
   m_SizeDelta: {x: 59.9124, y: 106.9718}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &210109441
@@ -1718,6 +1718,7 @@ MonoBehaviour:
   _charactersInSceneGameObject: {fileID: 1701837428}
   _characterUITemplatePrefab: {fileID: 6950899667012775860, guid: fd823fb8fbef69a46a254bbdd7fdc396, type: 3}
   _speakerImage: {fileID: 838211266}
+  _sillhoute: {fileID: 21300000, guid: b0c2f2bc562e41d4c8d15a396848a3a3, type: 3}
   _charactersInScene: []
 --- !u!1 &519420028
 GameObject:
@@ -1730,6 +1731,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1745,6 +1747,66 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 519420032}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2326,11 +2388,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialougeText: {fileID: 864712228}
   SpeakerText: {fileID: 1623401861}
-  _screenShakeIntensitySmall: 1
+  _screenShakeIntensitySmall: 0.03
   _screenShakeAmountSmall: 0.3
-  _screenShakeIntensityMeduim: 10
+  _screenShakeIntensityMeduim: 0.1
   _screenShakeAmountMeduim: 0.5
-  _screenShakeIntensityHeavy: 20
+  _screenShakeIntensityHeavy: 0.3
   _screenShakeAmountHeavy: 0.5
 --- !u!114 &730592065
 MonoBehaviour:
@@ -2445,9 +2507,9 @@ Canvas:
   m_GameObject: {fileID: 786142609}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2493,6 +2555,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 12c3cdc06ec14c340a3b1b0bab4775b9, type: 2}
   - {fileID: 11400000, guid: e0e0b3ec82d1daf4ab3a7f7c9564ca8b, type: 2}
   - {fileID: 11400000, guid: 39da3fa28edbae144b2d4c07c1dae83c, type: 2}
+  - {fileID: 11400000, guid: 8facd570fe086e14d89cb588dc8a72fa, type: 2}
+  - {fileID: 11400000, guid: f9fe41a2d0186fd46adc2552bf0baf7e, type: 2}
   _sceneA:
   - {fileID: 11400000, guid: 92f4a9398477a8347976f97988e48099, type: 2}
   - {fileID: 11400000, guid: d46f0575964410c488cad02ac55648f7, type: 2}
@@ -2502,6 +2566,8 @@ MonoBehaviour:
   _options: {fileID: 1080106338}
   _option1: {fileID: 1999793819}
   _option2: {fileID: 963309516}
+  Male: {fileID: 11400000, guid: 050205734bc5ca14c8cec287532f5b34, type: 2}
+  Female: {fileID: 11400000, guid: 1afad53dc9e1eae4d9c84a5ca1784acd, type: 2}
 --- !u!4 &830534655
 Transform:
   m_ObjectHideFlags: 0
@@ -3684,9 +3750,9 @@ Canvas:
   m_GameObject: {fileID: 1270245927}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -3978,9 +4044,9 @@ Canvas:
   m_GameObject: {fileID: 1515045320}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -4469,7 +4535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.249, y: -7.2491}
+  m_AnchoredPosition: {x: -7.2490005, y: -7.2490997}
   m_SizeDelta: {x: 48.61, y: 48.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1627285678
@@ -5394,9 +5460,9 @@ Canvas:
   m_GameObject: {fileID: 1844699777}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -6045,6 +6111,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003565955}
   m_CullTransparentMesh: 1
+--- !u!1 &2038197665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2038197666}
+  - component: {fileID: 2038197667}
+  - component: {fileID: 2038197668}
+  m_Layer: 6
+  m_Name: PostProcessingVolume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2038197666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038197665}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2038197667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038197665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 88f4c393cbfd4454993dc474df84f089, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!114 &2038197668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038197665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703a6283ac4a4c04080788ae2fccb653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: {fileID: 2038197667}
 --- !u!1 &2043024653
 GameObject:
   m_ObjectHideFlags: 0

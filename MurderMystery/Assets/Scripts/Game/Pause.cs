@@ -40,6 +40,10 @@ public class Pause : MonoBehaviour
 
     public void PauseGame()
    {
+        if(GameManager.Instance.IsCurrentSceneFlashback())
+        {
+            FindObjectOfType<PostProcessHandler>().OutBlackAndWhite();
+        }
         _pauseScreenBool = true;
         Time.timeScale = 0; //Stops time
         UpdateGameObjects();
@@ -47,6 +51,11 @@ public class Pause : MonoBehaviour
 
     public void ResumeGame()
     {
+        if (GameManager.Instance.IsCurrentSceneFlashback())
+        {
+            FindObjectOfType<PostProcessHandler>().GOBlackAndWhite();
+        }
+
         Time.timeScale = 1;
         _pauseScreenBool = false;
         UpdateGameObjects();
@@ -61,6 +70,7 @@ public class Pause : MonoBehaviour
     public void LeaveTOMainMenu()
     {
         Time.timeScale = 1;
+        GameManager.Instance.FadeOutMusic();
         _transition.JustFadeIn();
         StartCoroutine(TransitionToMainMenu());
     }
@@ -68,6 +78,8 @@ public class Pause : MonoBehaviour
     IEnumerator TransitionToMainMenu()
     {
         yield return new WaitForSeconds(1f);
+        FindObjectOfType<CharacterManager>().ClearAllCharacters();
+        FindObjectOfType<AudioManager>().Play("Rain");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); // go the prev scene  
     }
 
@@ -79,7 +91,8 @@ public class Pause : MonoBehaviour
 
     public void SaveGameUI()
     {
-        //Call function to actually game in a fil
+        GameManager.Instance.SetValuesInSaveData();
+        SaveSystem.SaveGameData(SaveData.Instance);
         _isSaving = true;
         UpdateGameObjects();
         StartCoroutine(SaveGameAnimation());
@@ -116,4 +129,6 @@ public class Pause : MonoBehaviour
         _gameSaved.SetActive(_isGameSaved);
         _ok.SetActive(_Isok);
     }
+
+
 }

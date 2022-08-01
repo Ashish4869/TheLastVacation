@@ -16,18 +16,22 @@ MonoBehaviour:
   characters:
   - {fileID: 11400000, guid: 8995cc24c6bd44848a1ebdac7439026e, type: 2}
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  _hasBranching: 0
+  _characterChange: 0
   SceneDialouges:
   - _speaker: You
     _dialouge: He is saying you are not that smart.
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: MysteryUnsolved
   - _speaker: You
     _dialouge: To figure out what could have killed her and what made you think that
       it was poison that killed her.
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Chris
     _dialouge: 'Yeah, you are kind of right. '
     emotion: 0
     _ShakeScreenType: 0
-  _hasBranching: 0
+    switchTheme: 

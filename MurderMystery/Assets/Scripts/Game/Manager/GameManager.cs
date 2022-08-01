@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     private CharacterDataSO _yourCharacter; //contains the character that the player has selected
 
     bool _previousStateBranch; //bool is to store whether the prev state was branch state or not
+    bool _isCharacterMale;
+
+    bool _isflashBack;
 
     StateManager _stateManager;
     TransitionManager _transitionManager;
@@ -36,7 +39,17 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI _option2;
 
+    [SerializeField]
+    CharacterDataSO Male;
 
+    [SerializeField]
+    CharacterDataSO Female;
+
+
+    //Setting values
+    bool _isScreenShakes;
+    int _fontSize;
+    float _textSpeed;
   
     private void Start() //Cache references to required classes
     {
@@ -44,7 +57,6 @@ public class GameManager : MonoBehaviour
         _stateManager = FindObjectOfType<StateManager>();
         _transitionManager = FindObjectOfType<TransitionManager>();
         FindObjectOfType<AudioManager>().StopPlaying("Rain");
-        _previousStateBranch = false;
     }
 
     //Implementation of Singleton Pattern
@@ -80,8 +92,64 @@ public class GameManager : MonoBehaviour
         _stateManager = FindObjectOfType<StateManager>();
 
         //Getting values saved in the SaveData Class
+        if(SaveData.Instance.IsFromLoad())
+        {
+            GameData data = SaveSystem.LoadGameData();
+            
+            if(data != null) SetValuesInSaveDataFromGameData(data);
+
+
+            _currentScene = SaveData.Instance.GetCurrentScene();
+
+            if(SaveData.Instance.GetCurrentStateinInt() == 0) //if we in scene state
+            {
+                _branchCounter =  SaveData.Instance.GetBranchCounter();
+                _previousStateBranch = SaveData.Instance.GetIsPreviousStateBranch();
+            }
+            else
+            {
+                _branchCounter =  SaveData.Instance.GetBranchCounter() - 1;
+                InBranchState();
+                Debug.Log("WE ARE IN BRANCH STATE");
+            }
+
+            _stateManager.SetState(SaveData.Instance.GetCurrentStateinInt());
+        }
+        else
+        {
+            //load nothing extra
+        }
+
+        //we have to load this anyway
         _yourName = SaveData.Instance.GetPlayerName();
-        _yourCharacter = SaveData.Instance.GetCharacter();
+
+        if (SaveData.Instance.GetPlayerGender())
+        {
+            _yourCharacter = Male;
+            _isCharacterMale = true;
+        }
+        else
+        {
+            _yourCharacter = Female;
+            _isCharacterMale = false;
+        }
+
+        //Configure Settings
+        SettingData settingdata = SaveSystem.LoadSettingData();
+
+        if (settingdata != null)
+        {
+            _isScreenShakes = settingdata._screenShakes;
+            _fontSize = settingdata._fontSize;
+            _textSpeed = settingdata._textSpeed;
+        }
+        else //default values
+        {
+            _isScreenShakes = true;
+            _fontSize = 50;
+            _textSpeed = 0.03f;
+        }
+
     }
 
     //Setters / Updaters
@@ -192,10 +260,61 @@ public class GameManager : MonoBehaviour
         return _previousStateBranch;
     }
 
+    public void SetValuesInSaveData()
+    {
+        SaveData.Instance.SetBranchCounter(_branchCounter);
+        SaveData.Instance.SetCurrentScene(_currentScene);
+        SaveData.Instance.SetCurrentState(_stateManager.GetCurrentGameState());
+        SaveData.Instance.SetCharacterGender(_isCharacterMale);
+        SaveData.Instance.SetIspreviousStateBranch(_previousStateBranch);
+        SaveData.Instance.SetCanLoad(true);
+    }
 
+    public void SetValuesInSaveDataFromGameData(GameData data)
+    {
+        SaveData.Instance.SetBranchCounter(data._branchcounter);
+        SaveData.Instance.SetCurrentScene(data._currentScene);
+        GameStates state = GetStateFromInt(data._currentState);
+        SaveData.Instance.SetCurrentState(state);
+        SaveData.Instance.SetCharacterGender(data._IsMalecharacter);
+        SaveData.Instance.SetIspreviousStateBranch(data._IspreviousStatebranch);
+        SaveData.Instance.SetCanLoad(true);
+    }
+
+    GameStates GetStateFromInt(int value)
+    {
+        switch (value)
+        {
+            case 0: return GameStates.Scene; 
+            case 1: return GameStates.SceneA;
+            case 2: return GameStates.SceneB; 
+            case 3: return GameStates.EndA; 
+            case 4: return GameStates.EndASceneA;
+            case 5: return GameStates.EndASceneB; 
+            case 6: return GameStates.EndB;
+            case 7: return  GameStates.EndBSceneA; 
+            case 8: return GameStates.EndBSceneB;
+            case 9: return GameStates.EndC; 
+            case 10: return GameStates.EndCSceneA; 
+            case 11: return GameStates.EndCSceneA;
+
+            default: return GameStates.Scene;
+        }
+    }
+     
+
+public void FadeOutMusic()
+   {
+        FindObjectOfType<AudioManager>().FadeMusicMethod(FadeMusic.FadeOut, FindObjectOfType<AudioManager>().GetCurrentTheme());
+
+        FindObjectOfType<AudioManager>().removeCurrentTheme();
+   }
     //Getters
     public int GetCurrentDialougeCounter() => _dialougeCounter;
-    
+
+    public bool GetIfScreenShake() => _isScreenShakes;
+    public int GetFontSize() => _fontSize;
+    public float GetTextSpeed() => _textSpeed;
 
     public SceneDataSO GetCurrentScene() //Returns scene data depending on the state that we are in , defined by the state manager
     {
@@ -226,5 +345,10 @@ public class GameManager : MonoBehaviour
     public CharacterDataSO GetCharacter() => _yourCharacter;
 
     public string GetName() => _yourName;
+
+    public bool IsCurrentSceneFlashback()
+    {
+        return _mainBranchScenes[_currentScene]._isFlashBack();
+    }
 
 }

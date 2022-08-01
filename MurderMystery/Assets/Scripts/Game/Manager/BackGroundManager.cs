@@ -15,12 +15,31 @@ public class BackGroundManager : MonoBehaviour
     private void Start()
     {
         EventManager.OnSceneDialougeExhausted += ProcessBackGround; //Function that is run when the event is handled
+        ProcessBackGround();
     }
 
     private void ProcessBackGround() // gets the current scene and sets the BG as per that
     {
         _currentScene = GameManager.Instance.GetCurrentScene();
         BackGround.sprite = _currentScene.GetCurrentSceneBG();
+
+        if(_currentScene._isFlashBack())
+        {
+            FindObjectOfType<PostProcessHandler>().GOBlackAndWhite();
+        }
+        else
+        {
+            if(FindObjectOfType<PostProcessHandler>() != null)
+            {
+                FindObjectOfType<PostProcessHandler>().OutBlackAndWhite();
+            }
+            
+        }
+    }
+
+    private void OnDestroy()
+    {
+        EventManager.OnSceneDialougeExhausted -= ProcessBackGround;
     }
 
 }

@@ -13,6 +13,7 @@ public class CharacterManager : MonoBehaviour
     [SerializeField] GameObject _charactersInSceneGameObject;
     [SerializeField] GameObject _characterUITemplatePrefab;
     [SerializeField] Image _speakerImage;
+    [SerializeField] Sprite _sillhoute;
 
     [SerializeField]
     List<CharacterDataSO> _charactersInScene;
@@ -102,8 +103,13 @@ public class CharacterManager : MonoBehaviour
 
         if (IsNotCharacter())
         {
-            _speakerImage.color = new Color(1, 1, 1, 0);
+            _speakerImage.sprite = _sillhoute;
+            return;
+        }
+        else if(_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "")
+        {
             _speakerImage.sprite = null;
+            _speakerImage.color = new Color(0,0, 0, 0);
             return;
         }
 
@@ -123,10 +129,10 @@ public class CharacterManager : MonoBehaviour
     }
 
     //Show a Sillehoute when the person speaking is not in the scene , eg : Narrator
-    private bool IsNotCharacter() =>  _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "Narrator" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "???" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "";
+    private bool IsNotCharacter() => _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "Narrator" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "???";
     
 
-    private void ClearAllCharacters() //Deletes all child elements that were created for this scene
+    public  void ClearAllCharacters() //Deletes all child elements that were created for this scene
     {
         foreach (string charName in _charactersDict.Keys)
         {

@@ -23,7 +23,7 @@ MonoBehaviour:
     _dialouge: 'Yeah the cops must be here within 2 hours. '
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: 
+    switchTheme: MysteryUnsolved
   - _speaker: You
     _dialouge: 'Hope they find enough evidence. '
     emotion: 0

@@ -27,6 +27,10 @@ public class ScreenShaker : MonoBehaviour
     //Shakes The screen untill the shaketime is below 0
     private void Update()
     {
+        if(!GameManager.Instance.GetIfScreenShake())
+        {
+            return;
+        }
         
         if (_shakeTime > 0)
         {
@@ -54,6 +58,11 @@ public class ScreenShaker : MonoBehaviour
     public void ResetPosition() //Resets the position when there is no shake
     {
         transform.position = _permanentPosition;
+    }
+
+    private void OnDestroy()
+    {
+        EventManager.OnShakeScreen -= ScreenShakeForTime;
     }
 
 }

@@ -37,6 +37,9 @@ public class DialougeManager : MonoBehaviour
     List<Dialouge> _currentSceneDialouges;
     bool IsDialougeAnimating = false;
 
+    float _textSpeed;
+    int _fontSize;
+
     void Start()
     {
         _eventManager = FindObjectOfType<EventManager>();
@@ -45,6 +48,10 @@ public class DialougeManager : MonoBehaviour
         _dialouges = new Queue<string>();
         _continue = GetComponent<Continue>();
         _dialougeSound = GetComponent<DialougeSound>();
+        _fontSize = GameManager.Instance.GetFontSize();
+        _textSpeed = GameManager.Instance.GetTextSpeed();
+
+        DialougeText.fontSize = _fontSize;
         GetDialouges();
     }
 
@@ -171,7 +178,7 @@ public class DialougeManager : MonoBehaviour
             }
             else
             {
-                yield return new WaitForSeconds(0.03f);
+                yield return new WaitForSeconds(_textSpeed);
             }
 
         }

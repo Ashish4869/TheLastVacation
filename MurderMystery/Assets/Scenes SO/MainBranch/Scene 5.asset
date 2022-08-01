@@ -26,7 +26,7 @@ MonoBehaviour:
       next scene animations
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: 
+    switchTheme: MysteryUnsolved
   - _speaker: Andy
     _dialouge: Ya this comes when the branch after the options merge
     emotion: 0

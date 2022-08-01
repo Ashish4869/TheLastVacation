@@ -24,10 +24,12 @@ MonoBehaviour:
     _dialouge: this is the scene where we character just change and nothjing else
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: MysteryUnsolved
   - _speaker: Andy
     _dialouge: Ya that is ryt
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 
   - _speaker: Chris
     _dialouge: 'Thats Right!
 
@@ -35,7 +37,9 @@ MonoBehaviour:
       gays'
     emotion: 0
     _ShakeScreenType: 3
+    switchTheme: 
   - _speaker: Kevin
     _dialouge: that ryt
     emotion: 0
     _ShakeScreenType: 0
+    switchTheme: 

@@ -15,10 +15,11 @@ public class SettingManager : MonoBehaviour
     [SerializeField] TMP_Dropdown ChangeTextSpeed;
     [SerializeField] TextMeshProUGUI _sampleText;
     [SerializeField] GameObject _tick;
+    [SerializeField] GameObject _settingsOK;
 
     int _fontsize;
-    int speed;
-    bool _isScreenShake;
+    float _speed;
+    bool _isScreenShake = true;
      
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,37 @@ public class SettingManager : MonoBehaviour
         {
             OnChangeTextSpeed(ChangeTextSpeed);
         });
+
+        SettingData data = SaveSystem.LoadSettingData();
+
+        if(data != null)
+        {
+            _isScreenShake = data._screenShakes;
+            _fontsize = data._fontSize;
+            _speed = data._textSpeed;
+
+            if (_fontsize == 50) ChangeTextSize.value = 0;
+            if (_fontsize == 40) ChangeTextSize.value = 1;
+            if (_fontsize == 30) ChangeTextSize.value = 2;
+
+            if (_speed == 0.03f) ChangeTextSpeed.value = 0;
+            if (_speed == 0.07f) ChangeTextSpeed.value = 1;
+
+            _tick.SetActive(_isScreenShake);
+        }
+        else //default values
+        {
+            _isScreenShake = true;
+            _fontsize = 50;
+            _speed = 0.03f;
+
+            ChangeTextSize.value = 0;
+            ChangeTextSpeed.value = 0;
+
+            _tick.SetActive(_isScreenShake);
+
+        }
+          
 
     }
 
@@ -49,16 +81,19 @@ public class SettingManager : MonoBehaviour
         if(change.value == 0)
         {
             _sampleText.fontSize = 50;
+            _fontsize = 50;
         }
 
         if(change.value == 1)
         {
             _sampleText.fontSize = 40;
+            _fontsize = 40;
         }
 
         if(change.value == 2)
         {
             _sampleText.fontSize = 30;
+            _fontsize = 30;
         }
     }
 
@@ -66,18 +101,36 @@ public class SettingManager : MonoBehaviour
     {
         if (speed.value == 0)
         {
-            //set speed to fast text
+            _speed = 0.03f;
         }
 
         if (speed.value == 1)
         {
-           //set speed to slow text
+            _speed = 0.07f;
         }
     }
 
 
     public void SaveSettings()
     {
+        Debug.Log("Saved");
         //Save the settings into a file later
+        SaveSystem.SaveSettingsData(this);
+        SaveData.Instance.SettingsChanged();
+        FindObjectOfType<AudioManager>().Play("ButtonClick");
+        _settingsOK.SetActive(true);
     }
+
+    public bool GetScreenShake() => _isScreenShake;
+
+    public float GetSpeed() => _speed;
+
+    public int GetSize() => _fontsize;
+
+    public void DisableSetting()
+    {
+        FindObjectOfType<AudioManager>().Play("ButtonClick");
+        _settingsOK.SetActive(false);
+    }
+    
 }

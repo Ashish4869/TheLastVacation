@@ -105,7 +105,7 @@ public class AudioManager : MonoBehaviour
         while(s.source.volume > 0)
         {
             yield return new WaitForSeconds(0.1f);
-            s.source.volume -= (float)0.02;
+            s.source.volume -= (float)0.05;
         }
     }
 
@@ -126,5 +126,15 @@ public class AudioManager : MonoBehaviour
         currentTheme = Theme;
         Play(Theme);
         FadeMusicMethod(FadeMusic.FadeIn, Theme);
+    }
+
+    public string GetCurrentTheme()
+    {
+        return currentTheme;
+    }
+
+    public void removeCurrentTheme()
+    {
+        currentTheme = "";
     }
 }
