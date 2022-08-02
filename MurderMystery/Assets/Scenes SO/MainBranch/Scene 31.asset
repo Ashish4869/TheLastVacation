@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 31
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: c629b976475e7d1479ceed25b102889b, type: 3}
+  characters:
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
+  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
+  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  _hasBranching: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: Chris
+    _dialouge: Maybe I can help.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Keith
+    _dialouge: Chris! What are you doing here?
+    emotion: 5
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: I just came to see Kevin because even I don't believe that he killed
+      her.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: I didn't speak up before because I was not able to think straight
+      after seeing Angela like that.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: EmptyStreets
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: Thanks for trusting me Chris!
+    emotion: 4
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: I have a plan to save Kevin, I think it will work.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Keith
+    _dialouge: What's the plan Chris??
+    emotion: 4
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: Yeah, I don't know if you guys noticed this or not.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: But the moment we left that drug store Andy was acting really weird.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: What do you mean?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: He was very cautious about his medicines.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: When I asked him about what all medicines he bought he got flustered
+      and didn't tell me properly.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: 'I even noticed him  throwing away a piece of paper, at that moment
+      I didn''t think much of it. '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: But now I believe he had bought something and  he didn't want any
+      of us to know.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Keith
+    _dialouge: But that doesn't mean that we can prove that he killed Angela.
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: I know John, but it is very suspicious, it could be the reciept for
+      those medicines which he bought.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: Why would he throw it away??
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: I know it doesn't prove anything but we can try using it as our leverage.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: And how will we do it?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: I have an idea, first we will just go over there and talk to everyone
+      normally.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: And later on we will bring out the topic of the reciept from the drug
+      store which obviously we don't have .
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: But we have to act as if we have it and we just have to lure him to
+      talk about it.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: 'It can work, what do you think : ? '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Yeah we can give it a shot.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

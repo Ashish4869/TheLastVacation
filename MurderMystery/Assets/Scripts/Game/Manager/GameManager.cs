@@ -45,6 +45,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     CharacterDataSO Female;
 
+    [SerializeField] GameObject _theend;
+
 
     //Setting values
     bool _isScreenShakes;
@@ -111,6 +113,8 @@ public class GameManager : MonoBehaviour
                 InBranchState();
             }
 
+
+            
             _stateManager.SetState(SaveData.Instance.GetCurrentStateinInt());
         }
         else
@@ -158,6 +162,14 @@ public class GameManager : MonoBehaviour
     //if the scene as branching , we show the options , else process next scene
     public void ProcessNextScene() 
     {
+        if(_currentScene == _mainBranchScenes.Count-1)
+        {
+            FindObjectOfType<PostProcessHandler>().OutBlackAndWhite();
+            _theend.SetActive(true);
+            return;
+        }
+
+
         if(_stateManager.GetCurrentGameState() == GameStates.SceneA || _stateManager.GetCurrentGameState() == GameStates.SceneB) //If we are in a branch scene
         {
             _stateManager.ReturnToMain();
@@ -270,6 +282,7 @@ public class GameManager : MonoBehaviour
 
     public void SetValuesInSaveDataFromGameData(GameData data) //Does the same as above but from save file
     {
+        SaveData.Instance.SetName(data._playerName);
         SaveData.Instance.SetBranchCounter(data._branchcounter);
         SaveData.Instance.SetCurrentScene(data._currentScene);
         GameStates state = GetStateFromInt(data._currentState);

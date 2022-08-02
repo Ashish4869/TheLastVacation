@@ -12,28 +12,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
   m_Name: SceneB1
   m_EditorClassIdentifier: 
-  SceneBG: {fileID: 21300000, guid: ae01d74ae38cfbb4aabfc36dd5f45b61, type: 3}
+  SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
   characters:
-  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
-  - {fileID: 11400000, guid: 8995cc24c6bd44848a1ebdac7439026e, type: 2}
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
   _hasBranching: 0
   _characterChange: 0
+  _isFlashback: 0
   SceneDialouges:
   - _speaker: You
-    _dialouge: 'Yeah the cops must be here within 2 hours. '
+    _dialouge: Yes Kevin, You have been hating on her from so long.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: MysteryUnsolved
+    SoundEffect: 
   - _speaker: You
-    _dialouge: 'Hope they find enough evidence. '
+    _dialouge: And we all know how you act when you get angry.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
-  - _speaker: Chris
-    _dialouge: 'Yeah since you mentioned it...
+    SoundEffect: 
+  - _speaker: Keith
+    _dialouge: ; is right.
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Keith
+    _dialouge: Kevin you have had a lot of history with her and you do have a reason
+      to kill her.
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: Those things were in the past!
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: 'We haven''t fought in <b>years!</b>
 
-      I''m pretty sure that if we
-      go through his things we can find some evidence.'
-    emotion: 0
-    _ShakeScreenType: 0
+      Everything was fine between
+      us.'
+    emotion: 2
+    _ShakeScreenType: 1
     switchTheme: 
+    SoundEffect: 

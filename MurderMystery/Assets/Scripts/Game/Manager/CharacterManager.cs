@@ -44,7 +44,7 @@ public class CharacterManager : MonoBehaviour
             animSpeed = 100;
         }
 
-        if(GameManager.Instance.GetGameState() == GameStates.Scene) //if we coming from branch state , we dont want the character to animate
+        if(GameManager.Instance.GetGameState() == GameStates.Scene ) //if we coming from branch state , we dont want the character to animate
         {
             if (GameManager.Instance.WasPreviousStateBranch())
             {
@@ -73,7 +73,6 @@ public class CharacterManager : MonoBehaviour
             _charactersDict.Add(_charactersInScene[i].name, child); //Place All characters
         }
 
-        animSpeed = 2;
 
     }
 

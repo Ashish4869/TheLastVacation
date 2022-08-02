@@ -22,16 +22,15 @@ public class DialougeSound : MonoBehaviour
        }
     }
 
-    public void SoundEffects(ScreenShakes shake) //Plays a audio cue for each shake type
-    {
-        if(shake == ScreenShakes.Meduim)
-        {
-            FindObjectOfType<AudioManager>().Play("Hit");
-        }
-    }
+    
 
     public void SwitchTheme(string theme) //Switches the theme of music
     {
         FindObjectOfType<AudioManager>().SwitchTheme(theme);
+    }
+
+    public void PlaySFX(string sfx)
+    {
+        FindObjectOfType<AudioManager>().Play(sfx);
     }
 }

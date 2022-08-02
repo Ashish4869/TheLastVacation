@@ -19,50 +19,59 @@ MonoBehaviour:
   _isFlashback: 0
   SceneDialouges:
   - _speaker: Narrator
-    _dialouge: 'and : .'
+    _dialouge: and ; .
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: You
     _dialouge: 'We were best friends since college, and worked in different MNC''s. '
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: You
     _dialouge: We got tired of our day to day life and wanted to go on a long vaccation.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: You
     _dialouge: Keith suggested to go to the countryside so that they can get rid
       of the city rush.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: You
     _dialouge: 'We decided to book a hotel but later Kevin suggested that he knows
       a person who owns a mansion '
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: You
     _dialouge: and is willing to rent it for a fair price.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: You
     _dialouge: All of us agreed.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: You
     _dialouge: We were all very excited and we began their journey 3 days from then
       in John's car
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: You
     _dialouge: We reached there the next night.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 

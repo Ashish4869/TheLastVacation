@@ -26,14 +26,16 @@ MonoBehaviour:
 
       Everything is planned out nothing will
       go wrong.'
-    emotion: 0
+    emotion: 4
     _ShakeScreenType: 0
-    switchTheme: 
+    switchTheme: ChillMusic
+    SoundEffect: 
   - _speaker: You
     _dialouge: I knew we can trust you Keith!
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: You
     _dialouge: 'so Andy there is nothing to worry about!
 
@@ -41,27 +43,32 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: You
-    _dialouge: If John has planned then you know its going  to be perfect!
+    _dialouge: If Keith has planned then you know its going  to be perfect!
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Emily
     _dialouge: I tried waking her up in the morning but she didn't respond.
-    emotion: 0
+    emotion: 5
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Emily
-    _dialouge: 'She was very tired yesterday so I thought I will let her sleep a
-      little more longer '
-    emotion: 0
+    _dialouge: She was very tired yesterday so I thought I will let her sleep a little
+      more longer .
+    emotion: 1
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Emily
     _dialouge: And after that I got ready and came here.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
     _dialouge: 'Ohh is that so?
 
@@ -69,3 +76,4 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 

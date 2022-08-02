@@ -21,45 +21,49 @@ MonoBehaviour:
   _isFlashback: 0
   SceneDialouges:
   - _speaker: 
-    _dialouge: 'August 1st
+    _dialouge: '<b>August 1st,  7:00 PM
 
-      One of Rooms in the Mansion.'
+      One of Rooms in the Mansion.</b>'
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Chris
-    _dialouge: 'Hey : , Andy come check this room out.
-
-      It''s even bigger than
-      my living room!!'
+    _dialouge: Hey ; , Andy come check this room out. It's even bigger than my <b>living
+      room!!</b>
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: 
+    switchTheme: ChillMusic
+    SoundEffect: 
   - _speaker: You
     _dialouge: 'Wow!
 
       My whole family can stay here. '
     emotion: 0
-    _ShakeScreenType: 0
+    _ShakeScreenType: 1
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
     _dialouge: 'Hahaha.
 
-      C''mon it isn''t that big. '
+      C''mon it isn''t <i>that</i> big. '
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
     _dialouge: 'But I have been wondering how did Dan get this mansion for such a
-      low price. '
+      <color="red">low price.</color> '
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
     _dialouge: Something doesn't feel right.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Chris
     _dialouge: 'C''mon Andy!
 
@@ -68,8 +72,9 @@ MonoBehaviour:
       Overthinking about
       everything! '
     emotion: 0
-    _ShakeScreenType: 0
+    _ShakeScreenType: 1
     switchTheme: 
+    SoundEffect: 
   - _speaker: Chris
     _dialouge: 'We are here to relax!
 
@@ -77,12 +82,14 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: You
     _dialouge: "Yes Chris is right! \nWe are here to release our stress so don't
       increase it by overthinking."
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
     _dialouge: 'Yeah I think you guys are right.
 
@@ -91,6 +98,7 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
     _dialouge: 'We are in this beautiful mansion in this peaceful place and we are
       going to make the best of it.
@@ -99,26 +107,31 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
-    _dialouge: Besides, what can go wrong?
+    _dialouge: Besides, <i>what can go wrong?</i>
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: ???
     _dialouge: "AAAAAAAAAAAAAAAHHHH!!!!! \n(Sudden scream from the other room....)"
     emotion: 0
     _ShakeScreenType: 2
-    switchTheme: 
+    switchTheme: nothing
+    SoundEffect: Hit
   - _speaker: You
-    _dialouge: 'I think I just heard Angela screaming. '
+    _dialouge: I think I just heard Angela screaming!
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: 
+    switchTheme: Survelance
+    SoundEffect: 
   - _speaker: You
     _dialouge: We must hurry up and check what happened!!
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Chris
     _dialouge: 'You guys go ahead.
 
@@ -126,3 +139,4 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 

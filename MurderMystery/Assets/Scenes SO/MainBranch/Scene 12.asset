@@ -22,21 +22,19 @@ MonoBehaviour:
   _isFlashback: 0
   SceneDialouges:
   - _speaker: 
-    _dialouge: 'August 2nd
+    _dialouge: '<b>August 2nd 9:00 AM
 
-      Next Morning
-
-      Living Room'
+      Living Room</b>'
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: 
+    switchTheme: ChillMusic
+    SoundEffect: 
   - _speaker: You
-    _dialouge: 'Good Morning everyone!
-
-      What a lovely morning. '
+    _dialouge: Good Morning everyone!
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
     _dialouge: 'Yeah weather is really good outside!
 
@@ -44,27 +42,32 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Kevin
     _dialouge: 'Ohh wow Andy!
 
-      Go ahead and jinx the day.'
-    emotion: 0
+      Go ahead and <i>jinx</i> the day.'
+    emotion: 2
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Kevin
     _dialouge: ' Today is a good day don''t decimate it for us.'
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Emily
     _dialouge: 'Stop Kevin!
 
       Why are you always after his life! '
-    emotion: 0
+    emotion: 2
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Emily
     _dialouge: "Don't mind him Andy he doesn\u2019t mean any harm."
-    emotion: 0
+    emotion: 4
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 

@@ -25,21 +25,25 @@ MonoBehaviour:
     _dialouge: 'AAGHHH!
 
       This means we will be late.'
-    emotion: 0
+    emotion: 2
     _ShakeScreenType: 0
-    switchTheme: 
+    switchTheme: ChillMusic
+    SoundEffect: 
   - _speaker: Kevin
     _dialouge: "I hope that girl won\u2019t take time."
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: You
     _dialouge: Lets wait for her.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: ???
     _dialouge: AAAANNNNGEEELLLAAAAAAAAAAAAA!
     emotion: 0
     _ShakeScreenType: 3
-    switchTheme: 
+    switchTheme: nothing
+    SoundEffect: Shock

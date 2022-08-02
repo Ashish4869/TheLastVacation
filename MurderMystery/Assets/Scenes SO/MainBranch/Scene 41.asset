@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 41
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  - {fileID: 11400000, guid: 91cd83d46993b1e46937cd16de2489ce, type: 2}
+  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  _hasBranching: 0
+  _characterChange: 1
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: Emily
+    _dialouge: 'Andy!
+
+      You are wrong, she didn''t mean to steal your job.'
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: EmptyStreets
+    SoundEffect: 
+  - _speaker: Emily
+    _dialouge: When she got to know that she is getting promoted she declined it
+      and said that you deserve it
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Emily
+    _dialouge: You have all the skills but the manager insisted her to take the job.
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: 'NOOO YOU ARE LYING!
+
+      She wanted the post for herself.'
+    emotion: 0
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Emily
+    _dialouge: She tried to contact you, but you just vanished and never picked her
+      call.
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Andy if you had not jumped to conclusion and if you had talked it
+      out, she would have been with us.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: THAT'S NOT TRUE.
+    emotion: 0
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: 'If she was actually a true friend she would have discussed it with
+      me '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: 'because she knew how badly I wanted that post. '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Emily
+    _dialouge: But the boss rejected her suggestion he told her that we might have
+      to cut off few people.
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Emily
+    _dialouge: 'To save money for the company that''s when she thought that if she
+      becomes the manager '
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Emily
+    _dialouge: So she could save you, and that's exactly what she did Andy.
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Emily
+    _dialouge: 'She never wanted to steal your job...
+
+      She just wanted to save
+      you.'
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: 'NO ,THIS CAN''T BE!
+
+      NOOOOOO ANGELAAA I''M SO SORRY.'
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: I got so blinded by my anger I couldn't control myself.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: I decided to kill her the day this happened.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: if only I had given her a chance to explain herself, this would have
+      not happened.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: ; , the cops are here.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

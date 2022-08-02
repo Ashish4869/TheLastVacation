@@ -22,10 +22,16 @@ MonoBehaviour:
   _isFlashback: 0
   SceneDialouges:
   - _speaker: 
-    _dialouge: After 3 hours
+    _dialouge: '<b>August 2nd 12:00 PM
+
+      Living Room
+
+      After Mourning Angella''s
+      Death</b>'
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: 
+    switchTheme: EmptyStreets
+    SoundEffect: 
   - _speaker: Andy
     _dialouge: 'OMG!
 
@@ -35,6 +41,7 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Kevin
     _dialouge: 'Yeah it is really shocking.
 
@@ -43,60 +50,71 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
     _dialouge: 'Kevin!
 
-      Don''t have a heart? '
+      Don''t you have a heart? '
     emotion: 0
-    _ShakeScreenType: 0
+    _ShakeScreenType: 1
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
-    _dialouge: It looks like you don't even care that Angela died!
+    _dialouge: It looks like you <b>don't even care</b> that Angela <color="red">died!</color>
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Emily
     _dialouge: Andy is right!
-    emotion: 0
+    emotion: 2
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Emily
-    _dialouge: You don't seem to be affected by Angela's death at all!
-    emotion: 0
+    _dialouge: You don't seem to be <i>affected</i> by Angela's death at all!
+    emotion: 2
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Kevin
     _dialouge: What are you both implying?
-    emotion: 0
+    emotion: 2
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
     _dialouge: What I'm trying to say is that..
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
     _dialouge: MAYBE YOU ARE THE ONE WHO KILLED ANGELA!
     emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: 
+    _ShakeScreenType: 1
+    switchTheme: nothing
+    SoundEffect: Shock
   - _speaker: Andy
     _dialouge: We all know you never liked her!
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: 
+    switchTheme: MysteryUnsolved
+    SoundEffect: 
   - _speaker: Kevin
     _dialouge: 'WHAT THE HELL?!
 
       Are you being serious right now?'
-    emotion: 0
-    _ShakeScreenType: 0
+    emotion: 2
+    _ShakeScreenType: 1
     switchTheme: 
+    SoundEffect: 
   - _speaker: Kevin
     _dialouge: How dare you accuse me of such heinous crime!
-    emotion: 0
+    emotion: 2
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
     _dialouge: 'We all know what kind of a person you are!
 
@@ -105,8 +123,10 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Andy
-    _dialouge: ': why don''t you speak up!'
+    _dialouge: ' ; why don''t you speak up!'
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 

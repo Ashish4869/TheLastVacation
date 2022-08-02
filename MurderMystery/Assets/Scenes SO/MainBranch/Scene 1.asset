@@ -19,12 +19,14 @@ MonoBehaviour:
   _isFlashback: 0
   SceneDialouges:
   - _speaker: 
-    _dialouge: August 1
+    _dialouge: <b>August 1</b>
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: Narrator
     _dialouge: This is the story of Seven Friends ,
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 

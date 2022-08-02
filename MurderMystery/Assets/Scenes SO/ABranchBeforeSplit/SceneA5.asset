@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: SceneA5
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
+  characters:
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
+  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  _hasBranching: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: You
+    _dialouge: '*I will have to catch Andy now*'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: EmptyStreets
+    SoundEffect: 
+  - _speaker: Keith
+    _dialouge: By the way Andy while we were there talking to Kevin ; found something.
+    emotion: 4
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Yeah, its a reciept from Everyday Drugs where we stopped yesterday.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: While we were coming to this mansion as you said you wanted to buy
+      some of your meds.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: WHAT!!!!! HOW DID YOU GET THAT!!!
+    emotion: 0
+    _ShakeScreenType: 1
+    switchTheme: nothing
+    SoundEffect: Shock
+  - _speaker: You
+    _dialouge: 'What do you mean?
+
+      It was right next to your bag.'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: Story
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: 'That''s not possible!
+
+      Its not mine, its probably Kevin''s
+      he must have tried to frame me.'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chris
+    _dialouge: But this receipt is in your name, Andy.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: BUT THAT'S NOT POSSIBLE!!!!
+    emotion: 0
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Keith
+    _dialouge: "Why not? \nYou went to that medical store and bought medicines "
+    emotion: 5
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Keith
+    _dialouge: For which they gave you the reciept, why are you getting so worked
+      up about it.
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: BECAUSE I THREW IT AWAY AS SOON AS I GOT IT SO NO ONE KNOWS I HAD
+      <color="red">PURE ETHANOL.</color>
+    emotion: 0
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: Shock
+  - _speaker: You
+    _dialouge: Why do you need <color="red">pure ethanol?</color>
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

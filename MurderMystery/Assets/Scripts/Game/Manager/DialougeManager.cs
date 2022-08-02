@@ -111,8 +111,9 @@ public class DialougeManager : MonoBehaviour
             GameManager.Instance.UpdateCurrentDialougeCounter();
             ProcessScreenShakes(); 
             _currentDialouge = _dialouges.Dequeue();
-            _currentDialouge = _currentDialouge.Replace(":", _yourName); //Replacing the : with the player name as entered by the player
+            _currentDialouge = _currentDialouge.Replace(";", _yourName); //Replacing the : with the player name as entered by the player
             StartCoroutine(AnimateText());
+            _dialougeSound.PlaySFX(_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()].SoundEffect); //changes the theme based on the value stored in the object
             _dialougeSound.SwitchTheme(_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()].switchTheme); //changes the theme based on the value stored in the object
         }
         else
@@ -130,17 +131,14 @@ public class DialougeManager : MonoBehaviour
         switch (_currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter()]._ShakeScreenType)
         {
             case ScreenShakes.Small:
-                _dialougeSound.SoundEffects(ScreenShakes.Small);
                 _eventManager.OnShakeScreenEvent(_screenShakeAmountSmall, _screenShakeIntensitySmall);
                 break;
 
             case ScreenShakes.Meduim:
-                _dialougeSound.SoundEffects(ScreenShakes.Meduim);
                 _eventManager.OnShakeScreenEvent(_screenShakeAmountMeduim, _screenShakeIntensityMeduim);
                 break;
 
             case ScreenShakes.Heavy:
-                _dialougeSound.SoundEffects(ScreenShakes.Heavy);
                 _eventManager.OnShakeScreenEvent(_screenShakeAmountHeavy, _screenShakeIntensityHeavy);
                 break;
         }

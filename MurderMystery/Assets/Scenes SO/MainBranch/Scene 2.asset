@@ -20,7 +20,8 @@ MonoBehaviour:
   _isFlashback: 0
   SceneDialouges:
   - _speaker: Narrator
-    _dialouge: Andy..
+    _dialouge: Andy,
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 

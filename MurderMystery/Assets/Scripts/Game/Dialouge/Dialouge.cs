@@ -25,4 +25,7 @@ public class Dialouge
 
     [Tooltip("String of the theme you want to switch to.")]
     public string switchTheme;
+
+    [Tooltip("String of the sound effect you wanna play for this dialogue")]
+    public string SoundEffect;
 }

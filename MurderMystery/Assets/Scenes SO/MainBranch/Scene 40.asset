@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 40
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  - {fileID: 11400000, guid: 91cd83d46993b1e46937cd16de2489ce, type: 2}
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
+  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  _hasBranching: 0
+  _characterChange: 1
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: Andy
+    _dialouge: HOW
+    emotion: 0
+    _ShakeScreenType: 2
+    switchTheme: nothing
+    SoundEffect: Shock
+  - _speaker: Andy
+    _dialouge: DARE
+    emotion: 0
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: Shock
+  - _speaker: Andy
+    _dialouge: SHE
+    emotion: 0
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: BETRAY
+    emotion: 0
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: Shock
+  - _speaker: Andy
+    _dialouge: ME!
+    emotion: 0
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: Shock
+  - _speaker: Andy
+    _dialouge: I HELPED HER SO MUCH!
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: EmptyStreets
+    SoundEffect: Hit
+  - _speaker: Andy
+    _dialouge: She didn't even know anything properly!
+    emotion: 0
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: I taught her from scratch!
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: Even for the project I did the most work and in the end she took away
+      all the credits!
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: And ever since that I didn't talk to her and just left the company
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: And ever since that I didn't talk to her and just left the company
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: but the anger still remained and I had to get rid of that somehow.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: And that's when I decided that I'll get rid of her, and that's when
+      you all asked to meet up.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: That's when I planned how to get rid of her.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: I decided to use poison to kill her and put the blame on Dan.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: as I knew already that they both had a huge fight because Dan never
+      liked Angela's personality.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: 'Once we started our journey I asked you to stop at the nearest drug
+      store to get my medications '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: 'and that''s where I bought pure ethanol as I knew it will be the
+      perfect poison. '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: 'At night when everyone had slept I decided go to her room and kill
+      her '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: So I just put some ethanol on my handkerchief,
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: Then I just simply put it near her face so that she breathes it in
+      and slowly goes into deep sleep.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Andy
+    _dialouge: And I hid the bottle in Dan's bag to focus everything on him.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

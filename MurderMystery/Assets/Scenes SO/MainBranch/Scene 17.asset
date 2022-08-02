@@ -23,7 +23,8 @@ MonoBehaviour:
     _dialouge: Did...Did Kevin really do this?
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: 
+    switchTheme: MysteryUnsolved
+    SoundEffect: 
   - _speaker: 'You '
     _dialouge: 'I know him very well.
 
@@ -32,25 +33,30 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: 'You '
     _dialouge: He has a good heart.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: 'You '
     _dialouge: I can never forget the time when my parents died in a car accident
       5 years ago.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: 'You '
     _dialouge: Only Kevin was there to support me.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 
   - _speaker: 'You '
     _dialouge: He was there for me whenever I needed him! He helped me overcome my
       depression!
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
+    SoundEffect: 

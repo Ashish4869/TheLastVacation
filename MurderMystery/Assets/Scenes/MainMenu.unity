@@ -1752,20 +1752,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: StartTheme
+  - name: ChillMusic
     _audioClip: {fileID: 8300000, guid: 889485bdffd884d42936ce03ab3d510f, type: 3}
-    _volume: 0.7
+    _volume: 0.5
     _pitch: 1
     _loop: 1
     source: {fileID: 0}
   - name: ChillTheme
     _audioClip: {fileID: 8300000, guid: af922e438bce76a4d9d356bf346dbec8, type: 3}
-    _volume: 0.7
-    _pitch: 1
-    _loop: 1
-    source: {fileID: 0}
-  - name: Confused
-    _audioClip: {fileID: 8300000, guid: 32e1470ddbd996f45a0df217edfe8181, type: 3}
     _volume: 0.7
     _pitch: 1
     _loop: 1
@@ -1826,7 +1820,55 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: MysteryUnsolved
     _audioClip: {fileID: 8300000, guid: 3c377a1531b959040a61e8059607099d, type: 3}
+    _volume: 0.5
+    _pitch: 1
+    _loop: 0
+    source: {fileID: 0}
+  - name: BetterDays
+    _audioClip: {fileID: 8300000, guid: 4540e7a2d318fb446a6429915e7c656c, type: 3}
     _volume: 0.7
+    _pitch: 1
+    _loop: 0
+    source: {fileID: 0}
+  - name: Shock
+    _audioClip: {fileID: 8300000, guid: 240f19dbe56e6864da56435ee7c39c9c, type: 3}
+    _volume: 0.7
+    _pitch: 1
+    _loop: 0
+    source: {fileID: 0}
+  - name: Suprise
+    _audioClip: {fileID: 8300000, guid: 75963847630e7b64588da8e65d05e610, type: 3}
+    _volume: 0.7
+    _pitch: 1
+    _loop: 0
+    source: {fileID: 0}
+  - name: Switch
+    _audioClip: {fileID: 8300000, guid: e714ff7029864c24193570598734a778, type: 3}
+    _volume: 0.7
+    _pitch: 1
+    _loop: 0
+    source: {fileID: 0}
+  - name: Survelance
+    _audioClip: {fileID: 8300000, guid: 32e1470ddbd996f45a0df217edfe8181, type: 3}
+    _volume: 0.5
+    _pitch: 1
+    _loop: 0
+    source: {fileID: 0}
+  - name: EmptyStreets
+    _audioClip: {fileID: 8300000, guid: 7c35d973651018d4a94ebee9c28fccab, type: 3}
+    _volume: 0.5
+    _pitch: 1
+    _loop: 0
+    source: {fileID: 0}
+  - name: Protagnists
+    _audioClip: {fileID: 8300000, guid: e53d346b653c71c47ba820502ee33e87, type: 3}
+    _volume: 0.7
+    _pitch: 1
+    _loop: 0
+    source: {fileID: 0}
+  - name: Story
+    _audioClip: {fileID: 8300000, guid: 0b2d962edef64b04da4d7ce55485082e, type: 3}
+    _volume: 0.5
     _pitch: 1
     _loop: 0
     source: {fileID: 0}
@@ -2739,19 +2781,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 516658801}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 658096670}
-        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: LoadGameScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &516658801
 MonoBehaviour:
   m_ObjectHideFlags: 0

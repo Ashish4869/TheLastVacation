@@ -64,6 +64,13 @@ public class TransitionManager : MonoBehaviour
     IEnumerator TransitionChar() //we are getting each child , then getting animator component and then making each of them run FadeOut animation
     {
         ClickScreen.SetActive(false);
+
+        Animator[] anims = CharactersParent.GetComponentsInChildren<Animator>();
+        foreach (Animator ani in anims)
+        {
+            ani.speed = 2;
+        }
+
         foreach (Transform trans in CharactersParent.transform)
         {
             trans.gameObject.GetComponent<Animator>().SetTrigger("fadeout");
