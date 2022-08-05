@@ -163,7 +163,7 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: Chris
-    _dialouge: 'It can work, what do you think : ? '
+    _dialouge: 'It can work, what do you think ; ? '
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 

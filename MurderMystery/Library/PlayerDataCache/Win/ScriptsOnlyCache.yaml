@@ -66,8 +66,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -114,61 +116,61 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1520}
+      Script: {instanceID: 1524}
     - Class: 114
-      Script: {instanceID: 1532}
+      Script: {instanceID: 1536}
     - Class: 114
-      Script: {instanceID: 1748}
+      Script: {instanceID: 1752}
     - Class: 114
-      Script: {instanceID: 1772}
+      Script: {instanceID: 1776}
     - Class: 114
-      Script: {instanceID: 1812}
+      Script: {instanceID: 1816}
     - Class: 114
-      Script: {instanceID: 1872}
+      Script: {instanceID: 1876}
     - Class: 114
-      Script: {instanceID: 2010}
+      Script: {instanceID: 2014}
     - Class: 114
-      Script: {instanceID: 2052}
+      Script: {instanceID: 2056}
     - Class: 114
-      Script: {instanceID: 2464}
+      Script: {instanceID: 2468}
     - Class: 114
-      Script: {instanceID: 2510}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2624}
     - Class: 114
-      Script: {instanceID: 2774}
+      Script: {instanceID: 2778}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2820}
     - Class: 114
-      Script: {instanceID: 2828}
+      Script: {instanceID: 2832}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2922}
     - Class: 114
-      Script: {instanceID: 2956}
+      Script: {instanceID: 2960}
     - Class: 114
-      Script: {instanceID: 3180}
+      Script: {instanceID: 3184}
     - Class: 114
-      Script: {instanceID: 3304}
+      Script: {instanceID: 3308}
     - Class: 114
-      Script: {instanceID: 3730}
+      Script: {instanceID: 3734}
     - Class: 114
-      Script: {instanceID: 4196}
+      Script: {instanceID: 4200}
     - Class: 114
-      Script: {instanceID: 4342}
+      Script: {instanceID: 4346}
     - Class: 114
-      Script: {instanceID: 4376}
+      Script: {instanceID: 4380}
     - Class: 114
-      Script: {instanceID: 4778}
+      Script: {instanceID: 4782}
     - Class: 114
-      Script: {instanceID: 4928}
+      Script: {instanceID: 4932}
     - Class: 114
-      Script: {instanceID: 4988}
+      Script: {instanceID: 4992}
     - Class: 114
-      Script: {instanceID: 5078}
+      Script: {instanceID: 5082}
     - Class: 114
-      Script: {instanceID: 5214}
+      Script: {instanceID: 5218}
     - Class: 114
-      Script: {instanceID: 5400}
+      Script: {instanceID: 5404}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -215,67 +217,67 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1520}
+      Script: {instanceID: 1524}
     - Class: 114
-      Script: {instanceID: 1610}
+      Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 1694}
+      Script: {instanceID: 1698}
     - Class: 114
-      Script: {instanceID: 1706}
+      Script: {instanceID: 1710}
     - Class: 114
-      Script: {instanceID: 1872}
+      Script: {instanceID: 1876}
     - Class: 114
-      Script: {instanceID: 1890}
+      Script: {instanceID: 1894}
     - Class: 114
-      Script: {instanceID: 2206}
+      Script: {instanceID: 2210}
     - Class: 114
-      Script: {instanceID: 2464}
+      Script: {instanceID: 2468}
     - Class: 114
-      Script: {instanceID: 2486}
+      Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2624}
     - Class: 114
-      Script: {instanceID: 2774}
+      Script: {instanceID: 2778}
     - Class: 114
-      Script: {instanceID: 2786}
+      Script: {instanceID: 2790}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2820}
     - Class: 114
-      Script: {instanceID: 2870}
+      Script: {instanceID: 2874}
     - Class: 114
-      Script: {instanceID: 2956}
+      Script: {instanceID: 2960}
     - Class: 114
-      Script: {instanceID: 2962}
+      Script: {instanceID: 2966}
     - Class: 114
-      Script: {instanceID: 3180}
+      Script: {instanceID: 3184}
     - Class: 114
-      Script: {instanceID: 3190}
+      Script: {instanceID: 3194}
     - Class: 114
-      Script: {instanceID: 3304}
+      Script: {instanceID: 3308}
     - Class: 114
-      Script: {instanceID: 3328}
+      Script: {instanceID: 3332}
     - Class: 114
-      Script: {instanceID: 3610}
+      Script: {instanceID: 3614}
     - Class: 114
-      Script: {instanceID: 4170}
+      Script: {instanceID: 4174}
     - Class: 114
-      Script: {instanceID: 4238}
+      Script: {instanceID: 4242}
     - Class: 114
-      Script: {instanceID: 4376}
+      Script: {instanceID: 4380}
     - Class: 114
-      Script: {instanceID: 4412}
+      Script: {instanceID: 4416}
     - Class: 114
-      Script: {instanceID: 4434}
+      Script: {instanceID: 4438}
     - Class: 114
-      Script: {instanceID: 4514}
+      Script: {instanceID: 4518}
     - Class: 114
-      Script: {instanceID: 4534}
+      Script: {instanceID: 4538}
     - Class: 114
-      Script: {instanceID: 4888}
+      Script: {instanceID: 4892}
     - Class: 114
-      Script: {instanceID: 5214}
+      Script: {instanceID: 5218}
     - Class: 114
-      Script: {instanceID: 5400}
+      Script: {instanceID: 5404}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1245,4 +1247,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: C:/Users/User/Desktop/Beta/MurderMystery.exe
+  playerPath: C:/Users/User/Desktop/beta screenfix/MurderMystery.exe
