@@ -22,6 +22,10 @@ public class SceneDataSO : ScriptableObject
     [SerializeField]
     bool _hasBranching;
 
+    [Tooltip("The Divergence caused by the choice taken")]
+    [SerializeField]
+    int _divergence;
+
     [Tooltip("Whether the next scene is the same as this , but with differetn characters")]
     [SerializeField]
     bool _characterChange;
@@ -33,6 +37,7 @@ public class SceneDataSO : ScriptableObject
     [Tooltip("The dialouges in the scene")]
     [SerializeField]
     private List<Dialouge> SceneDialouges;
+
 
 
     //Getters
@@ -49,4 +54,6 @@ public class SceneDataSO : ScriptableObject
     public bool HasCharacterSwitch() => _characterChange;
 
     public bool _isFlashBack() => _isFlashback;
+
+    public int GetDivergence() => _divergence;
 }

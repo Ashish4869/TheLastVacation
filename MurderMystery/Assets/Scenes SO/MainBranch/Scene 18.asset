@@ -18,6 +18,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
   - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
   _hasBranching: 1
+  _divergence: 10
   _characterChange: 0
   _isFlashback: 0
   SceneDialouges:

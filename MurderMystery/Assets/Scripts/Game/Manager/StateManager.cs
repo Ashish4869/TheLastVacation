@@ -15,6 +15,9 @@ public class StateManager : MonoBehaviour
     //Setters
     public void BranchAChosen() //function called when we click on the First option 
     {
+        int diver = GameManager.Instance.GetCurrentScene().GetDivergence();
+        Debug.Log(diver);
+        GameManager.Instance.UpdateDivergence(diver);
         gameState = GameStates.SceneA;
         GameManager.Instance.InBranchState();
         GameManager.Instance.HideOptions();
@@ -22,6 +25,8 @@ public class StateManager : MonoBehaviour
 
     public void BranchBChosen() //function called when we click on the Second option 
     {
+        int diver = GameManager.Instance.GetCurrentScene().GetDivergence();
+        GameManager.Instance.UpdateDivergence(-diver);
         gameState = GameStates.SceneB;
         GameManager.Instance.InBranchState();
         GameManager.Instance.HideOptions();

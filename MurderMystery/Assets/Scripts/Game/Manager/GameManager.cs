@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
 
     bool _isflashBack;
 
+    int _divergenceMeter;
+
     StateManager _stateManager;
     TransitionManager _transitionManager;
 
@@ -46,6 +48,8 @@ public class GameManager : MonoBehaviour
     CharacterDataSO Female;
 
     [SerializeField] GameObject _theend;
+
+    [SerializeField] TextMeshProUGUI _text;
 
 
     //Setting values
@@ -162,10 +166,28 @@ public class GameManager : MonoBehaviour
     //if the scene as branching , we show the options , else process next scene
     public void ProcessNextScene() 
     {
-        if(_currentScene == _mainBranchScenes.Count-1)
+        if(_currentScene == _mainBranchScenes.Count - 1)
         {
             FindObjectOfType<PostProcessHandler>().OutBlackAndWhite();
             _theend.SetActive(true);
+
+            //Testing for optios weight
+            if (Math.Abs(_divergenceMeter) > 10)
+            {
+                if (_divergenceMeter > 0)
+                {
+                    _text.text = "This is branch where you can find the killer";
+                }
+                else
+                {
+                    _text.text = "This is branch where you against the killler and u frame inncoent";
+                }
+                
+            }
+            else
+            {
+                _text.text = "This is branch where you could not figure out who the killer is";
+            }
             return;
         }
 
@@ -360,6 +382,11 @@ public void FadeOutMusic()
     public bool IsCurrentSceneFlashback()
     {
         return _mainBranchScenes[_currentScene]._isFlashBack();
+    }
+
+    public void UpdateDivergence(int divergence)
+    {
+        _divergenceMeter += divergence;
     }
 
 }

@@ -16,6 +16,7 @@ public class MainMenuManager: MonoBehaviour
     [SerializeField] GameObject _Extras;
     [SerializeField] GameObject _settings;
     [SerializeField] Button _load;
+    [SerializeField] GameObject _validName;
 
     bool _IsenterNameActive;
     bool _IsmainMenuActive;
@@ -77,18 +78,43 @@ public class MainMenuManager: MonoBehaviour
         _isExtrasActive = false;
         _isSettingsActive = false;
         _IsmainMenuActive = true;
+        _IsenterNameActive = false;
+        _validName.SetActive(false);
         UpdateGameObjects();
     }
 
     public void ChooseCharacter() //sets up the ui for the player to choose a character
     {
+        
+        name = _InputField.text;
+
+        if(name == "")
+        {
+            _validName.SetActive(true);
+            _IsenterNameActive = false;
+            UpdateGameObjects();
+            return;
+        }
+
         _IsenterNameActive = false;
         _IschooseCharacterActive = true;
-        name = _InputField.text;
+
         Debug.Log(name);
-        SaveData.Instance.SetName(name);
+        SaveData.Instance.SetName(name);    
         UpdateGameObjects();
        
+    }
+
+    public void BackToMainMenu()
+    {
+
+    }
+
+    public void OkonValidName()
+    {
+        _validName.SetActive(false);
+        _IsenterNameActive = true;
+        UpdateGameObjects();
     }
 
     public void ChooseCharacter(bool isMale) //saves the character chosen in Save data class and loads the next scene
