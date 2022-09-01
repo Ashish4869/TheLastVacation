@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     public List<SceneDataSO> _mainBranchScenes; //Stores all the scene data for the main branch
     public List<SceneDataSO> _sceneA; //Stores all the scene data for the A branch
     public List<SceneDataSO> _sceneB; //Stores all the scene data for B branch
+    public List<SceneDataSO> _EndA; //Stores all the scene data for the ENDA branch
+    public List<SceneDataSO> _EndB; //Stores all the scene data for the ENDB branch
+    public List<SceneDataSO> _EndC; //Stores all the scene data for the ENDC branch
     private int _dialougeCounter = -1; //Counter that keeps track of the dialogue to be displayed
     private int _currentScene = 0; //Counter that keeps track of the scene we are currently in
     private int _branchCounter = 0; //Counter that keeps track of the branch we are in
@@ -26,8 +29,9 @@ public class GameManager : MonoBehaviour
     bool _isCharacterMale;
 
     bool _isflashBack;
+    bool _isEndBranches;
 
-    int _divergenceMeter;
+    public int _divergenceMeter = 20;
 
     StateManager _stateManager;
     TransitionManager _transitionManager;
@@ -160,34 +164,30 @@ public class GameManager : MonoBehaviour
 
     //Setters / Updaters
     public void UpdateCurrentDialougeCounter() => _dialougeCounter++;
+
+    private List<SceneDataSO> GetMainbranchesArray()
+    {
+        if (_stateManager.GetCurrentGameState() == GameStates.Scene) return _mainBranchScenes;
+        if (_stateManager.GetCurrentGameState() == GameStates.EndA) return _EndA;
+        if (_stateManager.GetCurrentGameState() == GameStates.EndB) return _EndB;
+        if (_stateManager.GetCurrentGameState() == GameStates.EndC) return _EndC;
+
+        return null;
+    }
     
     //Process the next scene based on which state we are currently in
     //if we are in any branch state then we return to the main branch and process the next scene
     //if the scene as branching , we show the options , else process next scene
     public void ProcessNextScene() 
     {
-        if(_currentScene == _mainBranchScenes.Count - 1)
+        if(_currentScene == _mainBranchScenes.Count - 1 && !_isEndBranches)
         {
             FindObjectOfType<PostProcessHandler>().OutBlackAndWhite();
-            _theend.SetActive(true);
+            //_theend.SetActive(true);
 
-            //Testing for optios weight
-            if (Math.Abs(_divergenceMeter) > 10)
-            {
-                if (_divergenceMeter > 0)
-                {
-                    _text.text = "This is branch where you can find the killer";
-                }
-                else
-                {
-                    _text.text = "This is branch where you against the killler and u frame inncoent";
-                }
-                
-            }
-            else
-            {
-                _text.text = "This is branch where you could not figure out who the killer is";
-            }
+            _isEndBranches = true;
+            _currentScene = -1;
+            _stateManager.EvaluateEndingBranch(_divergenceMeter);
             return;
         }
 
@@ -200,21 +200,24 @@ public class GameManager : MonoBehaviour
         }
         
         
-        if(_mainBranchScenes[_currentScene].HasCharacterSwitch()) //if we have to switch characters then we do this
-        {
-            LoadNextSceneWithCharacterTransition();
-            return;
-        }
-        
+       if(_currentScene != -1)
+       {
+            if (GetMainbranchesArray()[_currentScene].HasCharacterSwitch()) //if we have to switch characters then we do this
+            {
+                LoadNextSceneWithCharacterTransition();
+                return;
+            }
 
-        if (_mainBranchScenes[_currentScene].HasBranching()) //if we have to branch then
-        {
-            ShowOptions();
-        }
-        else
-        {
-            LoadNextSceneWithTransition();
-        }
+
+            if (GetMainbranchesArray()[_currentScene].HasBranching()) //if we have to branch then
+            {
+                ShowOptions();
+                return;
+            }
+       }
+           
+        
+       LoadNextSceneWithTransition();
     }
 
     private void LoadNextSceneWithCharacterTransition()
@@ -230,6 +233,18 @@ public class GameManager : MonoBehaviour
         _dialougeCounter = -1;
         _eventManager.OnSceneDialougeExhaustedEvent();
        
+    }
+
+    IEnumerator Transition()
+    {
+        _transitionManager.FadeIn();
+        yield return new WaitForSeconds(1f);
+        // call an event to setup the next scene
+        _transitionManager.Transition();
+        _transitionManager.FadeOut();
+        _currentScene++;
+        _dialougeCounter = -1;
+        _eventManager.OnSceneDialougeExhaustedEvent();
     }
 
     private void LoadNextSceneWithoutTransition() //Loads next scene without any transition
@@ -262,18 +277,6 @@ public class GameManager : MonoBehaviour
     void LoadNextSceneWithTransition()
     {
         StartCoroutine(Transition());
-    }
-
-    IEnumerator Transition()
-    {
-        _transitionManager.FadeIn();
-        yield return new WaitForSeconds(1f);
-        // call an event to setup the next scene
-        _transitionManager.Transition();
-        _transitionManager.FadeOut();
-        _currentScene++;
-        _dialougeCounter = -1;
-        _eventManager.OnSceneDialougeExhaustedEvent();
     }
 
 
@@ -351,26 +354,16 @@ public void FadeOutMusic()
 
     public SceneDataSO GetCurrentScene() //Returns scene data depending on the state that we are in , defined by the state manager
     {
-        
-        if(_stateManager.GetCurrentGameState() == GameStates.Scene)
-        {
-            return _mainBranchScenes[_currentScene];
-        }
+        if (_stateManager.GetCurrentGameState() == GameStates.EndA) return _EndA[_currentScene];
+        if (_stateManager.GetCurrentGameState() == GameStates.EndB) return _EndB[_currentScene];
+        if (_stateManager.GetCurrentGameState() == GameStates.EndC) return _EndC[_currentScene];
 
-        if(_stateManager.GetCurrentGameState() == GameStates.SceneA)
-        {
-            
-            return _sceneA[_branchCounter];
-        }
+        if(_stateManager.GetCurrentGameState() == GameStates.Scene) return _mainBranchScenes[_currentScene];
 
-        if (_stateManager.GetCurrentGameState() == GameStates.SceneB)
-        {
-            
-            return _sceneB[_branchCounter];
-        }
+        if(_stateManager.GetCurrentGameState() == GameStates.SceneA) return _sceneA[_branchCounter];
+        if (_stateManager.GetCurrentGameState() == GameStates.SceneB) return _sceneB[_branchCounter];
         
         return null;
-
     }
 
     public GameStates GetGameState() => _stateManager.GetCurrentGameState();

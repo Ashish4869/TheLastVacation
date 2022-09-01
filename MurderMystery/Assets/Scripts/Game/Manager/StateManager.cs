@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 /// <summary>
@@ -30,6 +31,28 @@ public class StateManager : MonoBehaviour
         gameState = GameStates.SceneB;
         GameManager.Instance.InBranchState();
         GameManager.Instance.HideOptions();
+    }
+
+    public void EvaluateEndingBranch(int divergence)
+    {
+        if (Math.Abs(divergence) > 10)
+        {
+            if (divergence > 0)
+            {
+                gameState = GameStates.EndA;
+            }
+            else
+            {
+                gameState = GameStates.EndB;
+            }
+
+        }
+        else
+        {
+            gameState = GameStates.EndC;
+        }
+
+        GameManager.Instance.ProcessNextScene();
     }
 
     public void ReturnToMain() => gameState = GameStates.Scene; //Takes the control back to the main branch

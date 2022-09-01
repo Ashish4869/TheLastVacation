@@ -33,9 +33,11 @@ public class CharacterManager : MonoBehaviour
         //SetCharacterExpressionAndSpeaker();
     }
 
+    bool IsFromMainBranches() => (GameManager.Instance.GetGameState() == GameStates.Scene || GameManager.Instance.GetGameState() ==  GameStates.EndA || GameManager.Instance.GetGameState() == GameStates.EndB || GameManager.Instance.GetGameState() == GameStates.EndC);
+
     private void SetCharactersInUI() //Creates a game object for each character and makes it a child of CharacterInTheScene gameobject
     {
-        if (GameManager.Instance.GetGameState() == GameStates.Scene) //animate the characters if we are moving between scenes
+        if (IsFromMainBranches()) //animate the characters if we are moving between scenes
         {
             animSpeed = 2;
         }

@@ -2975,6 +2975,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bd5d4641746dee7478b6b6ad8f0037cc, type: 2}
   - {fileID: 11400000, guid: 7c6fddb292eb66a4b855a61cf5ed319f, type: 2}
   - {fileID: 11400000, guid: a2a607ffa13794c49ae8a64e13f85bb1, type: 2}
+  _EndA:
+  - {fileID: 11400000, guid: c42c8aaae25920f4186e5c840b825f30, type: 2}
+  - {fileID: 11400000, guid: ab4b9a7f25445a04297bede3469282cc, type: 2}
+  _EndB:
+  - {fileID: 11400000, guid: 8f1132b36d9b6474a8b337f4ed5e6e77, type: 2}
+  - {fileID: 11400000, guid: ac73b756123f39c40bb354778f81138f, type: 2}
+  _EndC:
+  - {fileID: 11400000, guid: 8eff6c1ca7d48194fae43cd1fbe35234, type: 2}
+  - {fileID: 11400000, guid: 2d9e4c5934415784597a926150b5277c, type: 2}
+  _divergenceMeter: 0
   _options: {fileID: 1080106338}
   _option1: {fileID: 1999793819}
   _option2: {fileID: 963309516}

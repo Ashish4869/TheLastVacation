@@ -75,6 +75,7 @@ public class TransitionManager : MonoBehaviour
         {
             trans.gameObject.GetComponent<Animator>().SetTrigger("fadeout");
         }
+
         yield return new WaitForSeconds(1f);
         ClickScreen.SetActive(true);
     }
