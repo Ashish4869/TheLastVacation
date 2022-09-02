@@ -51,6 +51,10 @@ public class SaveData : MonoBehaviour
     GameStates _currentState = GameStates.Scene;
     bool _IspreviousStatebranch;
     bool _canLoad = false;
+    int _divergenceMeter;
+    int _acheive1;
+    int _acheive2;
+    int _acheive3;
 
     bool _isFromLoad;
 
@@ -77,6 +81,12 @@ public class SaveData : MonoBehaviour
     public void SetCanLoad(bool canload) => _canLoad = canload;
 
     public void SetIsfromLoad(bool load) => _isFromLoad = load;
+
+    public void SetDivergencemeter(int divergence) => _divergenceMeter = divergence;
+
+    public void SetAcheivements1(int acheive) => _acheive1 = acheive;
+    public void SetAcheivements2(int acheive) => _acheive2 = acheive;
+    public void SetAcheivements3(int acheive) => _acheive3 = acheive;
 
 
     //Getters
@@ -117,5 +127,11 @@ public class SaveData : MonoBehaviour
     public bool CanLoad() => _canLoad;
 
     public bool IsFromLoad() => _isFromLoad;
+
+    public int GetDivergence() => _divergenceMeter;
+
+    public int GetAchievements1() => _acheive1;
+    public int GetAchievements2() => _acheive2;
+    public int GetAchievements3() => _acheive3;
 
 }

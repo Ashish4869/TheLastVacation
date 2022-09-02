@@ -33,7 +33,10 @@ public class CharacterManager : MonoBehaviour
         //SetCharacterExpressionAndSpeaker();
     }
 
-    bool IsFromMainBranches() => (GameManager.Instance.GetGameState() == GameStates.Scene || GameManager.Instance.GetGameState() ==  GameStates.EndA || GameManager.Instance.GetGameState() == GameStates.EndB || GameManager.Instance.GetGameState() == GameStates.EndC);
+    bool IsFromMainBranches() => (GameManager.Instance.GetGameState() == GameStates.Scene || 
+        GameManager.Instance.GetGameState() ==  GameStates.EndA || 
+        GameManager.Instance.GetGameState() == GameStates.EndB || 
+        GameManager.Instance.GetGameState() == GameStates.EndC);
 
     private void SetCharactersInUI() //Creates a game object for each character and makes it a child of CharacterInTheScene gameobject
     {
@@ -46,7 +49,7 @@ public class CharacterManager : MonoBehaviour
             animSpeed = 100;
         }
 
-        if(GameManager.Instance.GetGameState() == GameStates.Scene ) //if we coming from branch state , we dont want the character to animate
+        if(IsFromMainBranches()) //if we coming from branch state , we dont want the character to animate
         {
             if (GameManager.Instance.WasPreviousStateBranch())
             {

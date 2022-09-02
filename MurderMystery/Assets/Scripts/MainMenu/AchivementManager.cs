@@ -15,18 +15,14 @@ public class AchivementManager : MonoBehaviour
     [SerializeField] GameObject Achive2UI;
     [SerializeField] GameObject Achive3UI;
 
-    //later i will be saving this in a file , have to fetch from there and then check
-    public bool _reachedEnding1 = false;
-    public bool _reachedEnding2 = false;
-    public bool _reachedEnding3 = false;
 
 
 
-    public void ProcessAchviements() //Update he ui as per the data
+    public void ProcessAchviements(int achevie1 = 0 , int achieve2 = 0,  int achieve3 = 0) //Update he ui as per the data
     {
         SetAllGameObjectInactive();
 
-       if(_reachedEnding1)
+       if(achevie1 != 0)
        {
             Achive1UI.SetActive(true);
        }
@@ -35,7 +31,7 @@ public class AchivementManager : MonoBehaviour
             Lock1.SetActive(true);
        }
 
-        if (_reachedEnding2)
+        if (achieve2 != 0)
         {
             Achive2UI.SetActive(true);
         }
@@ -44,11 +40,10 @@ public class AchivementManager : MonoBehaviour
             Lock2.SetActive(true);
         }
 
-        if (_reachedEnding3)
+        if (achieve3 != 0)
         {
             Achive3UI.SetActive(true);
         }
-
         else
         {
             Lock3.SetActive(true);

@@ -12,6 +12,25 @@ public class StateManager : MonoBehaviour
     
     //Getters
     public GameStates GetCurrentGameState() =>  gameState;
+
+    public void BranchHasPerCurrentState(bool ISA)
+    {
+        if(ISA)
+        {
+            if (gameState == GameStates.Scene) gameState = GameStates.SceneA;
+            if (gameState == GameStates.EndA) gameState = GameStates.EndASceneA;
+            if (gameState == GameStates.EndB) gameState = GameStates.EndBSceneA;
+            if (gameState == GameStates.EndC) gameState = GameStates.EndCSceneA;
+        }
+        else
+        {
+            if (gameState == GameStates.Scene) gameState = GameStates.SceneB;
+            if (gameState == GameStates.EndA) gameState = GameStates.EndASceneB;
+            if (gameState == GameStates.EndB) gameState = GameStates.EndBSceneB;
+            if (gameState == GameStates.EndC) gameState = GameStates.EndCSceneB;
+        }
+       
+    }
    
     //Setters
     public void BranchAChosen() //function called when we click on the First option 
@@ -19,7 +38,7 @@ public class StateManager : MonoBehaviour
         int diver = GameManager.Instance.GetCurrentScene().GetDivergence();
         Debug.Log(diver);
         GameManager.Instance.UpdateDivergence(diver);
-        gameState = GameStates.SceneA;
+        BranchHasPerCurrentState(true);
         GameManager.Instance.InBranchState();
         GameManager.Instance.HideOptions();
     }
@@ -28,7 +47,7 @@ public class StateManager : MonoBehaviour
     {
         int diver = GameManager.Instance.GetCurrentScene().GetDivergence();
         GameManager.Instance.UpdateDivergence(-diver);
-        gameState = GameStates.SceneB;
+        BranchHasPerCurrentState(false);
         GameManager.Instance.InBranchState();
         GameManager.Instance.HideOptions();
     }
@@ -55,7 +74,13 @@ public class StateManager : MonoBehaviour
         GameManager.Instance.ProcessNextScene();
     }
 
-    public void ReturnToMain() => gameState = GameStates.Scene; //Takes the control back to the main branch
+    public void ReturnToMain()
+    {
+        if(gameState == GameStates.SceneA || gameState == GameStates.SceneB) gameState = GameStates.Scene; //Takes the control back to the main branch
+        if(gameState == GameStates.EndASceneA || gameState == GameStates.EndASceneB) gameState = GameStates.EndA; //Takes the control back to the End A branch
+        if(gameState == GameStates.EndBSceneA || gameState == GameStates.EndBSceneB) gameState = GameStates.EndB; //Takes the control back to the End B branch
+        if(gameState == GameStates.EndCSceneA || gameState == GameStates.EndCSceneB) gameState = GameStates.EndC; //Takes the control back to the End C branch
+    }
 
     public void SetState(int state) //Sets the state from the values obtained from the file
     {

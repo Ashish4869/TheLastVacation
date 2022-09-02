@@ -14,13 +14,22 @@ public class GameManager : MonoBehaviour
     public List<SceneDataSO> _mainBranchScenes; //Stores all the scene data for the main branch
     public List<SceneDataSO> _sceneA; //Stores all the scene data for the A branch
     public List<SceneDataSO> _sceneB; //Stores all the scene data for B branch
+
     public List<SceneDataSO> _EndA; //Stores all the scene data for the ENDA branch
+    public List<SceneDataSO> _EndABranchA; //Stores all the scene data for the ENDA branch A
+    public List<SceneDataSO> _EndABranchB; //Stores all the scene data for ENDA branch B
+
     public List<SceneDataSO> _EndB; //Stores all the scene data for the ENDB branch
+    public List<SceneDataSO> _EndBBranchA; //Stores all the scene data for the ENDB branch A
+    public List<SceneDataSO> _EndBBranchB; //Stores all the scene data for ENDB branch B
+
     public List<SceneDataSO> _EndC; //Stores all the scene data for the ENDC branch
+    public List<SceneDataSO> _EndCBranchA; //Stores all the scene data for the ENDC branch A
+    public List<SceneDataSO> _EndCBranchB; //Stores all the scene data for ENDC branch B
+
     private int _dialougeCounter = -1; //Counter that keeps track of the dialogue to be displayed
     private int _currentScene = 0; //Counter that keeps track of the scene we are currently in
     private int _branchCounter = 0; //Counter that keeps track of the branch we are in
-    private int _EndbranchCounter = 0;
 
     private string _yourName; //contains the name that the player has inputed
     private CharacterDataSO _yourCharacter; //contains the character that the player has selected
@@ -28,8 +37,11 @@ public class GameManager : MonoBehaviour
     bool _previousStateBranch; //bool is to store whether the prev state was branch state or not
     bool _isCharacterMale;
 
+    int _acheivement1;
+    int _acheivement2;
+    int _acheivement3;
+
     bool _isflashBack;
-    bool _isEndBranches;
 
     public int _divergenceMeter = 20;
 
@@ -92,6 +104,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+
         if (_instance != null)
         {
             Destroy(this);
@@ -109,8 +122,12 @@ public class GameManager : MonoBehaviour
             if(data != null) SetValuesInSaveDataFromGameData(data); //if we are loading for first time , then pull data and store in save data class
 
             _currentScene = SaveData.Instance.GetCurrentScene();
+            _acheivement1 = SaveData.Instance.GetAchievements1();
+            _acheivement2 = SaveData.Instance.GetAchievements2();
+            _acheivement3 = SaveData.Instance.GetAchievements3();
+            _divergenceMeter = SaveData.Instance.GetDivergence();
 
-            if(SaveData.Instance.GetCurrentStateinInt() == 0) //if we in scene state
+            if (SaveData.Instance.GetCurrentStateinInt() == 0 || SaveData.Instance.GetCurrentStateinInt() == 3 || SaveData.Instance.GetCurrentStateinInt() == 6 || SaveData.Instance.GetCurrentStateinInt() == 9) //if we in scene state
             {
                 _branchCounter =  SaveData.Instance.GetBranchCounter();
                 _previousStateBranch = SaveData.Instance.GetIsPreviousStateBranch();
@@ -120,9 +137,6 @@ public class GameManager : MonoBehaviour
                 _branchCounter =  SaveData.Instance.GetBranchCounter() - 1;
                 InBranchState();
             }
-
-
-            
             _stateManager.SetState(SaveData.Instance.GetCurrentStateinInt());
         }
         else
@@ -174,25 +188,71 @@ public class GameManager : MonoBehaviour
 
         return null;
     }
-    
+
+
+    private bool IfInBranchState() => _stateManager.GetCurrentGameState() == GameStates.SceneA ||
+                                      _stateManager.GetCurrentGameState() == GameStates.SceneB ||
+                                      _stateManager.GetCurrentGameState() == GameStates.EndASceneA ||
+                                      _stateManager.GetCurrentGameState() == GameStates.EndASceneB ||
+                                      _stateManager.GetCurrentGameState() == GameStates.EndBSceneA ||
+                                      _stateManager.GetCurrentGameState() == GameStates.EndBSceneB ||
+                                      _stateManager.GetCurrentGameState() == GameStates.EndCSceneA ||
+                                      _stateManager.GetCurrentGameState() == GameStates.EndCSceneB;
+
+    public bool IfReachedEnd()
+    {
+        if (_stateManager.GetCurrentGameState() == GameStates.EndA) return (_currentScene == _EndA.Count - 1) ? true : false;
+        if (_stateManager.GetCurrentGameState() == GameStates.EndB) return (_currentScene == _EndB.Count - 1) ? true : false;
+        if (_stateManager.GetCurrentGameState() == GameStates.EndC) return (_currentScene == _EndC.Count - 1) ? true : false;
+
+        return false;
+    }
+
     //Process the next scene based on which state we are currently in
     //if we are in any branch state then we return to the main branch and process the next scene
     //if the scene as branching , we show the options , else process next scene
     public void ProcessNextScene() 
     {
-        if(_currentScene == _mainBranchScenes.Count - 1 && !_isEndBranches)
+        if(_currentScene == _mainBranchScenes.Count - 1 && _stateManager.GetCurrentGameState() == GameStates.Scene)
         {
             FindObjectOfType<PostProcessHandler>().OutBlackAndWhite();
             //_theend.SetActive(true);
 
-            _isEndBranches = true;
             _currentScene = -1;
+            _branchCounter = 0;
             _stateManager.EvaluateEndingBranch(_divergenceMeter);
             return;
         }
 
+        if(IfReachedEnd())
+        {
+            _theend.SetActive(true);
 
-        if(_stateManager.GetCurrentGameState() == GameStates.SceneA || _stateManager.GetCurrentGameState() == GameStates.SceneB) //If we are in a branch scene
+            if (_stateManager.GetCurrentGameState() == GameStates.EndA)
+            {
+                _acheivement1 = 1;
+                Debug.Log("Unlocked Acheivement 1");
+            }
+
+            if (_stateManager.GetCurrentGameState() == GameStates.EndB)
+            { 
+                _acheivement2 = 1;
+                Debug.Log("Unlocked Acheivement 2");
+            }
+
+            if (_stateManager.GetCurrentGameState() == GameStates.EndC) 
+            {
+                _acheivement3 = 1;
+                Debug.Log("Unlocked Acheivement 3");
+            }
+
+            SaveSystem.SaveGameData(SaveData.Instance);
+            Debug.Log("Game Saved");
+            return;
+        }
+
+
+        if (IfInBranchState()) //If we are in a branch scene
         {
             _stateManager.ReturnToMain();
             LoadNextSceneWithoutTransition();
@@ -257,8 +317,28 @@ public class GameManager : MonoBehaviour
     private void ShowOptions() //shows the options 
     {
         _options.SetActive(true);
-        _option1.text = _sceneA[_branchCounter].GetCurrentSceneDialouges()[0]._dialouge;
-        _option2.text = _sceneB[_branchCounter].GetCurrentSceneDialouges()[0]._dialouge;
+
+        if(_stateManager.GetCurrentGameState() == GameStates.Scene)
+        {
+            _option1.text = _sceneA[_branchCounter].GetCurrentSceneDialouges()[0]._dialouge;
+            _option2.text = _sceneB[_branchCounter].GetCurrentSceneDialouges()[0]._dialouge;
+        }
+        else if(_stateManager.GetCurrentGameState() == GameStates.EndA)
+        {
+            _option1.text = _EndABranchA[_branchCounter].GetCurrentSceneDialouges()[0]._dialouge;
+            _option2.text = _EndABranchB[_branchCounter].GetCurrentSceneDialouges()[0]._dialouge;
+        }
+        else if(_stateManager.GetCurrentGameState() == GameStates.EndB)
+        {
+            _option1.text = _EndBBranchA[_branchCounter].GetCurrentSceneDialouges()[0]._dialouge;
+            _option2.text = _EndBBranchB[_branchCounter].GetCurrentSceneDialouges()[0]._dialouge;
+        }
+        else
+        {
+            _option1.text = _EndCBranchA[_branchCounter].GetCurrentSceneDialouges()[0]._dialouge;
+            _option2.text = _EndCBranchB[_branchCounter].GetCurrentSceneDialouges()[0]._dialouge;
+        }
+        
     }
 
     public void HideOptions() //Hides the options
@@ -303,6 +383,10 @@ public class GameManager : MonoBehaviour
         SaveData.Instance.SetCharacterGender(_isCharacterMale);
         SaveData.Instance.SetIspreviousStateBranch(_previousStateBranch);
         SaveData.Instance.SetCanLoad(true);
+        SaveData.Instance.SetDivergencemeter(_divergenceMeter);
+        SaveData.Instance.SetAcheivements1(_acheivement1);
+        SaveData.Instance.SetAcheivements2(_acheivement2);
+        SaveData.Instance.SetAcheivements3(_acheivement3);
     }
 
     public void SetValuesInSaveDataFromGameData(GameData data) //Does the same as above but from save file
@@ -315,6 +399,10 @@ public class GameManager : MonoBehaviour
         SaveData.Instance.SetCharacterGender(data._IsMalecharacter);
         SaveData.Instance.SetIspreviousStateBranch(data._IspreviousStatebranch);
         SaveData.Instance.SetCanLoad(true);
+        SaveData.Instance.SetDivergencemeter(data._divergenceMeter);
+        SaveData.Instance.SetAcheivements1(data._achieve1);
+        SaveData.Instance.SetAcheivements2(data._achieve2);
+        SaveData.Instance.SetAcheivements3(data._achieve3);
     }
 
     GameStates GetStateFromInt(int value) //Getting a state from the int value
@@ -354,15 +442,28 @@ public void FadeOutMusic()
 
     public SceneDataSO GetCurrentScene() //Returns scene data depending on the state that we are in , defined by the state manager
     {
+        if (_stateManager.GetCurrentGameState() == GameStates.Scene) return _mainBranchScenes[_currentScene];
+
         if (_stateManager.GetCurrentGameState() == GameStates.EndA) return _EndA[_currentScene];
         if (_stateManager.GetCurrentGameState() == GameStates.EndB) return _EndB[_currentScene];
         if (_stateManager.GetCurrentGameState() == GameStates.EndC) return _EndC[_currentScene];
 
-        if(_stateManager.GetCurrentGameState() == GameStates.Scene) return _mainBranchScenes[_currentScene];
+       
 
         if(_stateManager.GetCurrentGameState() == GameStates.SceneA) return _sceneA[_branchCounter];
         if (_stateManager.GetCurrentGameState() == GameStates.SceneB) return _sceneB[_branchCounter];
-        
+
+        if (_stateManager.GetCurrentGameState() == GameStates.EndASceneA) return _EndABranchA[_branchCounter];
+        if (_stateManager.GetCurrentGameState() == GameStates.EndASceneB) return _EndABranchB[_branchCounter];
+
+        if (_stateManager.GetCurrentGameState() == GameStates.EndBSceneA) return _EndBBranchA[_branchCounter];
+        if (_stateManager.GetCurrentGameState() == GameStates.EndBSceneB) return _EndBBranchB[_branchCounter];
+
+        if (_stateManager.GetCurrentGameState() == GameStates.EndCSceneA) return _EndCBranchA[_branchCounter];
+        if (_stateManager.GetCurrentGameState() == GameStates.EndCSceneB) return _EndCBranchB[_branchCounter];
+
+
+
         return null;
     }
 

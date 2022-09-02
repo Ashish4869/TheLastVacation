@@ -2478,8 +2478,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.94, y: 74}
-  m_SizeDelta: {x: 391.98, y: 50}
+  m_AnchoredPosition: {x: 80.79, y: -20}
+  m_SizeDelta: {x: 1157.77, y: 178}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &716310465
 MonoBehaviour:
@@ -2501,17 +2501,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You will go to main branch
+  m_text: 'GAME SAVED.
+
+    PLEASE VISIT THE EXTRAS TO KNOW WHICH ENDING YOU HAVE
+    WITNESSED.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0031614d1b173364cbbf05663127f095, type: 2}
+  m_sharedMaterial: {fileID: -5204769550569023110, guid: 0031614d1b173364cbbf05663127f095, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282068199
+  m_fontColor: {r: 0.9058824, g: 0.17254902, b: 0.23137257, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2528,15 +2531,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2978,13 +2981,24 @@ MonoBehaviour:
   _EndA:
   - {fileID: 11400000, guid: c42c8aaae25920f4186e5c840b825f30, type: 2}
   - {fileID: 11400000, guid: ab4b9a7f25445a04297bede3469282cc, type: 2}
+  - {fileID: 11400000, guid: fa0a6c43308378246869b44ac98cfbd7, type: 2}
+  _EndABranchA:
+  - {fileID: 11400000, guid: 9d15f1372a65b164580a15ddadfc6dde, type: 2}
+  - {fileID: 11400000, guid: 8cc75b31bb07af349a1d4fd3dde830a5, type: 2}
+  _EndABranchB:
+  - {fileID: 11400000, guid: 4625cbb03a0998344bc21336d48ad872, type: 2}
+  - {fileID: 11400000, guid: f6fe3cb78b9005147b0bff7a559af84d, type: 2}
   _EndB:
   - {fileID: 11400000, guid: 8f1132b36d9b6474a8b337f4ed5e6e77, type: 2}
   - {fileID: 11400000, guid: ac73b756123f39c40bb354778f81138f, type: 2}
+  _EndBBranchA: []
+  _EndBBranchB: []
   _EndC:
   - {fileID: 11400000, guid: 8eff6c1ca7d48194fae43cd1fbe35234, type: 2}
   - {fileID: 11400000, guid: 2d9e4c5934415784597a926150b5277c, type: 2}
-  _divergenceMeter: 0
+  _EndCBranchA: []
+  _EndCBranchB: []
+  _divergenceMeter: 20
   _options: {fileID: 1080106338}
   _option1: {fileID: 1999793819}
   _option2: {fileID: 963309516}
@@ -5678,11 +5692,11 @@ RectTransform:
   m_Father: {fileID: 544667718}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -58}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 115}
   m_SizeDelta: {x: 403.86, y: 75.72}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1810622130
 MonoBehaviour:
   m_ObjectHideFlags: 0
