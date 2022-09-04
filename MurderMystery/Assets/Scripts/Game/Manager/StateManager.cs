@@ -36,7 +36,6 @@ public class StateManager : MonoBehaviour
     public void BranchAChosen() //function called when we click on the First option 
     {
         int diver = GameManager.Instance.GetCurrentScene().GetDivergence();
-        Debug.Log(diver);
         GameManager.Instance.UpdateDivergence(diver);
         BranchHasPerCurrentState(true);
         GameManager.Instance.InBranchState();

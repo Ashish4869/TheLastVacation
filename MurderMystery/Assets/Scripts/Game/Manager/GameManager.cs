@@ -37,9 +37,7 @@ public class GameManager : MonoBehaviour
     bool _previousStateBranch; //bool is to store whether the prev state was branch state or not
     bool _isCharacterMale;
 
-    int _acheivement1;
-    int _acheivement2;
-    int _acheivement3;
+    bool[] _acheivments;
 
     bool _isflashBack;
 
@@ -114,6 +112,7 @@ public class GameManager : MonoBehaviour
         _eventManager = FindObjectOfType<EventManager>();
         _stateManager = FindObjectOfType<StateManager>();
 
+
         //Getting values saved in the Save File
         if(SaveData.Instance.IsFromLoad())
         {
@@ -122,9 +121,7 @@ public class GameManager : MonoBehaviour
             if(data != null) SetValuesInSaveDataFromGameData(data); //if we are loading for first time , then pull data and store in save data class
 
             _currentScene = SaveData.Instance.GetCurrentScene();
-            _acheivement1 = SaveData.Instance.GetAchievements1();
-            _acheivement2 = SaveData.Instance.GetAchievements2();
-            _acheivement3 = SaveData.Instance.GetAchievements3();
+            _acheivments = SaveData.Instance.GetAchievment();
             _divergenceMeter = SaveData.Instance.GetDivergence();
 
             if (SaveData.Instance.GetCurrentStateinInt() == 0 || SaveData.Instance.GetCurrentStateinInt() == 3 || SaveData.Instance.GetCurrentStateinInt() == 6 || SaveData.Instance.GetCurrentStateinInt() == 9) //if we in scene state
@@ -228,24 +225,27 @@ public class GameManager : MonoBehaviour
         {
             _theend.SetActive(true);
 
+            if (_acheivments == null) _acheivments = new bool[3]; //if null , make a new one
+
             if (_stateManager.GetCurrentGameState() == GameStates.EndA)
             {
-                _acheivement1 = 1;
+                _acheivments[0] = true;
                 Debug.Log("Unlocked Acheivement 1");
             }
 
             if (_stateManager.GetCurrentGameState() == GameStates.EndB)
-            { 
-                _acheivement2 = 1;
+            {
+                _acheivments[1] = true;
                 Debug.Log("Unlocked Acheivement 2");
             }
 
             if (_stateManager.GetCurrentGameState() == GameStates.EndC) 
             {
-                _acheivement3 = 1;
+                _acheivments[2] = true;
                 Debug.Log("Unlocked Acheivement 3");
             }
 
+            SetValuesInSaveData();
             SaveSystem.SaveGameData(SaveData.Instance);
             Debug.Log("Game Saved");
             return;
@@ -384,9 +384,7 @@ public class GameManager : MonoBehaviour
         SaveData.Instance.SetIspreviousStateBranch(_previousStateBranch);
         SaveData.Instance.SetCanLoad(true);
         SaveData.Instance.SetDivergencemeter(_divergenceMeter);
-        SaveData.Instance.SetAcheivements1(_acheivement1);
-        SaveData.Instance.SetAcheivements2(_acheivement2);
-        SaveData.Instance.SetAcheivements3(_acheivement3);
+        SaveData.Instance.SetAcheivement(_acheivments);
     }
 
     public void SetValuesInSaveDataFromGameData(GameData data) //Does the same as above but from save file
@@ -400,9 +398,7 @@ public class GameManager : MonoBehaviour
         SaveData.Instance.SetIspreviousStateBranch(data._IspreviousStatebranch);
         SaveData.Instance.SetCanLoad(true);
         SaveData.Instance.SetDivergencemeter(data._divergenceMeter);
-        SaveData.Instance.SetAcheivements1(data._achieve1);
-        SaveData.Instance.SetAcheivements2(data._achieve2);
-        SaveData.Instance.SetAcheivements3(data._achieve3);
+        SaveData.Instance.SetAcheivement(data._acheivments);
     }
 
     GameStates GetStateFromInt(int value) //Getting a state from the int value

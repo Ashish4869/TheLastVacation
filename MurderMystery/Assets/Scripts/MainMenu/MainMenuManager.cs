@@ -42,14 +42,10 @@ public class MainMenuManager: MonoBehaviour
         if(data != null) //if data present , load game
         {
             _load.interactable = data._canLoad;
-            int acheve1 = data._achieve1;
-            int acheve2 = data._achieve2;
-            int acheve3 = data._achieve3;
 
-            Debug.Log(acheve1);
-            Debug.Log(acheve2);
-            Debug.Log(acheve3);
-            achivementManager.ProcessAchviements(acheve1, acheve2, acheve3);
+            bool[] achivement = data._acheivments;
+           
+            achivementManager.ProcessAchviements(achivement);
         }
         else //if no data present , no load game
         {

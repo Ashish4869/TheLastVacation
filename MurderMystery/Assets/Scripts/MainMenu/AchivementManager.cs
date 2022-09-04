@@ -18,11 +18,12 @@ public class AchivementManager : MonoBehaviour
 
 
 
-    public void ProcessAchviements(int achevie1 = 0 , int achieve2 = 0,  int achieve3 = 0) //Update he ui as per the data
+    public void ProcessAchviements(bool[] achivements) //Update he ui as per the data
     {
+        if (achivements == null) return;
         SetAllGameObjectInactive();
 
-       if(achevie1 != 0)
+       if(achivements[0] == true)
        {
             Achive1UI.SetActive(true);
        }
@@ -31,7 +32,7 @@ public class AchivementManager : MonoBehaviour
             Lock1.SetActive(true);
        }
 
-        if (achieve2 != 0)
+        if (achivements[1] == true)
         {
             Achive2UI.SetActive(true);
         }
@@ -40,7 +41,7 @@ public class AchivementManager : MonoBehaviour
             Lock2.SetActive(true);
         }
 
-        if (achieve3 != 0)
+        if (achivements[2] == true)
         {
             Achive3UI.SetActive(true);
         }

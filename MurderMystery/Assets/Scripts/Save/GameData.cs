@@ -16,10 +16,7 @@ public class GameData
     public bool _IspreviousStatebranch;
     public bool _canLoad;
     public int _divergenceMeter;
-    public int _achieve1;
-    public int _achieve2;
-    public int _achieve3;
-
+    public bool[] _acheivments;
     public GameData(SaveData saveData)
     {
         _playerName = saveData.GetPlayerName();
@@ -30,8 +27,7 @@ public class GameData
         _IspreviousStatebranch = saveData.GetIsPreviousStateBranch();
         _canLoad = saveData.CanLoad();
         _divergenceMeter = saveData.GetDivergence();
-        _achieve1 = saveData.GetAchievements1();
-        _achieve2 = saveData.GetAchievements2();
-        _achieve3 = saveData.GetAchievements3();
+        _acheivments = saveData.GetAchievment();
+       
     }
 }

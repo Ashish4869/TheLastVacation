@@ -52,9 +52,7 @@ public class SaveData : MonoBehaviour
     bool _IspreviousStatebranch;
     bool _canLoad = false;
     int _divergenceMeter;
-    int _acheive1;
-    int _acheive2;
-    int _acheive3;
+    public bool[] _acheivements;
 
     bool _isFromLoad;
 
@@ -84,9 +82,7 @@ public class SaveData : MonoBehaviour
 
     public void SetDivergencemeter(int divergence) => _divergenceMeter = divergence;
 
-    public void SetAcheivements1(int acheive) => _acheive1 = acheive;
-    public void SetAcheivements2(int acheive) => _acheive2 = acheive;
-    public void SetAcheivements3(int acheive) => _acheive3 = acheive;
+    public void SetAcheivement(bool[] achivement) => _acheivements = achivement;
 
 
     //Getters
@@ -130,8 +126,6 @@ public class SaveData : MonoBehaviour
 
     public int GetDivergence() => _divergenceMeter;
 
-    public int GetAchievements1() => _acheive1;
-    public int GetAchievements2() => _acheive2;
-    public int GetAchievements3() => _acheive3;
+    public bool[] GetAchievment() => _acheivements;
 
 }
