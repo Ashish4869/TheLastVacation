@@ -39,9 +39,10 @@ public class MainMenuManager: MonoBehaviour
         //Loading the save file to check if we have data to load the game
         GameData data = SaveSystem.LoadGameData();
 
-        if(data != null) //if data present , load game
+        if (data != null) //if data present , load game and set achievements
         {
-            _load.interactable = data._canLoad;
+            SaveData.Instance.SetAcheivement(data._acheivments);
+            _load.interactable = data._canLoad; 
 
             bool[] achivement = data._acheivments;
            

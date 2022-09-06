@@ -112,16 +112,18 @@ public class GameManager : MonoBehaviour
         _eventManager = FindObjectOfType<EventManager>();
         _stateManager = FindObjectOfType<StateManager>();
 
+        
 
         //Getting values saved in the Save File
-        if(SaveData.Instance.IsFromLoad())
+        if (SaveData.Instance.IsFromLoad())
         {
             GameData data = SaveSystem.LoadGameData();
             
             if(data != null) SetValuesInSaveDataFromGameData(data); //if we are loading for first time , then pull data and store in save data class
 
             _currentScene = SaveData.Instance.GetCurrentScene();
-            _acheivments = SaveData.Instance.GetAchievment();
+           
+
             _divergenceMeter = SaveData.Instance.GetDivergence();
 
             if (SaveData.Instance.GetCurrentStateinInt() == 0 || SaveData.Instance.GetCurrentStateinInt() == 3 || SaveData.Instance.GetCurrentStateinInt() == 6 || SaveData.Instance.GetCurrentStateinInt() == 9) //if we in scene state
@@ -169,6 +171,19 @@ public class GameManager : MonoBehaviour
             _isScreenShakes = true;
             _fontSize = 50;
             _textSpeed = 0.03f;
+        }
+
+        _acheivments = SaveData.Instance.GetAchievment();
+
+        if (_acheivments.Length == 0)
+        {
+            Debug.Log("Acheviement data not present");
+        }
+        else
+        {
+            Debug.Log(_acheivments[0]);
+            Debug.Log(_acheivments[1]);
+            Debug.Log(_acheivments[2]);
         }
 
     }
@@ -225,7 +240,7 @@ public class GameManager : MonoBehaviour
         {
             _theend.SetActive(true);
 
-            if (_acheivments == null) _acheivments = new bool[3]; //if null , make a new one
+            if (_acheivments.Length == 0) _acheivments = new bool[3]; //if null , make a new one
 
             if (_stateManager.GetCurrentGameState() == GameStates.EndA)
             {

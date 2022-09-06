@@ -52,7 +52,7 @@ public class SaveData : MonoBehaviour
     bool _IspreviousStatebranch;
     bool _canLoad = false;
     int _divergenceMeter;
-    public bool[] _acheivements;
+    public bool[] _acheivements = new bool[3];
 
     bool _isFromLoad;
 

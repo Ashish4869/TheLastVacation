@@ -18,9 +18,9 @@ public class AchivementManager : MonoBehaviour
 
 
 
-    public void ProcessAchviements(bool[] achivements) //Update he ui as per the data
+    public void ProcessAchviements(bool[] achivements) //Update the ui as per the data
     {
-        if (achivements == null) return;
+        if (achivements.Length == 0) return;
         SetAllGameObjectInactive();
 
        if(achivements[0] == true)

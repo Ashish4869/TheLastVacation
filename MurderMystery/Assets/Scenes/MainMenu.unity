@@ -1935,7 +1935,7 @@ MonoBehaviour:
     _audioClip: {fileID: 8300000, guid: 3c377a1531b959040a61e8059607099d, type: 3}
     _volume: 0.5
     _pitch: 1
-    _loop: 0
+    _loop: 1
     source: {fileID: 0}
   - name: BetterDays
     _audioClip: {fileID: 8300000, guid: 4540e7a2d318fb446a6429915e7c656c, type: 3}
@@ -1965,13 +1965,13 @@ MonoBehaviour:
     _audioClip: {fileID: 8300000, guid: 32e1470ddbd996f45a0df217edfe8181, type: 3}
     _volume: 0.5
     _pitch: 1
-    _loop: 0
+    _loop: 1
     source: {fileID: 0}
   - name: EmptyStreets
     _audioClip: {fileID: 8300000, guid: 7c35d973651018d4a94ebee9c28fccab, type: 3}
     _volume: 0.5
     _pitch: 1
-    _loop: 0
+    _loop: 1
     source: {fileID: 0}
   - name: Protagnists
     _audioClip: {fileID: 8300000, guid: e53d346b653c71c47ba820502ee33e87, type: 3}
@@ -1983,7 +1983,7 @@ MonoBehaviour:
     _audioClip: {fileID: 8300000, guid: 0b2d962edef64b04da4d7ce55485082e, type: 3}
     _volume: 0.5
     _pitch: 1
-    _loop: 0
+    _loop: 1
     source: {fileID: 0}
   currentTheme: 
 --- !u!1 &306640260
@@ -11011,6 +11011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca381f41f8281fb44859800104b9cb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _acheivements: 
 --- !u!1 &1995154519
 GameObject:
   m_ObjectHideFlags: 0
