@@ -15,6 +15,7 @@ public class MainMenuManager: MonoBehaviour
     [SerializeField] TMP_InputField _InputField;
     [SerializeField] GameObject _Extras;
     [SerializeField] GameObject _settings;
+    [SerializeField] GameObject _credits;
     [SerializeField] Button _load;
     [SerializeField] GameObject _validName;
 
@@ -23,6 +24,7 @@ public class MainMenuManager: MonoBehaviour
     bool _IschooseCharacterActive;
     bool _isExtrasActive;
     bool _isSettingsActive;
+    bool _isCreditsActive;
 
 
     private void Start()
@@ -33,6 +35,7 @@ public class MainMenuManager: MonoBehaviour
         _IschooseCharacterActive = false;
         _isExtrasActive = false;
         _isSettingsActive = false;
+        _isCreditsActive = false;
 
         Debug.Log(Application.persistentDataPath);
 
@@ -78,6 +81,13 @@ public class MainMenuManager: MonoBehaviour
         UpdateGameObjects();
     }
 
+    public void ViewCredits()  //opens the ui for Credits page
+    {
+        _IsmainMenuActive = false;
+        _isCreditsActive = true;
+        UpdateGameObjects();
+    }
+
     public void Back() //opens Main UI
     {
         
@@ -85,6 +95,7 @@ public class MainMenuManager: MonoBehaviour
         _isSettingsActive = false;
         _IsmainMenuActive = true;
         _IsenterNameActive = false;
+        _isCreditsActive = false;
         _validName.SetActive(false);
         UpdateGameObjects();
     }
@@ -108,7 +119,6 @@ public class MainMenuManager: MonoBehaviour
         Debug.Log(name);
         SaveData.Instance.SetName(name);    
         UpdateGameObjects();
-       
     }
 
     
@@ -135,6 +145,7 @@ public class MainMenuManager: MonoBehaviour
         _chooseCharacter.SetActive(_IschooseCharacterActive);
         _Extras.SetActive(_isExtrasActive);
         _settings.SetActive(_isSettingsActive);
+        _credits.SetActive(_isCreditsActive);
     }
 
     public void LoadData() //Loads the data from the file and starts the game

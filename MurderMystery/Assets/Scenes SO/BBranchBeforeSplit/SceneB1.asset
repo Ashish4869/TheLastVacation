@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
   characters:
-  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
   - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
+  - {fileID: 11400000, guid: 8995cc24c6bd44848a1ebdac7439026e, type: 2}
   - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
   _hasBranching: 0
   _divergence: 0
@@ -23,42 +23,20 @@ MonoBehaviour:
   _isFlashback: 0
   SceneDialouges:
   - _speaker: You
-    _dialouge: Yes Kevin, You have been hating on her from so long.
+    _dialouge: '*Don''t offer then drinks*'
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: MysteryUnsolved
+    switchTheme: 
     SoundEffect: 
   - _speaker: You
-    _dialouge: And we all know how you act when you get angry.
+    _dialouge: So lets get started with the planning.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
-  - _speaker: Keith
-    _dialouge: ; is right.
+  - _speaker: Shane
+    _dialouge: Lets get to bussiness.
     emotion: 2
     _ShakeScreenType: 0
-    switchTheme: 
-    SoundEffect: 
-  - _speaker: Keith
-    _dialouge: Kevin you have had a lot of history with her and you do have a reason
-      to kill her.
-    emotion: 2
-    _ShakeScreenType: 0
-    switchTheme: 
-    SoundEffect: 
-  - _speaker: Kevin
-    _dialouge: Those things were in the past!
-    emotion: 2
-    _ShakeScreenType: 0
-    switchTheme: 
-    SoundEffect: 
-  - _speaker: Kevin
-    _dialouge: 'We haven''t fought in <b>years!</b>
-
-      Everything was fine between
-      us.'
-    emotion: 2
-    _ShakeScreenType: 1
     switchTheme: 
     SoundEffect: 

@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 7
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 91cd83d46993b1e46937cd16de2489ce, type: 2}
+  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: 
+    _dialouge: "<b>August 3rd 4:00PM \nAt Kevin Tatoo Shop</b>"
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: 
+    _dialouge: TATTOO BUZZING SOUND
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: OOUUUCCHHH!!
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: Ohh please STFU Sabrina its your 12th tattoo!
+    emotion: 0
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: 'And you are still screaming like a baby.
+
+      Jesus Christ.'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: I'm just a little too weak.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: 'For fuck sake you are 28 years old bitch. '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: "And you can\u2019t deal with these tiny pricks?"
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: I go through worse everyday.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: What do you mean?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: My restaurant is always jam packed.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: 'And ever since my sous chef has left all the work has been so hectic
+      for me. '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: Because I have to handle everything on my own and if any of the order
+      gets little messed up.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: The customers come after my life!
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: "I mean for fuck sake can\u2019t you see that I am  doing all the
+      work alone?"
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: Give me some breather.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: Hahahaha
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: 'Bitch I get customers who ask me to make dumb shit just like you. '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: "When they are done they say they don\u2019t agree that its the same. "
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: Then they argue and sometimes try to beat me.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: I really love this job.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: But sometimes I just hate it because of these fucking cunts.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: So much sacrifice just to fulfil our dreams.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: I would love to have a break from this job.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: Me too.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

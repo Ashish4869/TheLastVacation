@@ -14,47 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
   characters:
-  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
-  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
   - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
+  - {fileID: 11400000, guid: 8e68bfe9de408704aa9d1693af7e9f52, type: 2}
   _hasBranching: 0
+  _divergence: 0
   _characterChange: 0
   _isFlashback: 0
   SceneDialouges:
   - _speaker: You
-    _dialouge: Hmm maybe you are right.
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: MysteryUnsolved
-    SoundEffect: 
-  - _speaker: Keith
-    _dialouge: Yeah its probably because of the situation that he thought that Kevin
-      killed her
-    emotion: 1
-    _ShakeScreenType: 0
-    switchTheme: 
-    SoundEffect: 
-  - _speaker: Keith
-    _dialouge: But he is not wrong, I mean the proof is right in front of us.
-    emotion: 5
-    _ShakeScreenType: 0
-    switchTheme: 
-    SoundEffect: 
-  - _speaker: Chris
-    _dialouge: 'Yeah I guess all of us must have thought that this happened yesterday
-      night, '
+    _dialouge: Just shut up Kevin
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
-  - _speaker: Chris
-    _dialouge: 'Doing it in the morning when we were awake would have been difficult. '
+  - _speaker: Kevin
+    _dialouge: ;, you believe him?
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
-  - _speaker: Chris
-    _dialouge: And maybe we should just wait for the cops.
+  - _speaker: You
+    _dialouge: No, but you fighting back is only proving his point.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 

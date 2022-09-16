@@ -14,61 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
   characters:
-  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
-  - {fileID: 11400000, guid: 91cd83d46993b1e46937cd16de2489ce, type: 2}
   - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
+  - {fileID: 11400000, guid: 8e68bfe9de408704aa9d1693af7e9f52, type: 2}
   _hasBranching: 0
   _divergence: 0
   _characterChange: 0
   _isFlashback: 0
   SceneDialouges:
   - _speaker: You
-    _dialouge: You are not that smart.
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: MysteryUnsolved
-    SoundEffect: 
-  - _speaker: You
-    _dialouge: 'You couldn''t have figured out what could have killed her, '
+    _dialouge: But He does have a point
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
-  - _speaker: You
-    _dialouge: And what made you think that it was poison that killed her.
+  - _speaker: Kevin
+    _dialouge: Are you serious??
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
-  - _speaker: Keith
-    _dialouge: 'Yeah ; you are kind of right...  '
-    emotion: 5
-    _ShakeScreenType: 0
-    switchTheme: 
-    SoundEffect: 
-  - _speaker: Keith
-    _dialouge: But what I'm exactly trying to say is
-    emotion: 2
-    _ShakeScreenType: 0
-    switchTheme: 
-    SoundEffect: 
-  - _speaker: Keith
-    _dialouge: You never even considered the fact that someone from outside could
-      have come to kill her.
-    emotion: 2
-    _ShakeScreenType: 0
-    switchTheme: 
-    SoundEffect: 
-  - _speaker: Keith
-    _dialouge: 'And the fact that you were so sure that she died because of the poison
-      is very suspicious. '
-    emotion: 2
-    _ShakeScreenType: 0
-    switchTheme: 
-    SoundEffect: 
   - _speaker: You
-    _dialouge: Yeah you are right, even Emily could have done it as she was in the
-      same room with her all night.
+    _dialouge: "But Winston ,you don\u2019t have any proofs.\nIts all conjecture
+      at this point."
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 

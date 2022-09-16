@@ -129,13 +129,14 @@ public class CharacterManager : MonoBehaviour
                 _speakerImage.color = new Color(1, 1, 1, 1); //Making the sprite visible
                 _speakerImage.sprite = _charactersInScene[i].GetCharacterSpriteAsPerEmotion(Emotion.SpeakCrop); //Setting the speaker text
             }
+           
             i++;
         }
     }
 
     //Show a Sillehoute when the person speaking is not in the scene , eg : Narrator
-    private bool IsNotCharacter() => _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "Narrator" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "???";
-    
+    private bool IsNotCharacter() => _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "Narrator" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "???" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "Manager" || _currentScene.GetCurrentSceneDialouges()[GameManager.Instance.GetCurrentDialougeCounter() == -1 ? 0 : GameManager.Instance.GetCurrentDialougeCounter()]._speaker == "Boss";
+
 
     public  void ClearAllCharacters() //Deletes all child elements that were created for this scene
     {

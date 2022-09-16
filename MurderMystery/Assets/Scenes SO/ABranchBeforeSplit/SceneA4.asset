@@ -14,34 +14,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
   characters:
-  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
-  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
   - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
+  - {fileID: 11400000, guid: 8e68bfe9de408704aa9d1693af7e9f52, type: 2}
   _hasBranching: 0
+  _divergence: 0
   _characterChange: 0
   _isFlashback: 0
   SceneDialouges:
   - _speaker: You
-    _dialouge: But you are being very precise with everything.
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: MysteryUnsolved
-    SoundEffect: 
-  - _speaker: Andy
-    _dialouge: ; thats nothing but rubbish, you are saying this just to save that
-      killer.
+    _dialouge: Both of you shut up.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
-  - _speaker: Keith
-    _dialouge: ITS NOT YOUR JOB TO DECIDE WETHER HE IS A KILLER!
-    emotion: 2
+  - _speaker: You
+    _dialouge: Just to your rooms and calm yourself down.
+    emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
-  - _speaker: Keith
-    _dialouge: We have called cops and they will decide what will happen.
+  - _speaker: Kevin
+    _dialouge: 'Why me? '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: He is the one who is barking like a dog and doesn't shut up at all.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: You are right ;. I need to calm down
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Time will decide what will happen to him
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
