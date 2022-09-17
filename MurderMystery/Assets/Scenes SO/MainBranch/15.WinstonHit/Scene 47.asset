@@ -26,16 +26,7 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: You
-    _dialouge: 'Sabrina got stabbed mulitple times.
-
-      Winston was the once to
-      point that out.'
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: 
-    SoundEffect: 
-  - _speaker: You
-    _dialouge: Sabrina got stabbed mulitple times.
+    _dialouge: Laura got stabbed mulitple times.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
