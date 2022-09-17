@@ -61,13 +61,13 @@ public class StateManager : MonoBehaviour
             }
             else
             {
-                gameState = GameStates.EndB;
+                gameState = GameStates.EndC;
             }
 
         }
         else
         {
-            gameState = GameStates.EndC;
+            gameState = GameStates.EndB;
         }
 
         GameManager.Instance.ProcessNextScene();

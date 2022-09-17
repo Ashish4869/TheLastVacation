@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 9
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: c629b976475e7d1479ceed25b102889b, type: 3}
+  characters:
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
+  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: 
+    _dialouge: '<b>August 14th 8:00PM
+
+      WINSTON''S ROOM<b/>
+
+'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Hey guys, what happened?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: We need to check your bags.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: What??
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: You heard him.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: But why all of a sudden?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: 'Ohh that, we just want to prove Kevin that you are not the killer. '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: 'Because he has been barking that you are lying about him hitting
+      you. '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: And that you are the one who killed  Laura.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: "Guys just ignore him, you don\u2019t have to prove him anything."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: But we need to, we insist.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "Yeah Winston don\u2019t worry we\u2019ll shut his mouth."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "Yeah Winston don\u2019t worry we\u2019ll shut his mouth."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "Shane start with his cupboard and we\u2019ll look in his bags."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Uhh...guys....please....
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: There is nothing here.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: "Even I didn\u2019t find anything."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Yeah looks like we will be shutting his mouth after all.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Yeah go ahead and tell him.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

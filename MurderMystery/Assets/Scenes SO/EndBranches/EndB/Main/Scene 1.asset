@@ -1,0 +1,282 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 1
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: 
+    _dialouge: '<b> August 14th 6:15PM
+
+      LIVING ROOM</b>'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: Hey Shane, how is Winston?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: He is fine now.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: 'What are you thinking Caesar?
+
+      You look very serious.'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: "Nothing, Its just I can\u2019t believe that we would see horrible
+      things like these in our lives."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Such is life brother you never know what may happen and when.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: "That\u2019s true ;.\nBut to be honest I feel like somethings wrong."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "Something?? \nEverything is wrong."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: No I mean,uhh, how do I even put it?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: "Don\u2019t you think it was too easy for us to figure out that Kevin
+      killed her, and even Chelsea."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: What about her?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: "Why didn\u2019t he kill her? Why did he take the risk of leaving
+      her alive?"
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: And was she actually sedated?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: What if she killed her??
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Yeah you are actually right why leave any evidence?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: So do you guys think he is being framed for her murder.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: "Yeah that\u2019s exactly what I feel."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: But remember he did have pretty serious issues with her.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: "That doesn\u2019t mean he killed her."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: But it does mean that he had a motive.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: And about hitting Winston, he did try killing him but someone must
+      have come and he ran.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: But do we have any evidence against him?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: See we can not really decide if he killed her.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: But we have the facts which points everything towards him being the
+      killer.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: You are right, but what if he is being framed.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: "We can\u2019t be sure."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: "I know he has issues but I can\u2019t believe he killed her."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "Even I don\u2019t believe it."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: Then should we not try to figure out who did it?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: Maybe we should.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: "Yeah just think about it, wasn\u2019t it too easy that Kevin killed
+      her."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Yeah you are right, Winston started blaming Kevin.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "He didn\u2019t even think that someone from outside could have killed
+      her."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "And he didn\u2019t even question Chelsea about anything."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: 'Now that you mentioned it.
+
+      But why will he do it. '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "That\u2019s something we need to find out."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "But again him blaming Kevin doesn\u2019t make him the killer."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: But it does raise suspicion on him.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: We need more evidence.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: Lets talk to Kevin about it.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Yeah lets go.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

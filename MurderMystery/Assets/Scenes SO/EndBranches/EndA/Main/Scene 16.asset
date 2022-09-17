@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 16
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  - {fileID: 11400000, guid: 8e68bfe9de408704aa9d1693af7e9f52, type: 2}
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: Winston
+    _dialouge: What do you mean clear the road?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: Remember you called cops and ambulance and there was a landslide.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Ohh yeah you are right.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: We need to put her in the bed and lock her in untill the cops come.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Narrator
+    _dialouge: Cops arrrive and ; tells them about the situation.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Narrator
+    _dialouge: The cops take away Chelsea.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

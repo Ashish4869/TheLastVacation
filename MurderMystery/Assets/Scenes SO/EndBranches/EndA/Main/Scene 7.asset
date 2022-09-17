@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 7
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 1c452cd50f3d1d847b3fd59cb9901982, type: 3}
+  characters:
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
+  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
+  _hasBranching: 1
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: 
+    _dialouge: <b>Inside Kevins Room</b>
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: What you guys want now?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: We just want to talk.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: What you want to talk to me about.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: 'Uhhh..
+
+      We wanted to check your bags.'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: OOOHHHHH WWOOOOWW
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: YOU GUYS ARE NOT DONE WITH DESTROYING MY LIFE.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: Kevin please its not that,
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: We just need some proof that you are not the killer.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: What do you mean?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Narrator
+    _dialouge: They explain Kevin as to why they need to check the bags.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: Ok, go ahead.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: Yeah. Lets see.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: There is nothing here.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "Even I didn\u2019t find anything."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: "That means you didn\u2019t kill anyone."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: "That\u2019s what I fucking said and you guys never believed me."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: I am so happy, but now who is the killer now?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "We have to check everyone\u2019s bags."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: "Yeah I suggest start with Winston\u2019s bags because he lied about
+      me hitting him."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: But you agreed that you hit him.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: ARE YOU MAD???
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: I never said I hit him, I went to beat him up but I controlled myself
+      and just left that rod over there.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: So you are saying that he hit himself?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: It is a possibility.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 15
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 91cd83d46993b1e46937cd16de2489ce, type: 2}
+  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  - {fileID: 11400000, guid: 8e68bfe9de408704aa9d1693af7e9f52, type: 2}
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 1
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: Sabrina
+    _dialouge: Ohh my God she fainted again.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Ceasar
+    _dialouge: 'Probably because she realised how her life is going to be now. '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: We need to call the cops soon.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: We called them they will be reaching soon, I guess they cleared the
+      road.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 17
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: bd33cd3f49fa45b4d85d7dd526ddaef3, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 84cc3fd679fdf654ca6b7a42943088d0, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: 'You '
+    _dialouge: So the cops take away Chelsea.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: 'You '
+    _dialouge: I don't know what made her do such things,  they were best of friends.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: 'You '
+    _dialouge: 'As the police took away Chelsea.
+
+      For some reason.'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: 'You '
+    _dialouge: For some reason , I feel like something is wrong somwhere.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: 'You '
+    _dialouge: Like as if we were missing piece of a puzzle , what I know for sure
+      is that , I tried my best.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

@@ -12,42 +12,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
   m_Name: EndASceneA1
   m_EditorClassIdentifier: 
-  SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
+  SceneBG: {fileID: 21300000, guid: 1c452cd50f3d1d847b3fd59cb9901982, type: 3}
   characters:
-  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
-  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
   - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
+  - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
+  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
   _hasBranching: 0
   _divergence: 0
   _characterChange: 0
   _isFlashback: 0
   SceneDialouges:
   - _speaker: You
-    _dialouge: I think we should not hurry up to the conclusions.
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: MysteryUnsolved
-    SoundEffect: 
-  - _speaker: You
-    _dialouge: We must give Kevin some chance to explain himself.
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: 
-    SoundEffect: 
-  - _speaker: Keith
-    _dialouge: I think ; is right.
-    emotion: 0
-    _ShakeScreenType: 0
-    switchTheme: 
-    SoundEffect: 
-  - _speaker: Keith
-    _dialouge: We should not point fingers at each other without any <b>solid proof.</b>
+    _dialouge: I dont think so
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
   - _speaker: Kevin
-    _dialouge: "Thanks guys. \nAt least some people have <i>brains</i> unlike others."
+    _dialouge: Then who do you think did it.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: It can be anyone.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: "But he didn\u2019t say that I left and not hit him."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: 'He cleary said I HIT HIM.
+
+      He did it to put the blame on me.'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Yeah that is also a possibility.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 

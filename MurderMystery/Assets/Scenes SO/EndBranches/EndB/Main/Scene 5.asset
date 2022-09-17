@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 5
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
+  characters:
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
+  - {fileID: 11400000, guid: 8e68bfe9de408704aa9d1693af7e9f52, type: 2}
+  - {fileID: 11400000, guid: 91cd83d46993b1e46937cd16de2489ce, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: Shane
+    _dialouge: Wait where is Chelsea and Martin.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: What happened guys??
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: Ohh thank god you are here, Kevin and Winston are missing.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: 'WHAT THE FUCK!
+
+      Are you being serious?'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Wait Chelsea is still not here, where is she??
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: "She was in the washroom. But its been very long she didn\u2019t come
+      out."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: Maybe we should go and check on her.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

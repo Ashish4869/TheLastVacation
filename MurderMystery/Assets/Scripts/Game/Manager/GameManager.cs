@@ -244,19 +244,19 @@ public class GameManager : MonoBehaviour
 
             if (_stateManager.GetCurrentGameState() == GameStates.EndA)
             {
-                _acheivments[0] = true;
+                _acheivments[1] = true;
                 Debug.Log("Unlocked Acheivement 1");
             }
 
             if (_stateManager.GetCurrentGameState() == GameStates.EndB)
             {
-                _acheivments[1] = true;
+                _acheivments[2] = true;
                 Debug.Log("Unlocked Acheivement 2");
             }
 
             if (_stateManager.GetCurrentGameState() == GameStates.EndC) 
             {
-                _acheivments[2] = true;
+                _acheivments[0] = true;
                 Debug.Log("Unlocked Acheivement 3");
             }
 
