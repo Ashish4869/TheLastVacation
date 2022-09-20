@@ -24,7 +24,7 @@ MonoBehaviour:
     _dialouge: So the cops take away Chelsea.
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: DissapointedTheme
+    switchTheme: 
     SoundEffect: 
   - _speaker: 'You '
     _dialouge: I don't know what made her do such things,  they were best of friends.

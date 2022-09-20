@@ -30,7 +30,7 @@ MonoBehaviour:
 '
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Dystopian
+    switchTheme: 
     SoundEffect: 
   - _speaker: Narrator
     _dialouge: They searched the bag of the last person and called everyone to the

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
   m_Name: Scene 2
   m_EditorClassIdentifier: 
-  SceneBG: {fileID: 21300000, guid: 1c452cd50f3d1d847b3fd59cb9901982, type: 3}
+  SceneBG: {fileID: 21300000, guid: c629b976475e7d1479ceed25b102889b, type: 3}
   characters:
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
   _hasBranching: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
       LAURA''S ROOM</b>'
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Dystopian
+    switchTheme: 
     SoundEffect: 
   - _speaker: Ceasar
     _dialouge: "I can\u2019t believe she is not here with us anymore."

@@ -27,7 +27,7 @@ MonoBehaviour:
       LIVING ROOM</b>'
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: MysteryUnsolved
+    switchTheme: 
     SoundEffect: 
   - _speaker: Ceasar
     _dialouge: Hey Shane, how is Winston?
@@ -57,7 +57,7 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: You
-    _dialouge: Such is life brother, you never know what may happen and when.
+    _dialouge: Such is life brother you never know what may happen and when.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
@@ -116,7 +116,7 @@ MonoBehaviour:
     _dialouge: But then why did Kevin Hit Winston?
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Dystopian
+    switchTheme: 
     SoundEffect: 
   - _speaker: Shane
     _dialouge: "; is right, if he didn\u2019t kill anyone he should have not hit
@@ -139,13 +139,13 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: Shane
-    _dialouge: Honestly when ; left the room and I was with him.
+    _dialouge: 'Honestly when ; left the room and I was with him '
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
   - _speaker: Shane
-    _dialouge: "It felt like he was kind of faking,it didn\u2019t look like he was
+    _dialouge: "it felt like he was kind of faking,it didn\u2019t look like he was
       actually hurt."
     emotion: 0
     _ShakeScreenType: 0

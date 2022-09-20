@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 2
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 5f984c0c35f970b47aed4cd4f46f3a2e, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: 
+    _dialouge: <b>Winston Enters the Managers Cabin</b>
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: You called for me sir ?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Manager
+    _dialouge: YOUR LAST MONTHS PROGRESS IS NOTHING BUT A DISSAPPOINTMENT.
+    emotion: 0
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Manager
+    _dialouge: YOU ARE GOOD FOR NOTHING.
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Sorry sir but I was sick last month because of covid and...
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Manager
+    _dialouge: "I DON\u2019T WANT EXCUSES!"
+    emotion: 0
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Manager
+    _dialouge: I WANT NUMBERS!
+    emotion: 0
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Manager
+    _dialouge: Now if you want to keep your job you better give me a reason for it.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Manager
+    _dialouge: NOW GET OUT.
+    emotion: 0
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 

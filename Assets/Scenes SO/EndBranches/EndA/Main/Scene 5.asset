@@ -26,7 +26,7 @@ MonoBehaviour:
     _dialouge: Yeah lets go guys and Jennifer maybe you should stay with Chelsea.
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Survelance
+    switchTheme: 
     SoundEffect: 
   - _speaker: Jennifer
     _dialouge: Yeah I will stay with her. I hope the cops come tomorrow.

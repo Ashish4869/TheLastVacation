@@ -27,7 +27,7 @@ MonoBehaviour:
     _dialouge: Ohh my God she fainted again.
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Synth
+    switchTheme: 
     SoundEffect: 
   - _speaker: Ceasar
     _dialouge: 'Probably because she realised how her life is going to be now. '

@@ -37,7 +37,10 @@ public class MainMenuManager: MonoBehaviour
         _isExtrasActive = false;
         _isSettingsActive = false;
         _isCreditsActive = false;
+<<<<<<< HEAD:Assets/Scripts/MainMenu/MainMenuManager.cs
         
+=======
+>>>>>>> e346a96cd3767c0d11c366effb082efdb53b809c:MurderMystery/Assets/Scripts/MainMenu/MainMenuManager.cs
 
         Debug.Log(Application.persistentDataPath);
 

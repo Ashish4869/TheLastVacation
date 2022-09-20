@@ -26,7 +26,7 @@ MonoBehaviour:
     _dialouge: Yeah we found it in your bag.
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Synth
+    switchTheme: 
     SoundEffect: 
   - _speaker: Chelsea
     _dialouge: Guys this is not the situation to make that joke.
@@ -35,7 +35,7 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: Ceasar
-    _dialouge: Its not a joke, we did find it in your bag.
+    _dialouge: Its not a joke we did find it in your bag.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 

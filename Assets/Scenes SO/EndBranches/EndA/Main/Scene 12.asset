@@ -26,7 +26,7 @@ MonoBehaviour:
     _dialouge: "Yeah, so you finally know that I didn\u2019t do it."
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Dystopian
+    switchTheme: 
     SoundEffect: 
   - _speaker: Chelsea
     _dialouge: What is he saying?
@@ -41,10 +41,10 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: Martin
-    _dialouge: Please tell us fast. We are very confused.
+    _dialouge: Please tell us fast we are very confused.
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Synth
+    switchTheme: 
     SoundEffect: 
   - _speaker: You
     _dialouge: "Yeah I\u2019ll tell you guys now."
@@ -93,6 +93,6 @@ MonoBehaviour:
   - _speaker: Chelsea
     _dialouge: What???
     emotion: 0
-    _ShakeScreenType: 1
+    _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 

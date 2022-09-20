@@ -26,7 +26,7 @@ MonoBehaviour:
     _dialouge: What do you mean clear the road?
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Synth
+    switchTheme: 
     SoundEffect: 
   - _speaker: Shane
     _dialouge: Remember you called cops and ambulance and there was a landslide.

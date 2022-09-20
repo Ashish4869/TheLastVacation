@@ -22,10 +22,10 @@ MonoBehaviour:
   _isFlashback: 0
   SceneDialouges:
   - _speaker: 
-    _dialouge: <b>Jennifer , Sabrina and Martin leave to their rooms.</b>
+    _dialouge: <b>Jennifer , Sabrina and Martin leave to their rooms</b>
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Dystopian
+    switchTheme: 
     SoundEffect: 
   - _speaker: Shane
     _dialouge: So did you guys find anything?
@@ -50,7 +50,7 @@ MonoBehaviour:
       have splattered everywhere.
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: MysteryUnsolved
+    switchTheme: 
     SoundEffect: 
   - _speaker: Shane
     _dialouge: Yeah and that helps us how ?
@@ -65,7 +65,7 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: Ceasar
-    _dialouge: Yeah! you are absolutely right.
+    _dialouge: Yeah you are absolutely right.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 

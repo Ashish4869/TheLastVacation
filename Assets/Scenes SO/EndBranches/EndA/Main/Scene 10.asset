@@ -25,12 +25,12 @@ MonoBehaviour:
   - _speaker: 
     _dialouge: '<b>August 14th 8:25PM
 
-      LIVING ROOM</b>
+      LIVING ROOM<b/>
 
 '
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Dystopian
+    switchTheme: 
     SoundEffect: 
   - _speaker: Shane
     _dialouge: "Now what?? \nNone of them have any bloody clothes."
@@ -63,7 +63,7 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: 
-    _dialouge: <b>They checked Everyones Bag</b>
+    _dialouge: <b>They checked Everyone Bag</b>
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
@@ -75,7 +75,7 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: You
-    _dialouge: "No, we haven\u2019t checked one person yet."
+    _dialouge: "No we haven\u2019t checked one person yet."
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 

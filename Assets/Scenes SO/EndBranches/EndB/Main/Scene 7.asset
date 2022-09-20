@@ -25,8 +25,8 @@ MonoBehaviour:
   - _speaker: You
     _dialouge: WHAT THE HELL IS HAPPENING????
     emotion: 0
-    _ShakeScreenType: 2
-    switchTheme: Survelance
+    _ShakeScreenType: 0
+    switchTheme: 
     SoundEffect: 
   - _speaker: Martin
     _dialouge: What do we do now??
@@ -43,9 +43,9 @@ MonoBehaviour:
   - _speaker: 
     _dialouge: NYPD OPEN THE DOOR
     emotion: 0
-    _ShakeScreenType: 1
+    _ShakeScreenType: 0
     switchTheme: 
-    SoundEffect: bang
+    SoundEffect: 
   - _speaker: You
     _dialouge: "That\u2019s the police."
     emotion: 0

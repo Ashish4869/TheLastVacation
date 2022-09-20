@@ -24,10 +24,10 @@ MonoBehaviour:
       they escaped.
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: SadMusic
+    switchTheme: 
     SoundEffect: 
   - _speaker: You
-    _dialouge: They took the body with them and told us to take some time off work.
+    _dialouge: They took the body with them and told us to take some time of work.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
@@ -71,7 +71,7 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: You
-    _dialouge: If only I was bit more decisive in my decisions , we would have caught
+    _dialouge: If only I was bit more decisive in my decision , we would have caught
       the criminal.
     emotion: 0
     _ShakeScreenType: 0

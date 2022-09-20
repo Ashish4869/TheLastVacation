@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
   m_Name: Scene 7
   m_EditorClassIdentifier: 
-  SceneBG: {fileID: 21300000, guid: 7056f6dfacc3a2f4cbb07fc9b4c5dc7f, type: 3}
+  SceneBG: {fileID: 21300000, guid: 1c452cd50f3d1d847b3fd59cb9901982, type: 3}
   characters:
   - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
   - {fileID: 11400000, guid: 038ffe7e9d3ffd84da7ca973e97ac994, type: 2}
@@ -26,7 +26,7 @@ MonoBehaviour:
     _dialouge: <b>Inside Kevins Room</b>
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Dystopian
+    switchTheme: 
     SoundEffect: 
   - _speaker: Kevin
     _dialouge: What you guys want now?
@@ -55,19 +55,19 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: Kevin
-    _dialouge: OOOHHHHH WWOOOOWW1
+    _dialouge: OOOHHHHH WWOOOOWW
     emotion: 0
-    _ShakeScreenType: 2
+    _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
   - _speaker: Kevin
-    _dialouge: YOU GUYS ARE NOT DONE WITH DESTROYING MY LIFE!
+    _dialouge: YOU GUYS ARE NOT DONE WITH DESTROYING MY LIFE.
     emotion: 0
-    _ShakeScreenType: 3
+    _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
   - _speaker: Ceasar
-    _dialouge: Kevin please its not that...
+    _dialouge: Kevin please its not that,
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
@@ -154,7 +154,7 @@ MonoBehaviour:
   - _speaker: Kevin
     _dialouge: ARE YOU MAD???
     emotion: 0
-    _ShakeScreenType: 2
+    _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
   - _speaker: Kevin

@@ -25,12 +25,12 @@ MonoBehaviour:
   - _speaker: 
     _dialouge: '<b>August 14th 8:00PM
 
-      WINSTON''S ROOM</b>
+      WINSTON''S ROOM<b/>
 
 '
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Dystopian
+    switchTheme: 
     SoundEffect: 
   - _speaker: Winston
     _dialouge: Hey guys, what happened?

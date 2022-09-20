@@ -23,10 +23,10 @@ MonoBehaviour:
   _isFlashback: 0
   SceneDialouges:
   - _speaker: Shane
-    _dialouge: Wait. Where is Chelsea and Martin.
+    _dialouge: Wait where is Chelsea and Martin.
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Survelance
+    switchTheme: 
     SoundEffect: 
   - _speaker: Martin
     _dialouge: What happened guys??
@@ -45,7 +45,7 @@ MonoBehaviour:
 
       Are you being serious?'
     emotion: 0
-    _ShakeScreenType: 2
+    _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
   - _speaker: You

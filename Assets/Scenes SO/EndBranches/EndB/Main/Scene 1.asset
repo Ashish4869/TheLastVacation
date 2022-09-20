@@ -27,7 +27,7 @@ MonoBehaviour:
       LIVING ROOM</b>'
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: MysteryUnsolved
+    switchTheme: 
     SoundEffect: 
   - _speaker: Ceasar
     _dialouge: Hey Shane, how is Winston?
@@ -131,7 +131,7 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: You
-    _dialouge: But remember, he did have pretty serious issues with her.
+    _dialouge: But remember he did have pretty serious issues with her.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 

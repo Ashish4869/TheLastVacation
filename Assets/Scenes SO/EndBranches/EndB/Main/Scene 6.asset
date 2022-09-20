@@ -29,7 +29,7 @@ MonoBehaviour:
       CHELSA''S ROOM</b>'
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Survelance
+    switchTheme: 
     SoundEffect: 
   - _speaker: Sabrina
     _dialouge: 'Chelsea open the door.
@@ -56,11 +56,11 @@ MonoBehaviour:
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
-    SoundEffect: bang
+    SoundEffect: 
   - _speaker: Jennifer
     _dialouge: OMG she is not here.
     emotion: 0
-    _ShakeScreenType: 1
+    _ShakeScreenType: 0
     switchTheme: 
     SoundEffect: 
   - _speaker: Shane

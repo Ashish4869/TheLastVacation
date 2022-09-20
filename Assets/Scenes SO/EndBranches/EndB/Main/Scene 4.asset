@@ -28,10 +28,10 @@ MonoBehaviour:
       LIVING ROOM</b>'
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Survelance
+    switchTheme: 
     SoundEffect: 
   - _speaker: Sabrina
-    _dialouge: 'Guys, what happened? '
+    _dialouge: 'Guys what happened? '
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
@@ -44,7 +44,7 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: Jennifer
-    _dialouge: Oh my God, does that mean Kevin kidnapped him?
+    _dialouge: Oh my God does that mean Kevin kidnapped him?
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Chelsea
   m_EditorClassIdentifier: 
   CharacterWidth: 500
-  CharacterHeight: 1400
-  _characterNormal: {fileID: 21300000, guid: 7cbf998183dd1904599a2477eda905b7, type: 3}
-  _characterSad: {fileID: 21300000, guid: f2fdf68f8186d0b4e8cd0e778fc7e031, type: 3}
-  _characterAngry: {fileID: 21300000, guid: 1a503568f51108447b5bba1dae51f5b7, type: 3}
+  CharacterHeight: 1000
+  _characterNormal: {fileID: 21300000, guid: a10826c44036968408889cdcf4a6328f, type: 3}
+  _characterSad: {fileID: 0}
+  _characterAngry: {fileID: 0}
   _characterScared: {fileID: 0}
-  _characterHappy: {fileID: 21300000, guid: e6133894e9eff8e4aa56ecbf7b65c0a2, type: 3}
+  _characterHappy: {fileID: 0}
   _characterShocked: {fileID: 0}
-  _characterSpeakCrop: {fileID: 21300000, guid: 0d236f63a31d3e1489b9661c835f6f40, type: 3}
+  _characterSpeakCrop: {fileID: 21300000, guid: b62699bf6f71aec47ae6b551804e8bdc, type: 3}

@@ -245,19 +245,31 @@ public class GameManager : MonoBehaviour
             if (_stateManager.GetCurrentGameState() == GameStates.EndA)
             {
                 _acheivments[1] = true;
+<<<<<<< HEAD:Assets/Scripts/Game/Manager/GameManager.cs
                 Debug.Log("Unlocked Acheivement 2");
+=======
+                Debug.Log("Unlocked Acheivement 1");
+>>>>>>> e346a96cd3767c0d11c366effb082efdb53b809c:MurderMystery/Assets/Scripts/Game/Manager/GameManager.cs
             }
 
             if (_stateManager.GetCurrentGameState() == GameStates.EndB)
             {
                 _acheivments[2] = true;
+<<<<<<< HEAD:Assets/Scripts/Game/Manager/GameManager.cs
                 Debug.Log("Unlocked Acheivement 3");
+=======
+                Debug.Log("Unlocked Acheivement 2");
+>>>>>>> e346a96cd3767c0d11c366effb082efdb53b809c:MurderMystery/Assets/Scripts/Game/Manager/GameManager.cs
             }
 
             if (_stateManager.GetCurrentGameState() == GameStates.EndC) 
             {
                 _acheivments[0] = true;
+<<<<<<< HEAD:Assets/Scripts/Game/Manager/GameManager.cs
                 Debug.Log("Unlocked Acheivement 1");
+=======
+                Debug.Log("Unlocked Acheivement 3");
+>>>>>>> e346a96cd3767c0d11c366effb082efdb53b809c:MurderMystery/Assets/Scripts/Game/Manager/GameManager.cs
             }
 
             SetValuesInSaveData();

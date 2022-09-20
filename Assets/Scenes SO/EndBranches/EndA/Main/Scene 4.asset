@@ -26,7 +26,7 @@ MonoBehaviour:
     _dialouge: Hey Caesar, ; where were you guys?
     emotion: 0
     _ShakeScreenType: 0
-    switchTheme: Survelance
+    switchTheme: 
     SoundEffect: 
   - _speaker: Ceasar
     _dialouge: We were just walking around.
@@ -48,7 +48,7 @@ MonoBehaviour:
     switchTheme: 
     SoundEffect: 
   - _speaker: You
-    _dialouge: We are safe and nothing will happen to any of us now.
+    _dialouge: we are safe and nothing will happen to any of us now.
     emotion: 0
     _ShakeScreenType: 0
     switchTheme: 
