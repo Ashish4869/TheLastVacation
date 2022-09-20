@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 51
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 8e68bfe9de408704aa9d1693af7e9f52, type: 2}
+  - {fileID: 11400000, guid: 84cc3fd679fdf654ca6b7a42943088d0, type: 2}
+  - {fileID: 11400000, guid: 91cd83d46993b1e46937cd16de2489ce, type: 2}
+  - {fileID: 11400000, guid: 8995cc24c6bd44848a1ebdac7439026e, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 1
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: 
+    _dialouge: <b>Kevin Leaves to his room and locks the door behind him</b>
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: Story
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: "What is happening? \nWhy is this happening? "
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: I just lost two friends today!
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: "Don\u2019t cry Chelsea, you have to stay strong."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: 'How can you say that? '
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: I just lost my best friend, she was like my sister.
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: And one of my friends killed her and I almost lost another friend
+      of mine
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: How can I stay strong in this situation?
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: Control yourself Chelsea, what happened has happened.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: You say that like its not a big thing, I want to kill that bastard
+      who destroyed everything.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: NOOOOOOOOO, CHELSEA!
+    emotion: 1
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: "You won\u2019t do anything like that. "
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: Right now we just have to calm ourselves down and collect our thoughts.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Jennifer
+    _dialouge: Yeah he is right Chelsea.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: We are here for you Chelsea.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

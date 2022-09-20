@@ -1,0 +1,272 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 8
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 74061cb4cb1a5f44a912fa4e7b3cc12c, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 84cc3fd679fdf654ca6b7a42943088d0, type: 2}
+  - {fileID: 11400000, guid: a2b648a2bd12d1f4da47253ad696dfbf, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: 
+    _dialouge: "<b>August 4th 2:00AM \nChelsea's Place</b>"
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: Intro
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: Broooo  , do you have any ciggerates left.
+    emotion: 4
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: "For God\u2019s sake Chelsea didn\u2019t you just finish a pack of
+      ciggerates."
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: Yeah, so?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: So maybe you should stop it now, you are literally killing yourself.
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: Ohh come on Laura, stop acting like my mom.
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: I'm telling it for your betterment.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: Smoking is good for releasing the stresssss.
+    emotion: 4
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: "UGHHHHH.\nThere\u2019s no point in arguing with you."
+    emotion: 2
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: "No I don\u2019t have any ciggerates."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: "FUCKK!\nI\u2019ll just go and buy one."
+    emotion: 1
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: Do whatever you want to and by the way how was your audition?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: "Please don\u2019t talk about it, it was horrible."
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: That scumbag director offered me role, but in order to get that role
+      he asked me to sleep with him.
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: "Jesus Christ!! \nWhat a dickhead, good that you rejected the role."
+    emotion: 1
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: 'Rejected?
+
+      Who said I rejected the role?'
+    emotion: 4
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: CHELSEA!!!!!
+    emotion: 2
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: Did you sleep with that douchebag just for that role??
+    emotion: 2
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: Hahahaha calm down babe, I was just kidding.
+    emotion: 4
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: 'UGGGHH!
+
+      You bitch, you worry me a lot.'
+    emotion: 2
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: By the way how was your day?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: It was tiring as hell and on top of that..
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: "Derick keeps on hiting on me, I\u2019m sick of him."
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: "And if that wasn\u2019t enough my boss, who is an A-listed Asshole.."
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: Asked me to do extra shifts from next month onwards.
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: "Which means I\u2019ll be in the office from 9AM to 8PM."
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: Damn girl looks like you need a vaccay.
+    emotion: 0
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: Yeah I do need one.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: Hey, I have an idea. What if we go somewhere far from this city for
+      a trip.
+    emotion: 0
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: 'What??
+
+      Just you and me?'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: "No dumbass! We\u2019ll call everyone."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: "I don\u2019t think its possible."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: Why not?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: I mean we just have to convince one person.
+    emotion: 4
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: And if that person agrees, everyone else will automatically agree.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: Who?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: ;
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: You are right and no one will say no to ;.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Chelsea
+    _dialouge: Exactly!
+    emotion: 4
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Laura
+    _dialouge: "I\u2019ll call him."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 7
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7056f6dfacc3a2f4cbb07fc9b4c5dc7f, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 8995cc24c6bd44848a1ebdac7439026e, type: 2}
+  - {fileID: 11400000, guid: 8e68bfe9de408704aa9d1693af7e9f52, type: 2}
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 1
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: Martin
+    _dialouge: So that means someone else among us is the killer?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: Story
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Yes you are right, Kevin is off the hook.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: You must have not locked the door so he took his chance.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: There is no way Winston, I remember I locked the door.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Jennifer
+    _dialouge: This is so messed up, if not Kevin then who is the killer.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: We will get to know in few minutes.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: What do you mean? And how will you do that?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Yesterday night Caesar, Shane and I were discussing.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: we came to a conclusion that someone else is the killer and not Kevin.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: And that we are still at the risk of losing our lives.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: And Caesar was worried about it a lot but we thought that he is just
+      overwhelmed.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: And Caesar was worried about it a lot but we thought that he is just
+      overwhelmed.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: But before he went to bed he asked us to use our phones as camera
+      if someone comes to your room.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: So we decided that we will keep our phone for recording.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: And if someone comes in our phones can record them.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: That means we will be able to find the killer, so where is his phone?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

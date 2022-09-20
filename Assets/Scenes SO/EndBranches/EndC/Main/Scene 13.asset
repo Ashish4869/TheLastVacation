@@ -1,0 +1,289 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 13
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7056f6dfacc3a2f4cbb07fc9b4c5dc7f, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  - {fileID: 11400000, guid: 84cc3fd679fdf654ca6b7a42943088d0, type: 2}
+  - {fileID: 11400000, guid: 91cd83d46993b1e46937cd16de2489ce, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: Winston
+    _dialouge: HOW
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: EmptyStreets
+    SoundEffect: Shock
+  - _speaker: Winston
+    _dialouge: DARE
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: Shock
+  - _speaker: Winston
+    _dialouge: SHE
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: Shock
+  - _speaker: Winston
+    _dialouge: BETRAY
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: Shock
+  - _speaker: Winston
+    _dialouge: ME
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: Shock
+  - _speaker: Winston
+    _dialouge: I HELPED HER SO MUCH!
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: switch
+  - _speaker: Winston
+    _dialouge: "She didn\u2019t even know anything, I taught her from \r\nscratch.\r"
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Even for the project I did the most work and in the end she took away
+      all the credits.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: "And ever since that, I didn\u2019t talk to her and just left the
+      company."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: But the anger was still there and I had to get rid of that somehow.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: That's when I decided that I'll get rid of her.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: That's when you all asked to meet up.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: That's when I planned I would get rid of her. There was no better
+      day than this.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: Synth
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: I decided to kill her and put the blame on Kevin.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: 'As I already knew that they both had a huge fight. '
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: "And that Kevin used to abuse her and almost beat her up one day.
+      \r"
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: After we reached the mansion I looked around the whole mansion.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: After she decided where she will be staying I took  a room farther
+      than hers.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: So that no one will have any doubts about me.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: And at night when everyone had slept I decided go to her room and
+      kill her.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: So I just put some chloroform on my handkerchief and put on both Chelsea
+      and her.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: And then...
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: HAHAHAHAHAHA
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: laugh
+  - _speaker: Winston
+    _dialouge: And then the fun began!
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: "I pulled out the knife and stabbed her but that didn\u2019t satisfy
+      me."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Not at all after what she had done to me that one stab was not enough.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: So I stabbed her again and again and again and again and again and
+      again.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: HAHAHAHAHAHAHAHA
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: laugh
+  - _speaker: Winston
+    _dialouge: I enjoyed every moment of it.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: "Then I just got rid of my clothes and hid the knife in Chelsea\u2019s
+      bag."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: "you know it was near and I just wanted to make sure that if the Kevin
+      plan didn\u2019t work out. "
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: I could put everything on Chelsea.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: "But turns out I wasn\u2019t that smart."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: But you know it was fun!
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: And if that asshole Caesar had not opened his mouth last night he
+      would have been alive.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: What do you mean?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Ohh I heard you guys talking last night.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: And I thought he might cause some trouble in the future so I had to
+      send him to meet Laura.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: I mean he was missing her anyways.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: HAHAHAHAHA
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: laugh
+  - _speaker: Chelsea
+    _dialouge: YOU SICK FUCK!
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Sir, please take him away.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

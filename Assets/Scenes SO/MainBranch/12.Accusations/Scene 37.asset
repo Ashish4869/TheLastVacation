@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 37
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7f2e72c8a91515f49921baa5a90796e9, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
+  - {fileID: 11400000, guid: 8e68bfe9de408704aa9d1693af7e9f52, type: 2}
+  _hasBranching: 1
+  _divergence: 3
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: You
+    _dialouge: You are not wrong but Winston, none of us will do that and you know
+      it.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: Protagnists
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Maybe someone had a bad history with her. What do you think Kevin?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: What do you mean?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: As far as I remember you are her ex-bf..
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: "And you guys had your fair share of fights and some were physical
+      if I\u2019m not wrong."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Winston! Stop right now!
+    emotion: 0
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: 'Why??
+
+      I am just trying to figure out who killed her.'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: "Watch your mouth Winston or I\u2019ll fucking break it."
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: "I didn\u2019t say anything wrong, didn\u2019t you guys have fights."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: That was in the past and she forgave me, ever since then we have been
+      in good terms.
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Well, we can never be sure of it.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: SHUT UP WINSTON OR.
+    emotion: 2
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: 'Or what ?
+
+      You will beat me up?'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: This is what I am talking about guys, just look at his temper.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: We all are safe, stop blaming others without any proof and go take
+      some rest.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "You are very tired and that\u2019s why you are saying all this."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

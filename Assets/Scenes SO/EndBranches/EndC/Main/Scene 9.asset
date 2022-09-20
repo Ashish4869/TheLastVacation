@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 9
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 7056f6dfacc3a2f4cbb07fc9b4c5dc7f, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 84cc3fd679fdf654ca6b7a42943088d0, type: 2}
+  - {fileID: 11400000, guid: 91cd83d46993b1e46937cd16de2489ce, type: 2}
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: Chelsea
+    _dialouge: I am going to kill you bastard.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: Synth
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: "I can\u2019t believe this."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: There is nothing you can do now Winston just surrender.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: 
+    _dialouge: '*KNOCK SOUNDS*'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: knock
+  - _speaker: You
+    _dialouge: ' I believe those are cops.'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Narrator
+    _dialouge: Everything was explained to the cops.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Officer
+    _dialouge: This video is the proof that Mr. Winston is the killer and you are
+      under arrest.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Before you take him officer, we want to know why he did this.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Tell us Winston. Why did you kill Laura and Caesar.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: HAHAHAHAHAHAHAHA
+    emotion: 0
+    _ShakeScreenType: 3
+    switchTheme: 
+    SoundEffect: laugh
+  - _speaker: Chelsea
+    _dialouge: Stop laughing you jerk and tell us why you did this?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: "I\u2019ll tell you why. This all dates back to when I was trying
+      to get a job."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

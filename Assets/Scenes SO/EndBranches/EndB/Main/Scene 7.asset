@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 7
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: 1c452cd50f3d1d847b3fd59cb9901982, type: 3}
+  characters:
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
+  - {fileID: 11400000, guid: 8e68bfe9de408704aa9d1693af7e9f52, type: 2}
+  - {fileID: 11400000, guid: 91cd83d46993b1e46937cd16de2489ce, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: You
+    _dialouge: WHAT THE HELL IS HAPPENING????
+    emotion: 0
+    _ShakeScreenType: 2
+    switchTheme: Survelance
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: What do we do now??
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "We can\u2019t do anything unless the cops come."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: 
+    _dialouge: NYPD OPEN THE DOOR
+    emotion: 0
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: bang
+  - _speaker: You
+    _dialouge: "That\u2019s the police."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Officer
+    _dialouge: We are here on call stating that there was a muder . Show us the body.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: Sir there is one more problem.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Officer
+    _dialouge: What is it?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Three of our friends are missing.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: We had doubt that one of our friends killed her and so we had locked
+      him in and today he is missing.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: And also two more of our friends Chelsea and Winston are missing.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Officer
+    _dialouge: "Ohh no, don\u2019t worry you guys we\u2019ll find them we\u2019ll
+      need some details about them first."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

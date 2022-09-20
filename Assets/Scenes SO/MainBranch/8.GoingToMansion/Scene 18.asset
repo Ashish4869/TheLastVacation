@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 18
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: bd33cd3f49fa45b4d85d7dd526ddaef3, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 1051de0ff91629841beb51619527821c, type: 2}
+  - {fileID: 11400000, guid: 91cd83d46993b1e46937cd16de2489ce, type: 2}
+  - {fileID: 11400000, guid: dad4c42f28e30ae449e21c935b5f9d6c, type: 2}
+  - {fileID: 11400000, guid: 8e68bfe9de408704aa9d1693af7e9f52, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 1
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: 
+    _dialouge: <b>After driving for about 4 hours</b>
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: BetterDays
+    SoundEffect: 
+  - _speaker: Kevin
+    _dialouge: 'Ohh holy mother of God!
+
+      Finally we have reached.'
+    emotion: 2
+    _ShakeScreenType: 2
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Sabrina
+    _dialouge: "AAHHHHH! \nMy back is killing me."
+    emotion: 1
+    _ShakeScreenType: 2
+    switchTheme: BetterDays
+    SoundEffect: 
+  - _speaker: Shane
+    _dialouge: I think coming by car was a really bad decision.
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: I think you are right.
+    emotion: 1
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

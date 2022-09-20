@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31586043c51f304ba9ea69911924242, type: 3}
+  m_Name: Laura
+  m_EditorClassIdentifier: 
+  CharacterWidth: 500
+  CharacterHeight: 1000
+  _characterNormal: {fileID: 21300000, guid: 227dec1ec231a8f45acde5a9ee52cc0c, type: 3}
+  _characterSad: {fileID: 21300000, guid: e6e7145bcbcd1c64a8b0e60aa0366dc4, type: 3}
+  _characterAngry: {fileID: 21300000, guid: ab917ac0f1ff3b7418e59c263d4389fc, type: 3}
+  _characterScared: {fileID: 21300000, guid: 801e37132806cf44e8e8dc3bbd44c4db, type: 3}
+  _characterHappy: {fileID: 0}
+  _characterShocked: {fileID: 0}
+  _characterSpeakCrop: {fileID: 21300000, guid: f923618632110584a824e19833836ff4, type: 3}

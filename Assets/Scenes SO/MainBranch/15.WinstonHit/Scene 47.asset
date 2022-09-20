@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 47
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: c629b976475e7d1479ceed25b102889b, type: 3}
+  characters: []
+  _hasBranching: 1
+  _divergence: 10
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: You
+    _dialouge: Lets think this through.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: Survelance
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Laura got stabbed mulitple times.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Winston pointed out that no one from the outside could have done it
+      , cause the windows where closed.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Why did he take our attention to the windows.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Was he trying to give us a signal , which he could'nt say out loud?
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: 'Kevin on the other hand , just lost his temper.
+
+'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: But what ever points Winston put makes him most suspicious
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: And with Winston injury, Kevin seems to be the criminal.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: But the same time its seems all to perfect.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: I have come to a conclusion.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 

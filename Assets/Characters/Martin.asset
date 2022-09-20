@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31586043c51f304ba9ea69911924242, type: 3}
+  m_Name: Martin
+  m_EditorClassIdentifier: 
+  CharacterWidth: 500
+  CharacterHeight: 1000
+  _characterNormal: {fileID: 21300000, guid: 08ac399d86831b540ba1291cb55d4e5e, type: 3}
+  _characterSad: {fileID: 21300000, guid: d9a28af3bb7ae1543aef238547d6aea1, type: 3}
+  _characterAngry: {fileID: 21300000, guid: f4cd0b37342e599458fbcd83704fbe36, type: 3}
+  _characterScared: {fileID: 0}
+  _characterHappy: {fileID: 0}
+  _characterShocked: {fileID: 0}
+  _characterSpeakCrop: {fileID: 21300000, guid: 543ecc3f1c4f7d24495e9de24df2cbee, type: 3}

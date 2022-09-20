@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795c2a3929f177845910d3ac6d5de862, type: 3}
+  m_Name: Scene 21
+  m_EditorClassIdentifier: 
+  SceneBG: {fileID: 21300000, guid: c629b976475e7d1479ceed25b102889b, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 8e68bfe9de408704aa9d1693af7e9f52, type: 2}
+  - {fileID: 11400000, guid: 3a149ac08520a1e48b57539f42f60cd8, type: 2}
+  _hasBranching: 0
+  _divergence: 0
+  _characterChange: 0
+  _isFlashback: 0
+  SceneDialouges:
+  - _speaker: 
+    _dialouge: '<b>August 13th 1:00PM
+
+      Exploring the mansion.</b>
+
+'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: BetterDays
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: Hey ; , Winston come check this room out!
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: "Its even bigger than my living room.\r"
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: 'Wow!
+
+      My whole family can stay here.'
+    emotion: 0
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: "Hahaha\nC\u2019mon, it isn\u2019t that big."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: But I have been wondering how did Kevin get this mansion for such
+      a low price.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: "Something doesn\u2019t feel right."
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: "C\u2019mon Winston.\nAre you fucking serious?"
+    emotion: 2
+    _ShakeScreenType: 1
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: 'Overthinking about everything all the godamn time.
+
+      We are
+      here to relax.'
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: "We don\u2019t fucking get this opportunity everyday.\r"
+    emotion: 2
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: Have to agree on Martin on this.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: "We are here to release our stress, so don\u2019t increase it by overthinking.\r"
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Yeah I think you guys are right.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: If only I was a little more carefree like you guys.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: We are in this beautiful mansion in this peaceful place and we are
+      going to make the best of it.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Winston
+    _dialouge: Besides what can go wrong.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: ???
+    _dialouge: '*SSCCCREEEAAAAAAAAMMMMMMMM*'
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: nothing
+    SoundEffect: fscream
+  - _speaker: You
+    _dialouge: I think, I just heard  someone screaming.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: Dystopian
+    SoundEffect: 
+  - _speaker: You
+    _dialouge: We must hurry up and check what happened.
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
+  - _speaker: Martin
+    _dialouge: "You guys go ahead I\u2019ll call rest of them.\r"
+    emotion: 0
+    _ShakeScreenType: 0
+    switchTheme: 
+    SoundEffect: 
