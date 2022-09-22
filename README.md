@@ -1,4 +1,4 @@
-# MurderMystery-UNITY-
+# The Last Vacation
 A Visual Novel made using Unity! <br/>
 Witness the story that unfolds as your play as yourself.<br/>
 The game is tailored to your choices.
