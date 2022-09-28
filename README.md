@@ -18,9 +18,10 @@ https://user-images.githubusercontent.com/68268366/191790929-5e404136-ffd5-4bbc-
 ![Download](./Assets/4.png)
 ![Download](./Assets/5.png)
 
-# Play the Game!
+# Link to the Game!
+<a href="https://akk-3211.itch.io/the-last-vacation">![Download](./Assets/TheLastVacationLink.png)</a>
 
-# Get it on Google Play!
+
 
 
 
